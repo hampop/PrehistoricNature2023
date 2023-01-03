@@ -34,7 +34,7 @@ public abstract class RotatedPillarFlammableBlock extends RotatedPillarBlock {
 
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if (context.getItemInHand().getItem() instanceof AxeItem) {
+        if (context.getItemInHand().getItem() instanceof AxeItem && state.getBlock() != getStrippedLog()) {
             return getStrippedLog().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
         }
         return state;

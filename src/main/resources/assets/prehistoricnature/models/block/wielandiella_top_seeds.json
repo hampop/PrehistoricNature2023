@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/wielandiella_t_e_seed",
+"w":"prehistoricnature:block/wielandiella_t_w_seed"
+}
+}

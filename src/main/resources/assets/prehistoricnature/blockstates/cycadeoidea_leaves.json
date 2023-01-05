@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/cycadeoidea_leaves_inventory"
+    },
+    "": {
+      "model": "prehistoricnature:block/cycadeoidea_leaves"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"variants": {
+		"facing=north": [
+			{"model": "prehistoricnature:block/grypania", "y": 180},
+			{"model": "prehistoricnature:block/grypania_var", "y": 180}
+		],
+		"facing=south": [
+			{"model": "prehistoricnature:block/grypania"},
+			{"model": "prehistoricnature:block/grypania_var"}
+		],
+		"facing=west": [
+			{"model": "prehistoricnature:block/grypania", "y": -270},
+			{"model": "prehistoricnature:block/grypania_var", "y": -270}
+		],
+		"facing=east": [
+			{"model": "prehistoricnature:block/grypania", "y": -90},
+			{"model": "prehistoricnature:block/grypania_var", "y": -90}
+		],
+		"facing=up": [
+			{"model": "prehistoricnature:block/grypania"},
+			{"model": "prehistoricnature:block/grypania_var"}
+		],
+		"facing=down": [
+			{"model": "prehistoricnature:block/grypania"},
+			{"model": "prehistoricnature:block/grypania_var"}
+		]
+	}
+}

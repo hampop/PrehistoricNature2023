@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/wattieza_shoot"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/wattieza_shoot_side_03", "y": -90
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/wattieza_shoot_side_03"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/wattieza_shoot_side_03", "y": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/wattieza_shoot_side_03", "y": 180
+    }
+  }
+}

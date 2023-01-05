@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dictyonema"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/dictyonema_side", "y": 90}
+      ],
+      "facing=east": [
+      {"model": "prehistoricnature:block/dictyonema_side", "y": 180}
+      ],
+      "facing=south": [
+      {"model": "prehistoricnature:block/dictyonema_side", "y": 270}
+      ],
+
+      "facing=west": [
+      {"model": "prehistoricnature:block/dictyonema_side"}
+      ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/dictyonema"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/dictyonema", "x": 180}
+    ]
+  }
+}

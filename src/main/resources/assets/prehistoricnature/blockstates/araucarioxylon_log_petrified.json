@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/araucarioxylon_log_petrified",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

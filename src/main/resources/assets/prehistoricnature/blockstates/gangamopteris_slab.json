@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/gangamopteris_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/gangamopteris_slab_top"
+    }
+  }
+}

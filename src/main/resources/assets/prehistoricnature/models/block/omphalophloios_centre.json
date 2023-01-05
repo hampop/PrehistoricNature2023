@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/omphalophloios_t_b_e",
+"w":"prehistoricnature:block/omphalophloios_t_b_w"
+}
+}

@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/sigillaria_shoot_t_e1",
+"w":"prehistoricnature:block/sigillaria_shoot_t_w1"
+}
+}

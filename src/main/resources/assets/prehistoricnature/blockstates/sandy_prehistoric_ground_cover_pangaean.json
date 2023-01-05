@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "snowy=false": [ 
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_pangaean", "weight": 2 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_light_pangaean", "weight": 3 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_pangaean", "weight": 2, "y": 90 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_light_pangaean", "weight": 3, "y": 90 }
+       ],
+        "snowy=true": [
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed_pangaean" },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed_pangaean", "y": 90 }
+        ]
+    }
+}

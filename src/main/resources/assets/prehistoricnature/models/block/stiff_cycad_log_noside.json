@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "texture": "prehistoricnature:block/stiff_cycad_log",
+        "inside": "prehistoricnature:block/stiff_cycad_log",
+        "particle": "prehistoricnature:block/stiff_cycad_log"
+    },
+    "elements": [
+        {   "from": [ 6, 6, 6 ],
+            "to": [ 10, 10, 10 ],
+            "faces": {
+                "north": { "texture": "#inside" }
+            }
+        }
+    ]
+}

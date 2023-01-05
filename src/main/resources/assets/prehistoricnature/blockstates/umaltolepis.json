@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/umaltolepis"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/umaltolepis_inventory"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/aneurophyton_shoot" },
+      {"model": "prehistoricnature:block/aneurophyton_shoot", "y": 90 },
+      {"model": "prehistoricnature:block/aneurophyton_shoot_flipped" },
+      {"model": "prehistoricnature:block/aneurophyton_shoot_flipped", "y": 90 }
+      
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/aneurophyton_shoot_inventory"
+    }
+  }
+}

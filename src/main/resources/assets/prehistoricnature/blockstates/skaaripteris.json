@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/skaaripteris"},
+      {"model": "prehistoricnature:block/skaaripteris_var"}
+    ]
+  }
+}

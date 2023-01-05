@@ -1,0 +1,9 @@
+{
+    "multipart": [
+		{ 	"apply": { "model": "prehistoricnature:block/phyllotheca" } },
+    	
+        {   "when": { "water": true },
+            "apply": { "model": "prehistoricnature:block/phyllotheca_lower_stem" }
+        }
+    ]
+}

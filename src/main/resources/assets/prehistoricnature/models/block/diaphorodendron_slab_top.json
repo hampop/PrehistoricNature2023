@@ -1,0 +1,8 @@
+{
+  "parent": "block/upper_slab",
+  "textures": {
+    "bottom": "prehistoricnature:block/diaphorodendron_planks",
+    "top": "prehistoricnature:block/diaphorodendron_planks",
+    "side": "prehistoricnature:block/diaphorodendron_planks"
+  }
+}

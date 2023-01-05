@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "prehistoricnature:block/sphenobaiera_slab_double"
+    }
+  }
+}

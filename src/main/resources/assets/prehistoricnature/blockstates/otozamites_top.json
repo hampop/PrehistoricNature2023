@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+		{"model": "prehistoricnature:block/otozamites_top", "weight": 2 },
+		{"model": "prehistoricnature:block/otozamites_top_seeds" }
+    ]
+  }
+}

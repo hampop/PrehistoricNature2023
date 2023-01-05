@@ -1,0 +1,7 @@
+{
+  "parent": "prehistoricnature:block/fence_side_thin",
+  "textures": {
+    "texture": "prehistoricnature:block/tietea_branch",
+    "particle": "prehistoricnature:block/tietea_branch"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/quasistrobus_inventory"
+    },
+    "": {"model": "prehistoricnature:block/quasistrobus"}
+  }
+}

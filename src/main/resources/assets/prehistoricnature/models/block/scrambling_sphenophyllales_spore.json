@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/sphenophyllales1_c_var",
+"w":"prehistoricnature:block/sphenophyllales1_c_var",
+"ee":"prehistoricnature:block/sphenophyllales1_e_var",
+"ww":"prehistoricnature:block/sphenophyllales1_w_var"
+}
+}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/wattieza_shoot"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/wattieza_shoot_inventory"
+    }
+  }
+}

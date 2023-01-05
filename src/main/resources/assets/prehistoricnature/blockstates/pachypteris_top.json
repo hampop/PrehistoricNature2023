@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/pachypteris_top"},
+      {"model": "prehistoricnature:block/pachypteris_top_bushy"},
+      {"model": "prehistoricnature:block/pachypteris_top_tall"}
+    ]
+  }
+}

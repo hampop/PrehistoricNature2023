@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/hymenaea_log_end",
+    "up": "prehistoricnature:block/hymenaea_log_end",
+    "north": "prehistoricnature:block/hymenaea_log",
+    "east": "prehistoricnature:block/hymenaea_log",
+    "south": "prehistoricnature:block/hymenaea_log",
+    "west": "prehistoricnature:block/hymenaea_log",
+    "particle": "prehistoricnature:block/hymenaea_log_end"
+  }
+}

@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/xihuphyllum_3_e",
+"w":"prehistoricnature:block/xihuphyllum_3_w"
+}
+}

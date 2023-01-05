@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/sphenobaiera_log_end",
+    "up": "prehistoricnature:block/sphenobaiera_log_end",
+    "north": "prehistoricnature:block/sphenobaiera_log",
+    "east": "prehistoricnature:block/sphenobaiera_log",
+    "south": "prehistoricnature:block/sphenobaiera_log",
+    "west": "prehistoricnature:block/sphenobaiera_log",
+    "particle": "prehistoricnature:block/sphenobaiera_log_end"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/cycadeoidea_shoot_inventory",
+    "particle": "prehistoricnature:items/cycadeoidea_shoot_inventory"
+  }
+}

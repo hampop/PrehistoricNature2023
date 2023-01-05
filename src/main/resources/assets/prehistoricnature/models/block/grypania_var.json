@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/grypania_var",
+    "particle": "prehistoricnature:items/grypania_inventory"
+  }
+}

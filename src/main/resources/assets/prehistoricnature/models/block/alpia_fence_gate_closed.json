@@ -1,0 +1,7 @@
+{
+    "parent": "block/fence_gate_closed",
+    "textures": {
+        "texture": "prehistoricnature:block/alpia_planks",
+    "particle": "prehistoricnature:block/alpia_planks"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/bjuvia_shoot"},
+      {"model": "prehistoricnature:block/bjuvia_shoot_flower"}
+    ],
+
+    "inventory": {
+      "model": "prehistoricnature:block/bjuvia_shoot_inventory"
+    }
+  }
+}

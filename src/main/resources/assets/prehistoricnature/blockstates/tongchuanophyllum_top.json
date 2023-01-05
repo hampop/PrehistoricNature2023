@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/tongchuanophyllum_inventory"
+    },
+    "var=0": {"model": "prehistoricnature:block/tongchuanophyllum_top_1"},
+    "var=1": {"model": "prehistoricnature:block/tongchuanophyllum_top_2"},
+    "var=2": {"model": "prehistoricnature:block/tongchuanophyllum_top_3"},
+    "var=3": {"model": "prehistoricnature:block/tongchuanophyllum_top_4"}
+  }
+}

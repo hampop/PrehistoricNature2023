@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "prehistoricnature:block/podozamites_slab_double"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "prehistoricnature:block/sand_red_wavy_1" },
+      { "model": "prehistoricnature:block/sand_red_wavy_2" }
+    ]
+  }
+}

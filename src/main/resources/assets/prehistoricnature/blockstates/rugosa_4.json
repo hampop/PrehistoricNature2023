@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/rugosa_4"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/rugosa_4_side"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/rugosa_4_side", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/rugosa_4_side", "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/rugosa_4_side", "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/rugosa_4"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/rugosa_4", "x": 180}
+    ]
+  }
+}

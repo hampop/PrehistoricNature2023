@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/ginkgo_log_end",
+    "up": "prehistoricnature:block/ginkgo_log_end",
+    "north": "prehistoricnature:block/ginkgo_log",
+    "east": "prehistoricnature:block/ginkgo_log",
+    "south": "prehistoricnature:block/ginkgo_log",
+    "west": "prehistoricnature:block/ginkgo_log",
+    "particle": "prehistoricnature:block/ginkgo_log_end"
+  }
+}

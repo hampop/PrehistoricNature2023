@@ -1,0 +1,11 @@
+{
+"parent":"prehistoricnature:block/4x4_4pointedplant_hanging_flipped",
+"textures":{
+"tc":"prehistoricnature:block/leptocycas_shoot_t_cone",
+"te":"prehistoricnature:block/leptocycas_shoot_t_e",
+"tw":"prehistoricnature:block/leptocycas_shoot_t_w",
+"bc":"prehistoricnature:block/leptocycas_shoot_b_cone",
+"be":"prehistoricnature:block/leptocycas_shoot_b_e",
+"bw":"prehistoricnature:block/leptocycas_shoot_b_w"
+}
+}

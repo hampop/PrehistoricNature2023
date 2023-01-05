@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/nilssonia_shoot", "weight": 2 },
+      {"model": "prehistoricnature:block/nilssonia_shoot_flower"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/nilssonia_shoot_inventory"
+    }
+  }
+}

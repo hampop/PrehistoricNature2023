@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/brachyphyllum_log_end",
+    "up": "prehistoricnature:block/brachyphyllum_log_end",
+    "north": "prehistoricnature:block/brachyphyllum_log",
+    "east": "prehistoricnature:block/brachyphyllum_log",
+    "south": "prehistoricnature:block/brachyphyllum_log",
+    "west": "prehistoricnature:block/brachyphyllum_log",
+    "particle": "prehistoricnature:block/brachyphyllum_log_end"
+  }
+}

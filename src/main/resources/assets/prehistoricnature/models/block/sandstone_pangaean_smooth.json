@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "prehistoricnature:block/sandstone_pangaean_top",
+    "side": "prehistoricnature:block/sandstone_pangaean_smooth"
+  }
+}

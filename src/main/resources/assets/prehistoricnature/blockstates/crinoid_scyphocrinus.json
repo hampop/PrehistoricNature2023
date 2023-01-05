@@ -1,0 +1,15 @@
+{
+  "multipart" : [
+    {	"when": { "topshoot": "true" },
+        "apply": [
+          {"model": "prehistoricnature:block/crinoid_scyphocrinus_top"},
+          {"model": "prehistoricnature:block/crinoid_scyphocrinus_top_var"}
+        ]
+    },
+    {
+      "when": {"topshoot": "false" },
+      "apply": {"model": "prehistoricnature:block/crinoid_scyphocrinus"}
+    }
+  ]
+
+}

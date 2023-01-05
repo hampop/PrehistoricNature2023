@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/ortiseia"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/ortiseia_inventory"
+    }
+  }
+}

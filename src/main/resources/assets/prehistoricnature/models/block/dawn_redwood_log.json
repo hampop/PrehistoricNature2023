@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/dawn_redwood_log_end",
+    "up": "prehistoricnature:block/dawn_redwood_log_end",
+    "north": "prehistoricnature:block/dawn_redwood_log",
+    "east": "prehistoricnature:block/dawn_redwood_log",
+    "south": "prehistoricnature:block/dawn_redwood_log",
+    "west": "prehistoricnature:block/dawn_redwood_log",
+    "particle": "prehistoricnature:block/dawn_redwood_log_end"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/skaaripteris_var",
+    "particle": "prehistoricnature:block/skaaripteris_var"
+  }
+}

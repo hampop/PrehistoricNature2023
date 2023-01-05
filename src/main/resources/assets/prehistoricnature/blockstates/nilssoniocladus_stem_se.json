@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1", "x": 180, "y": 180 }
+    ],
+    "facing=north": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1", "x": 180 }
+    ],
+    "facing=south": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1", "x": 180, "y": 180 }
+    ],
+    "facing=east": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1", "x": 180, "y": 90 }
+    ],
+    "facing=west": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1", "x": 180, "y": 270 }
+    ],
+    "facing=up": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1" }
+    ],
+    "facing=down": [
+     	{"model": "prehistoricnature:block/nilssoniocladus_stem_corner_1" }
+    ]
+    
+  }
+}

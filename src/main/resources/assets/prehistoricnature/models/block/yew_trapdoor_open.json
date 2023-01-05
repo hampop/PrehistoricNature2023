@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_open",
+  "textures": {
+    "texture": "prehistoricnature:block/yew_trapdoor",
+    "planktexture": "prehistoricnature:block/yew_planks",
+    "particle": "prehistoricnature:block/yew_trapdoor"
+  }
+}

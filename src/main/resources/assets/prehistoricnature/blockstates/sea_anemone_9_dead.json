@@ -1,0 +1,60 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base",
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base",
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base"
+      }
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": {
+        "model": "prehistoricnature:block/anemone_9_base",
+        "x": 180
+      }
+    }
+  ]
+}

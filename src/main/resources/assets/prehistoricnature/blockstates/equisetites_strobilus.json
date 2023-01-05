@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/equisites_strobilus"}
+    ],
+	"inventory": [
+      	{"model": "prehistoricnature:block/equisites_strobilus"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/equisites_strobilus", "x": 90}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/equisites_strobilus", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/equisites_strobilus", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/equisites_strobilus", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/equisites_strobilus"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/equisites_strobilus", "x": 180}
+    ]
+  }
+}

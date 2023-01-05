@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/pitys_log_end",
+    "up": "prehistoricnature:block/pitys_log_end",
+    "north": "prehistoricnature:block/pitys_log",
+    "east": "prehistoricnature:block/pitys_log",
+    "south": "prehistoricnature:block/pitys_log",
+    "west": "prehistoricnature:block/pitys_log",
+    "particle": "prehistoricnature:block/pitys_log_end"
+  }
+}

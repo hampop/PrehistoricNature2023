@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/coronacollina"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/coronacollina"}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/coronacollina", "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/coronacollina", "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/coronacollina", "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/coronacollina"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/coronacollina", "X": 180}
+    ]
+  }
+}

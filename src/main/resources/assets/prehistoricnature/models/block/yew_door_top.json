@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "prehistoricnature:block/yew_door_bottom",
+        "top": "prehistoricnature:block/yew_door_top"
+    }
+}

@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/zamites_leaves_e",
+"w":"prehistoricnature:block/zamites_leaves_w"
+}
+}

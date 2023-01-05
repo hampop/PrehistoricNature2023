@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/liriodendron_log"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/liriodendron_log"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/liriodendron_log"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/liriodendron_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/liriodendron_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/liriodendron_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/liriodendron_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/hironoia_flower"},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle"},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/hironoia_flower", "x": 90},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle", "x": 90},
+       	{"model": "prehistoricnature:block/hironoia_flower_rot", "x": 90}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/hironoia_flower", "x": 90, "y": 90},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle", "x": 90, "y": 90},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/hironoia_flower", "x": 90, "y": 180},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle", "x": 90, "y": 180},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/hironoia_flower", "x": 90, "y": 270},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle", "x": 90, "y": 270},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/hironoia_flower"},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle"},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/hironoia_flower", "x": 180},
+      	{"model": "prehistoricnature:block/hironoia_flower_angle", "x": 180},
+      	{"model": "prehistoricnature:block/hironoia_flower_rot", "x": 180}
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone", "weight": 2 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var", "weight": 2 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone"},
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var"},
+
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone", "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var", "y": 90 },
+
+      
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_flipped", "weight": 2 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var_flipped", "weight": 2 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_flipped"},
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var_flipped"},
+
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_flipped", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var_flipped", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_flipped", "y": 90 },
+      {"model": "prehistoricnature:block/leptocycas_shoot_cone_var_flipped", "y": 90 }
+      
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/leptocycas_shoot_inventory"
+    }
+  }
+}

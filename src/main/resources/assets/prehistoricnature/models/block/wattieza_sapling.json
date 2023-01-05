@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/wattieza_sapling",
+    "particle": "prehistoricnature:block/wattieza_sapling"
+  }
+}

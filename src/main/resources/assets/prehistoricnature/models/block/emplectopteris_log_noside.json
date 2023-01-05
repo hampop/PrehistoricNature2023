@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "texture": "prehistoricnature:block/emplectopteris_log",
+        "inside": "prehistoricnature:block/emplectopteris_log",
+        "particle": "prehistoricnature:block/emplectopteris_log"
+    },
+    "elements": [
+        {   "from": [ 7, 7, 7 ],
+            "to": [ 9, 9, 9 ],
+            "faces": {
+                "north": { "texture": "#inside" }
+            }
+        }
+    ]
+}

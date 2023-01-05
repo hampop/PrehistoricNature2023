@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/aethophyllum2",
+    "particle": "prehistoricnature:block/aethophyllum2"
+  }
+}

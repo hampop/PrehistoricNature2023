@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/todites_shoot" }
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/todites_shoot_inventory"
+    }
+  }
+}

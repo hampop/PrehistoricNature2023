@@ -1,0 +1,10 @@
+{
+  "variants": {
+  	"": {
+  		"model": "prehistoricnature:block/sahnioxylon_shoot"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/sahnioxylon_shoot_inventory"
+    }
+  }
+}

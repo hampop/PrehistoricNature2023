@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+
+      {"model": "prehistoricnature:block/microbial_mat_0" },
+      {"model": "prehistoricnature:block/microbial_mat_1" },
+      {"model": "prehistoricnature:block/microbial_mat_2" },
+      {"model": "prehistoricnature:block/microbial_mat_3" },
+      {"model": "prehistoricnature:block/microbial_mat_4" }
+    ]
+  }
+}

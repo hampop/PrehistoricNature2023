@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/calamites_shoot_inventory",
+    "particle": "prehistoricnature:items/calamites_shoot_inventory"
+  }
+}

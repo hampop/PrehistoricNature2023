@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "prehistoricnature:block/czekanowskia_door_bottom",
+        "top": "prehistoricnature:block/czekanowskia_door_top"
+    }
+}

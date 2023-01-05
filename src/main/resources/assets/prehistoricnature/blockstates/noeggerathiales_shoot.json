@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/noeggerathiales_shoot_flower", "weight": 2 },
+      {"model": "prehistoricnature:block/noeggerathiales_shoot"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/noeggerathiales_shoot_inventory"
+    }
+  }
+}

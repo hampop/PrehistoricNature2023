@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/wachtlerina_2_e",
+"w":"prehistoricnature:block/wachtlerina_2_w"
+}
+}

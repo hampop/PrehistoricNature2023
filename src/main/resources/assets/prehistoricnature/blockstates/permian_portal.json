@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "prehistoricnature:block/permian_portal_ew"
+    },
+    "axis=x": {
+      "model": "prehistoricnature:block/permian_portal_ns"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/permian_portal_ns"
+    }
+  }
+}

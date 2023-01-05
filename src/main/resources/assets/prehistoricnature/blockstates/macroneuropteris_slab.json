@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/macroneuropteris_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/macroneuropteris_slab_top"
+    }
+  }
+}

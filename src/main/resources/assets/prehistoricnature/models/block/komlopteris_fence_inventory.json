@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "prehistoricnature:block/komlopteris_planks",
+    "particle": "prehistoricnature:block/komlopteris_planks"
+  }
+}

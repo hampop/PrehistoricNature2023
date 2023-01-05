@@ -1,0 +1,6 @@
+{
+    "parent": "prehistoricnature:block/pallisade_side",
+    "textures": {
+        "pallisade": "prehistoricnature:block/todites_log"
+    }
+}

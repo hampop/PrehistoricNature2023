@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/sigillaria_log_end",
+    "up": "prehistoricnature:block/sigillaria_log_end",
+    "north": "prehistoricnature:block/sigillaria_log",
+    "east": "prehistoricnature:block/sigillaria_log",
+    "south": "prehistoricnature:block/sigillaria_log",
+    "west": "prehistoricnature:block/sigillaria_log",
+    "particle": "prehistoricnature:block/sigillaria_log_end"
+  }
+}

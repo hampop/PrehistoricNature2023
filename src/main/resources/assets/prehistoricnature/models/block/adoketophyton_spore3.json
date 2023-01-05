@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/adoketophyton_spore3",
+    "particle": "prehistoricnature:block/adoketophyton_spore3"
+  }
+}

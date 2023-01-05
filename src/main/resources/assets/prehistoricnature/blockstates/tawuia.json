@@ -1,0 +1,45 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/tawuia_1"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/tawuia_1", "x": 90},
+      {"model": "prehistoricnature:block/tawuia_2", "x": 90},
+      {"model": "prehistoricnature:block/tawuia_3", "x": 90},
+      {"model": "prehistoricnature:block/tawuia_4", "x": 90}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/tawuia_1", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/tawuia_2", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/tawuia_3", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/tawuia_4", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/tawuia_1", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/tawuia_2", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/tawuia_3", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/tawuia_4", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/tawuia_1", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/tawuia_2", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/tawuia_3", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/tawuia_4", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/tawuia_1"},
+      {"model": "prehistoricnature:block/tawuia_2"},
+      {"model": "prehistoricnature:block/tawuia_3"},
+      {"model": "prehistoricnature:block/tawuia_4"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/tawuia_1", "x": 180},
+      {"model": "prehistoricnature:block/tawuia_2", "x": 180},
+      {"model": "prehistoricnature:block/tawuia_3", "x": 180},
+      {"model": "prehistoricnature:block/tawuia_4", "x": 180}
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/blue_sponge"},
+		{"model": "prehistoricnature:block/blue_sponge_var"},
+      	{"model": "prehistoricnature:block/blue_sponge_small"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/blue_sponge_side"},
+		{"model": "prehistoricnature:block/blue_sponge_side_var"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/blue_sponge_side", "y": 90},
+      	{"model": "prehistoricnature:block/blue_sponge_side_var", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/blue_sponge_side", "y": 180},
+      	{"model": "prehistoricnature:block/blue_sponge_side_var", "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/blue_sponge_side","y": 270},
+      	{"model": "prehistoricnature:block/blue_sponge_side_var","y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/blue_sponge"},
+		{"model": "prehistoricnature:block/blue_sponge_var"},
+      	{"model": "prehistoricnature:block/blue_sponge_small"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/blue_sponge", "x": 180},
+      	{"model": "prehistoricnature:block/blue_sponge_var", "x": 180},
+      	{"model": "prehistoricnature:block/blue_sponge_small", "x": 180}
+    ]
+  }
+}

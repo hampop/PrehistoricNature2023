@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bone_meal"
+    },
+    "1": {
+      "item": "prehistoricnature:lepidopteris_seeds"
+    },
+    "2": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "prehistoricnature:lepidopteris",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/dawn_redwood_sapling",
+    "particle": "prehistoricnature:block/dawn_redwood_sapling"
+  }
+}

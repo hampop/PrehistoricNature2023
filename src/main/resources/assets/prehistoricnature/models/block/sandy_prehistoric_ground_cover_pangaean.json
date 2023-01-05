@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "prehistoricnature:block/sand_prehistoric_ground_pangaean",
+        "top": "prehistoricnature:block/sand_prehistoric_ground_top_pangaean",
+        "side": "prehistoricnature:block/sand_prehistoric_ground_side_pangaean",
+        "particle": "prehistoricnature:block/sand_prehistoric_ground_top_pangaean"
+    }
+}

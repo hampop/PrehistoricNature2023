@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/namacalathus_1"},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_1"},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_3"},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 270}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/namacalathus_side_1"},
+      {"model": "prehistoricnature:block/namacalathus_side_2"},
+      {"model": "prehistoricnature:block/namacalathus_side_3"}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/namacalathus_side_1", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_side_2", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_side_3", "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/namacalathus_side_1", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_side_2", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_side_3", "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/namacalathus_side_1", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_side_2", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_side_3", "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/namacalathus_1"},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_2"},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 270},
+      {"model": "prehistoricnature:block/namacalathus_3"},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 90},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 270}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/namacalathus_1", "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_1", "y": 270, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_2", "y": 270, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/namacalathus_3", "y": 270, "x": 180}
+    ]
+  }
+}

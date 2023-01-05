@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/noeggerathiales_shoot_inventory",
+    "particle": "prehistoricnature:items/noeggerathiales_shoot_inventory"
+  }
+}

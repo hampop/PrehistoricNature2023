@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "prehistoricnature:block/sand_red_sticky" },
+      { "model": "prehistoricnature:block/sand_red_sticky", "y": 90 },
+      { "model": "prehistoricnature:block/sand_red_sticky", "y": 180 },
+      { "model": "prehistoricnature:block/sand_red_sticky", "y": 270 }
+    ]
+  }
+}

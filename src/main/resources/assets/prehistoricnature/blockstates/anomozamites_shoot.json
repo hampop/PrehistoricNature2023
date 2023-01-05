@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/anomozamites_shoot"
+    },
+    
+    "inventory": {
+      "model": "prehistoricnature:block/anomozamites_shoot_inventory"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+  	"inventory": [
+      {"model": "prehistoricnature:block/archaefructus_inventory"}
+  		],
+    "": [
+      {"model": "prehistoricnature:block/archaefructus"}
+    ]
+  }
+}

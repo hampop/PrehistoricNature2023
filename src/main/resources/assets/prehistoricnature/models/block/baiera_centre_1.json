@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/baiera1_c_e",
+"w":"prehistoricnature:block/baiera1_c_w"
+}
+}

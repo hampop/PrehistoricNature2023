@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/cyclodendron_1"},
+      {"model": "prehistoricnature:block/cyclodendron_2"},
+      {"model": "prehistoricnature:block/cyclodendron_3"}
+    ]
+  }
+}

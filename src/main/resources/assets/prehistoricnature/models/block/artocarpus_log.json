@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/artocarpus_log_end",
+    "up": "prehistoricnature:block/artocarpus_log_end",
+    "north": "prehistoricnature:block/artocarpus_log",
+    "east": "prehistoricnature:block/artocarpus_log",
+    "south": "prehistoricnature:block/artocarpus_log",
+    "west": "prehistoricnature:block/artocarpus_log",
+    "particle": "prehistoricnature:block/artocarpus_log_end"
+  }
+}

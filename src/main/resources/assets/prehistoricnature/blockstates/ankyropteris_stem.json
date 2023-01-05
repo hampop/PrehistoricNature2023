@@ -1,0 +1,60 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_stem_1", "y": 180, "weight": 3},
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_2", "y": 180 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_3", "y": 180 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_4", "y": 180 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_5", "y": 180 }
+			    ]
+        },
+        {   "when": { "facing": "north" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 180 }
+			    ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+			      	{"model": "prehistoricnature:block/ankyropteris_stem_1", "weight": 3},
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_2" },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_3" },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_4" },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_5" }
+			    ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves" }
+			    ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+			      	{"model": "prehistoricnature:block/ankyropteris_stem_1", "y": 270, "weight": 3},
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_2", "y": 270 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_3", "y": 270 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_4", "y": 270 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_5", "y": 270 }
+			    ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 270 }
+			    ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+			      	{"model": "prehistoricnature:block/ankyropteris_stem_1", "y": 90, "weight": 3},
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_2", "y": 90 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_3", "y": 90 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_4", "y": 90 },
+			     	{"model": "prehistoricnature:block/ankyropteris_stem_5", "y": 90 }
+			    ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 90 }
+			    ]
+        }
+        ]
+}

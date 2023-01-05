@@ -1,0 +1,6 @@
+{
+    "parent": "prehistoricnature:block/pallisade_post_small",
+    "textures": {
+        "texture": "prehistoricnature:block/nilssonia_log"
+    }
+}

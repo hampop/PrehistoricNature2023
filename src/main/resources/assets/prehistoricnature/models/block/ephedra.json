@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/ephedra_small",
+    "particle": "prehistoricnature:block/ephedra_small"
+  }
+}

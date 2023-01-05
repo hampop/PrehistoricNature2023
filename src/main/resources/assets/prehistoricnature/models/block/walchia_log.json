@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/walchia_log_end",
+    "up": "prehistoricnature:block/walchia_log_end",
+    "north": "prehistoricnature:block/walchia_log",
+    "east": "prehistoricnature:block/walchia_log",
+    "south": "prehistoricnature:block/walchia_log",
+    "west": "prehistoricnature:block/walchia_log",
+    "particle": "prehistoricnature:block/walchia_log_end"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/furcula_log_end",
+    "up": "prehistoricnature:block/furcula_log_end",
+    "north": "prehistoricnature:block/furcula_log",
+    "east": "prehistoricnature:block/furcula_log",
+    "south": "prehistoricnature:block/furcula_log",
+    "west": "prehistoricnature:block/furcula_log",
+    "particle": "prehistoricnature:block/furcula_log_end"
+  }
+}

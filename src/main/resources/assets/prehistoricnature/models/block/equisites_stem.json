@@ -1,0 +1,29 @@
+{
+	"parent": "block/cube",
+    "textures": {
+        "particle": "prehistoricnature:block/equisites_branch",
+        "down": "prehistoricnature:block/equisites_branch_end",
+        "up": "prehistoricnature:block/equisites_branch_end",
+        "north": "prehistoricnature:block/equisites_branch",
+        "south": "prehistoricnature:block/equisites_branch",
+        "west": "prehistoricnature:block/equisites_branch",
+        "east": "prehistoricnature:block/equisites_branch"
+
+    },
+    
+    "elements": [
+        {   "from": [ 5, 0, 5 ],
+            "to": [ 11, 16, 11 ],
+            "faces": {
+                "down":  { "uv": [ 5, 10, 11, 16 ],  "texture": "#down", "cullface": "down" },
+                "up":    { "uv": [ 5, 10, 11, 16 ], "texture": "#up" },
+                "north": { "uv": [ 5, 0, 11, 16 ],  "texture": "#north" },
+                "south": { "uv": [ 5, 0, 11, 16 ],  "texture": "#south" },
+                "west":  { "uv": [ 5, 0, 11, 16 ], "texture": "#west" },
+                "east":  { "uv": [ 5, 0, 11, 16 ],  "texture": "#east" }
+            }
+        }
+
+	    
+    ]
+}

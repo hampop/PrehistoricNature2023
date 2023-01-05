@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/rhacophyton_small_e",
+"w":"prehistoricnature:block/rhacophyton_small_w"
+}
+}

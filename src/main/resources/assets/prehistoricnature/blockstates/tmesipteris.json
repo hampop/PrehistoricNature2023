@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/tmesipteris"},
+      {"model": "prehistoricnature:block/tmesipteris_dbl"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/tmesipteris"},
+      {"model": "prehistoricnature:block/tmesipteris_dbl"}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/tmesipteris", "y": 90},
+      {"model": "prehistoricnature:block/tmesipteris_dbl", "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/tmesipteris", "y": 180},
+      {"model": "prehistoricnature:block/tmesipteris_dbl", "y": 180}
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/tmesipteris", "y": 270},
+      {"model": "prehistoricnature:block/tmesipteris_dbl", "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/tmesipteris"},
+      {"model": "prehistoricnature:block/tmesipteris_dbl"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/tmesipteris"},
+      {"model": "prehistoricnature:block/tmesipteris_dbl"}
+    ]
+  }
+}

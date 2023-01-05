@@ -1,0 +1,24 @@
+{
+	"parent": "block/cube",
+    "textures": {
+        "particle": "prehistoricnature:block/tempskya_side2",
+        "down": "prehistoricnature:block/tempskya_side2",
+        "up": "prehistoricnature:block/tempskya_side2",
+        "north": "prehistoricnature:block/tempskya_side2",
+        "south": "prehistoricnature:block/tempskya_side2",
+        "west": "prehistoricnature:block/tempskya_side2",
+        "east": "prehistoricnature:block/tempskya_side2"
+    },
+    "elements": [
+        {   "from": [8, 0, 0 ],
+            "to": [ 9, 16, 16 ],
+            "faces": {
+                
+                
+                "east": { "uv": [ 0, 0, 16, 16 ],  "texture": "#east" },
+                "west": { "uv": [ 16, 0, 0, 16 ],  "texture": "#west" }
+                
+            }
+        }
+    ]
+}

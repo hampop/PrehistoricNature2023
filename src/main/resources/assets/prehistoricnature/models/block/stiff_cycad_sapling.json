@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/stiff_cycad_sapling",
+    "particle": "prehistoricnature:block/stiff_cycad_sapling"
+  }
+}

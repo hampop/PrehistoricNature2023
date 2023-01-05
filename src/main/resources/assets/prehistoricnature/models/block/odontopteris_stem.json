@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/odontopteris_stem",
+    "up": "prehistoricnature:block/odontopteris_stem",
+    "north": "prehistoricnature:block/odontopteris_stem",
+    "east": "prehistoricnature:block/odontopteris_stem",
+    "south": "prehistoricnature:block/odontopteris_stem",
+    "west": "prehistoricnature:block/odontopteris_stem",
+    "particle": "prehistoricnature:block/odontopteris_stem"
+  }
+}

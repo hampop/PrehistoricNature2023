@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/agathis_log_end",
+    "up": "prehistoricnature:block/agathis_log_end",
+    "north": "prehistoricnature:block/agathis_log",
+    "east": "prehistoricnature:block/agathis_log",
+    "south": "prehistoricnature:block/agathis_log",
+    "west": "prehistoricnature:block/agathis_log",
+    "particle": "prehistoricnature:block/agathis_log_end"
+  }
+}

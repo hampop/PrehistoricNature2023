@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/sigillaria_wood",
+    "particle": "prehistoricnature:block/sigillaria_wood"
+  }
+}

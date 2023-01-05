@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/hymenaea_door_bottom",
+        "top": "prehistoricnature:block/hymenaea_door_top"
+    }
+}

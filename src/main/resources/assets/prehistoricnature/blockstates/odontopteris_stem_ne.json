@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 180 }
+    ],
+    "facing=north": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180 }
+    ],
+    "facing=south": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 180 }
+    ],
+    "facing=east": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 90 }
+    ],
+    "facing=west": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 270 }
+    ],
+    "facing=up": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 180 }
+    ],
+    "facing=down": [
+     	{"model": "prehistoricnature:block/odontopteris_stem_corner", "x": 180, "y": 180 }
+    ]
+    
+  }
+}

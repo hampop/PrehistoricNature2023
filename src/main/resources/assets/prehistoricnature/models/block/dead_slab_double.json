@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/dead_planks",
+    "particle": "prehistoricnature:block/dead_planks"
+  }
+}

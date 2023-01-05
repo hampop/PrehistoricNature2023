@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/schmeissneria_inventory",
+    "particle": "prehistoricnature:items/schmeissneria_inventory"
+  }
+}

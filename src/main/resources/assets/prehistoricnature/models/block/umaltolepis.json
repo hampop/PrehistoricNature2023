@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_4pointedplant",
+"textures":{
+"e":"prehistoricnature:block/umaltolepis_c",
+"w":"prehistoricnature:block/umaltolepis_c",
+"ee":"prehistoricnature:block/umaltolepis_e",
+"ww":"prehistoricnature:block/umaltolepis_w"
+}
+}

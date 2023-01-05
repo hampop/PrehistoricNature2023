@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/sanmiguelia"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/sanmiguelia_inventory"
+    }
+  }
+}

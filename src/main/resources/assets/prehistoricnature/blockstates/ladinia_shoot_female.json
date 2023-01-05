@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/ladinia_shoot_female"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/ladinia_shoot_female_inventory"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "prehistoricnature:block/cambrian_portal_ew"
+    },
+    "axis=x": {
+      "model": "prehistoricnature:block/cambrian_portal_ns"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/cambrian_portal_ns"
+    }
+  }
+}

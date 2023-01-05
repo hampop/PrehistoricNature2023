@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/pachypteris"
+    },
+    "deep=false": {
+      "model": "prehistoricnature:block/pachypteris"
+    },
+    "deep=true": {
+      "model": "prehistoricnature:block/pachypteris_deep"
+    },
+    
+    "inventory": {
+      "model": "prehistoricnature:block/pachypteris_inventory"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/hironoia_log_end",
+    "up": "prehistoricnature:block/hironoia_log_end",
+    "north": "prehistoricnature:block/hironoia_log",
+    "east": "prehistoricnature:block/hironoia_log",
+    "south": "prehistoricnature:block/hironoia_log",
+    "west": "prehistoricnature:block/hironoia_log",
+    "particle": "prehistoricnature:block/hironoia_log_end"
+  }
+}

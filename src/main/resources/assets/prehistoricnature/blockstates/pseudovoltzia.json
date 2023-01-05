@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/pseudovoltzia"},
+      {"model": "prehistoricnature:block/pseudovoltzia_var"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/pseudovoltzia_inventory"
+    }
+  }
+}

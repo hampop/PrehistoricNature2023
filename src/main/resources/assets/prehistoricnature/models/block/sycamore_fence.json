@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "prehistoricnature:block/sycamore_planks",
+    "particle": "prehistoricnature:block/sycamore_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/artocarpus_fruit_1"},
+      {"model": "prehistoricnature:block/artocarpus_fruit_2"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/artocarpus_fruit_block_inventory"
+    }
+  }
+}

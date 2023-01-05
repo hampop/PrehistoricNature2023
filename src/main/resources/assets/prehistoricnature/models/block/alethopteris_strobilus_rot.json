@@ -1,0 +1,26 @@
+{
+	"parent": "block/cube",
+    "textures": {
+        "particle": "prehistoricnature:block/alethflowerside",
+        "down": "prehistoricnature:block/alethflowersideb",
+        "up": "prehistoricnature:block/alethflowersidet",
+        "north": "prehistoricnature:block/alethflowerside",
+        "south": "prehistoricnature:block/alethflowerside",
+        "west": "prehistoricnature:block/alethflowerside",
+        "east": "prehistoricnature:block/alethflowerside"
+    },
+    "elements": [
+        {   "from": [ 7, 0, 7 ],
+            "to": [ 10, 4, 10 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": false },
+            "faces": {
+                "down":  { "uv": [ 7, 13, 10, 16 ],  "texture": "#down", "cullface": "down" },
+                "up":    { "uv": [ 7, 13, 10, 16 ], "texture": "#up" },
+                "north": { "uv": [ 7, 13, 10, 16 ],  "texture": "#north" },
+                "south": { "uv": [ 7, 13, 10, 16 ],  "texture": "#south" },
+                "west":  { "uv": [ 7, 13, 10, 16 ], "texture": "#west" },
+                "east":  { "uv": [ 7, 13, 10, 16 ],  "texture": "#east" }
+            }
+        }
+    ]
+}

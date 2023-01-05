@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/pertica_spores",
+    "particle": "prehistoricnature:block/pertica_spores"
+  }
+}

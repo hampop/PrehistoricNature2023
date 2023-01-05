@@ -1,0 +1,10 @@
+{
+  "variants": {
+  	"": {
+  		"model": "prehistoricnature:block/sigillaria_shoot"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/sigillaria_shoot_inventory"
+    }
+  }
+}

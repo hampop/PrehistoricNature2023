@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dead_conifer_1"},
+      {"model": "prehistoricnature:block/dead_conifer_2"},
+      {"model": "prehistoricnature:block/dead_conifer_3"}
+    ]
+  }
+}

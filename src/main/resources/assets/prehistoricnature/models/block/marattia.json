@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_4pointedplant",
+"textures":{
+"e":"prehistoricnature:block/marattia_b_c",
+"w":"prehistoricnature:block/marattia_b_c",
+"ee":"prehistoricnature:block/marattia_b_e",
+"ww":"prehistoricnature:block/marattia_b_w"
+}
+}

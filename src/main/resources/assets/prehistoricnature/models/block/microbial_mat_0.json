@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/microbial_mat_0",
+    "particle": "prehistoricnature:block/microbial_mat_0"
+  }
+}

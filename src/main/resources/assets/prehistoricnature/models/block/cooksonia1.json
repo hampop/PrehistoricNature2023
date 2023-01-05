@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/cooksonia1",
+    "particle": "prehistoricnature:block/cooksonia1"
+  }
+}

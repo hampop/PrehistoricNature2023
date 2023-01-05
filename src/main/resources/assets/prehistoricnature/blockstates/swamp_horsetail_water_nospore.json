@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/swamp_horsetail_water_nospore"},
+      {"model": "prehistoricnature:block/swamp_horsetail_water_nospore_var"},
+      {"model": "prehistoricnature:block/swamp_horsetail_water_nospore_var2"}
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1"},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1_side"},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2_side"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1_side", "y": 90},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2_side", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1_side", "y": 180},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2_side", "y": 180}
+    ],
+
+    "facing=west": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1_side", "y": 270},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2_side", "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1"},
+      	{"model": "prehistoricnature:block/dark_orange_sponge_2"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/dark_orange_sponge_1", "x": 180},
+      	{"model": "prehistoricnature:block/orange_sponge_small", "x": 180}
+    ]
+  }
+}

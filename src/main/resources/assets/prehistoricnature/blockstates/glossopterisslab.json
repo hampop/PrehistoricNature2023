@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/glossopterisslab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/glossopterisslab_top"
+    }
+  }
+}

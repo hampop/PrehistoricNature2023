@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus", "y": 270 }
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus" }
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus", "y": 90 }
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus", "y": 180 }
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/dicroidium_f_strobilus"}
+    ]
+  }
+}

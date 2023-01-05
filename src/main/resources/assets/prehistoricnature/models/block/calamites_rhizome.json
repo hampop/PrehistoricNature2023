@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/calamites_log",
+    "up": "prehistoricnature:block/calamites_log",
+    "north": "prehistoricnature:block/calamites_log",
+    "east": "prehistoricnature:block/calamites_log",
+    "south": "prehistoricnature:block/calamites_log",
+    "west": "prehistoricnature:block/calamites_log",
+    "particle": "prehistoricnature:block/calamites_log"
+  }
+}

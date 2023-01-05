@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/redwood_planks",
+    "top": "prehistoricnature:block/redwood_planks",
+    "side": "prehistoricnature:block/redwood_planks"
+  }
+}

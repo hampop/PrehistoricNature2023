@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/elkinsia_bushy",
+    "particle": "prehistoricnature:block/elkinsia_bushy"
+  }
+}

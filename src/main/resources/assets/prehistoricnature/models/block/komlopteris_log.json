@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/komlopteris_log_end",
+    "up": "prehistoricnature:block/komlopteris_log_end",
+    "north": "prehistoricnature:block/komlopteris_log",
+    "east": "prehistoricnature:block/komlopteris_log",
+    "south": "prehistoricnature:block/komlopteris_log",
+    "west": "prehistoricnature:block/komlopteris_log",
+    "particle": "prehistoricnature:block/komlopteris_log_end"
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_stem_corner", "x": 180 }
+			    ]
+        },
+        {   "when": { "facing": "north" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 180 }
+			    ]
+        },
+
+         {   "when": { "facing": "south" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_stem_corner", "x": 180, "y": 180 }
+			    ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves" }
+			    ]
+        },
+
+         {   "when": { "facing": "east" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_stem_corner", "x": 180, "y": 90 }
+			    ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 270 }
+			    ]
+        },
+
+         {   "when": { "facing": "west" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_stem_corner", "x": 180, "y": 270 }
+			    ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+			      {"model": "prehistoricnature:block/ankyropteris_leaves", "y": 90 }
+			    ]
+        }
+        ]
+}

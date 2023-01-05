@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/sciadopitys_log_end",
+    "up": "prehistoricnature:block/sciadopitys_log_end",
+    "north": "prehistoricnature:block/sciadopitys_log",
+    "east": "prehistoricnature:block/sciadopitys_log",
+    "south": "prehistoricnature:block/sciadopitys_log",
+    "west": "prehistoricnature:block/sciadopitys_log",
+    "particle": "prehistoricnature:block/sciadopitys_log_end"
+  }
+}

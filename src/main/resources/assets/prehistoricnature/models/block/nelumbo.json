@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_4pointedplant",
+"textures":{
+"e":"prehistoricnature:block/nelumbo_c",
+"w":"prehistoricnature:block/nelumbo_c",
+"ee":"prehistoricnature:block/nelumbo_e",
+"ww":"prehistoricnature:block/nelumbo_w"
+}
+}

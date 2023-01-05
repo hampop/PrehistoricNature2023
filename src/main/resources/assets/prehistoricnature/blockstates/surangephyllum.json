@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/surangephyllum_inventory"
+    },
+    "var=false": {"model": "prehistoricnature:block/surangephyllum"},
+    "var=true": {"model": "prehistoricnature:block/surangephyllum_var"}
+  }
+}

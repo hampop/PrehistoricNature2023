@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/dawn_redwood_planks",
+    "particle": "prehistoricnature:block/dawn_redwood_planks"
+  }
+}

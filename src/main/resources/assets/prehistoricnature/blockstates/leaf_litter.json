@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+        { "model": "prehistoricnature:block/leaf_litter" },
+        { "model": "prehistoricnature:block/leaf_litter", "x": 90 },
+        { "model": "prehistoricnature:block/leaf_litter", "x": 180 },
+        { "model": "prehistoricnature:block/leaf_litter", "x": 270 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 90 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 90, "x": 90 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 90, "x": 180 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 90, "x": 270 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 180 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 180, "x": 90 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 180, "x": 180 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 180, "x": 270 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 270 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 270, "x": 90 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 270, "x": 180 },
+        { "model": "prehistoricnature:block/leaf_litter", "y": 270, "x": 270 }
+    ]
+  }
+}

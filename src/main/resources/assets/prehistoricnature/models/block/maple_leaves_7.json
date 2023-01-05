@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "prehistoricnature:block/maple_leaves_7"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "var=false": {"model": "prehistoricnature:block/surangephyllum_t"},
+    "var=true": {"model": "prehistoricnature:block/surangephyllum_t_var"}
+    }
+}

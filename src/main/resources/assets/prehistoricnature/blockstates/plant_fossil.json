@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/plant_fossil_1"},
+      {"model": "prehistoricnature:block/plant_fossil_2"},
+      {"model": "prehistoricnature:block/plant_fossil_3"},
+      {"model": "prehistoricnature:block/plant_fossil_4"},
+      {"model": "prehistoricnature:block/plant_fossil_1_var"},
+      {"model": "prehistoricnature:block/plant_fossil_2_var"},
+      {"model": "prehistoricnature:block/plant_fossil_3_var"},
+      {"model": "prehistoricnature:block/plant_fossil_4_var"}
+    ]
+  }
+}

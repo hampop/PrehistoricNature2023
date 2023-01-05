@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "prehistoricnature:block/taxodium_planks",
+    "particle": "prehistoricnature:block/taxodium_planks"
+  }
+}

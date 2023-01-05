@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/dicroidium_leaves_small"
+    },
+    "facing=north": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small", "x": 90 },
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_flower", "x": 90 }
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_flower", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_flower", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_flower", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_shoot"},
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_shoot_flower", "weight": 3}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_shoot", "x": 180},
+      {"model": "prehistoricnature:block/dicroidium_leaves_small_shoot_flower", "x": 180, "weight": 3}
+    ]
+  }
+}

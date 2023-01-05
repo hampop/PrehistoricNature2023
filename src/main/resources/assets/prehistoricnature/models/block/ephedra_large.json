@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/ephedra_large_e",
+"w":"prehistoricnature:block/ephedra_large_w"
+}
+}

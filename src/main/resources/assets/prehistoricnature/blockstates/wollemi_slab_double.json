@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "prehistoricnature:block/wollemi_slab_double"
+    }
+  }
+}

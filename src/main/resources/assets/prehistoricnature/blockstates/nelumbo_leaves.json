@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/nelumbo_leaves"},
+      {"model": "prehistoricnature:block/nelumbo_leaves_large"},
+      {"model": "prehistoricnature:block/nelumbo_leaves_var"},
+      {"model": "prehistoricnature:block/nelumbo_leaves_large_var"}
+    ]
+  }
+}

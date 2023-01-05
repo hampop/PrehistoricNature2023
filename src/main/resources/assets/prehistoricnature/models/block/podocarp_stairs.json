@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/podocarp_planks",
+    "top": "prehistoricnature:block/podocarp_planks",
+    "side": "prehistoricnature:block/podocarp_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/surangephyllum_b",
+    "particle": "prehistoricnature:block/surangephyllum_b"
+  }
+}

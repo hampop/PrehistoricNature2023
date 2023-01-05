@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/antarcticycas_inventory",
+    "particle": "prehistoricnature:items/antarcticycas_inventory"
+  }
+}

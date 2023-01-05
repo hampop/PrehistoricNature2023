@@ -1,0 +1,7 @@
+{
+  "parent": "prehistoricnature:block/fence_inventory_thin",
+  "textures": {
+    "texture": "prehistoricnature:block/leptocycas_log",
+    "particle": "prehistoricnature:block/leptocycas_log"
+  }
+}

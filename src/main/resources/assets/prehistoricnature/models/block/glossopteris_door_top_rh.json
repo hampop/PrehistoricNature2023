@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/glossopteris_door_bottom",
+        "top": "prehistoricnature:block/glossopteris_door_top"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "prehistoricnature:block/fence_gate_closed_thin",
+    "textures": {
+        "texture": "prehistoricnature:block/gigantopterid_log",
+    "particle": "prehistoricnature:block/gigantopterid_log"
+    }
+}

@@ -1,0 +1,59 @@
+{
+
+    	"multipart": [
+	    	{"apply": [
+		    		{ "model": "prehistoricnature:block/matonia_stem_base_1", "weight": 2 },
+		    		{ "model": "prehistoricnature:block/matonia_stem_base_2" }
+	    		]
+	    	},
+	
+			{"when": { "facing": "north" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia", "y": 180 },
+				      {"model": "prehistoricnature:block/matonia_large_1", "y": 180 },
+				      {"model": "prehistoricnature:block/matonia_large_2", "y": 180 }
+			     ]
+			},
+	
+			{"when": { "facing": "south" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia"},
+				      {"model": "prehistoricnature:block/matonia_large_1"},
+				      {"model": "prehistoricnature:block/matonia_large_2"}
+			     ]
+			},
+	
+			{"when": { "facing": "east" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia", "y": -90 },
+				      {"model": "prehistoricnature:block/matonia_large_1", "y": -90 },
+				      {"model": "prehistoricnature:block/matonia_large_2", "y": -90 }
+			     ]
+			},
+	
+			{"when": { "facing": "west" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia", "y": 90 },
+				      {"model": "prehistoricnature:block/matonia_large_1", "y": 90 },
+				      {"model": "prehistoricnature:block/matonia_large_2", "y": 90 }
+			     ]
+			},
+	
+			{"when": { "facing": "up" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia"},
+				      {"model": "prehistoricnature:block/matonia_large_1"},
+				      {"model": "prehistoricnature:block/matonia_large_2"}
+			     ]
+			},
+	
+			{"when": { "facing": "down" },
+				"apply": [
+				      {"model": "prehistoricnature:block/matonia"},
+				      {"model": "prehistoricnature:block/matonia_large_1"},
+				      {"model": "prehistoricnature:block/matonia_large_2"}
+			     ]
+			}
+		]
+
+}

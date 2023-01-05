@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/nystroemia_t_e",
+"w":"prehistoricnature:block/nystroemia_t_w"
+}
+}

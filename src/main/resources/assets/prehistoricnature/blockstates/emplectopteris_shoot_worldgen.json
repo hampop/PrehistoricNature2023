@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    { 	"apply": { "model": "prehistoricnature:block/emplectopteris_shoot" } },
+
+    {   "when": { "water": true },
+      "apply": { "model": "prehistoricnature:block/emplectopteris_roots_down" }
+    }
+  ]
+}

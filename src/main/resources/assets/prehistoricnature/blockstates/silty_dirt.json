@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "prehistoricnature:block/silty_dirt" },
+      { "model": "prehistoricnature:block/silty_dirt", "y": 90 },
+      { "model": "prehistoricnature:block/silty_dirt", "y": 180 },
+      { "model": "prehistoricnature:block/silty_dirt", "y": 270 }
+    ]
+  }
+}

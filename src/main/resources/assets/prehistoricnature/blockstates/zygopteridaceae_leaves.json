@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves_inventory"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves",
+      "x": 90,
+      "y": 180
+    },
+    
+    "facing=west": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves",
+      "x": 90,
+      "y": 270
+    },
+
+    "facing=up": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves_shoot"
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/zygopteridaceae_leaves_shoot",
+      "x": 180
+    }
+  }
+}

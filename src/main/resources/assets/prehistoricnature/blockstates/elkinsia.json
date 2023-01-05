@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/elkinsia", "weight": 4},
+      {"model": "prehistoricnature:block/elkinsia_bushy"}
+    ]
+  }
+}

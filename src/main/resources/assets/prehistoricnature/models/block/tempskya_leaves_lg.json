@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/tempskya_leaves_dbl_e",
+"w":"prehistoricnature:block/tempskya_leaves_dbl_w"
+}
+}

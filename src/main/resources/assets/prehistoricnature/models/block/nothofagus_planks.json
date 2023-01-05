@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/nothofagus_planks",
+    "particle": "prehistoricnature:block/nothofagus_planks"
+  }
+}

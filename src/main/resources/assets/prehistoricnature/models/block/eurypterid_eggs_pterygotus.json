@@ -1,0 +1,6 @@
+{
+	"parent": "prehistoricnature:block/eurypterid_eggs",
+	"textures": {
+		"texture": "prehistoricnature:block/mobspawn_pterygotus"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/tempskya_leaves",
+    "particle": "prehistoricnature:block/tempskya_leaves"
+  }
+}

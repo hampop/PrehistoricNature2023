@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/coniopteris"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/coniopteris_inventory"
+    }
+  }
+}

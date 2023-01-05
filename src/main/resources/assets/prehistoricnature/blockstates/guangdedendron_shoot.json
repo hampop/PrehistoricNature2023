@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "age=0": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=1": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=2": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=3": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=4": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=5": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=6": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=7": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=8": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=9": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=10": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=11": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=12": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=13": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=14": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ],
+    "age=15": [
+      {"model": "prehistoricnature:block/guangdedendron_top"},
+      {"model": "prehistoricnature:block/guangdedendron_top_rot"}
+    ]
+  }
+}

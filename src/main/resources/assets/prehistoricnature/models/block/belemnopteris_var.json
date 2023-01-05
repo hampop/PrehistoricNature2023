@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/belemnopteris_var",
+    "particle": "prehistoricnature:block/belemnopteris_var"
+  }
+}

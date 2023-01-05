@@ -1,0 +1,9 @@
+{
+    "multipart": [
+		{ 	"apply": { "model": "prehistoricnature:block/neocalamites" } },
+    	
+        {   "when": { "water": true },
+            "apply": { "model": "prehistoricnature:block/neocalamites_lower_stem" }
+        }
+    ]
+}

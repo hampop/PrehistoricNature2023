@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/crinoid_petalocrinus"},
+      {"model": "prehistoricnature:block/crinoid_petalocrinus", "y": 90},
+      {"model": "prehistoricnature:block/crinoid_petalocrinus", "y": 180},
+      {"model": "prehistoricnature:block/crinoid_petalocrinus", "y": 270}
+    ]
+  }
+}

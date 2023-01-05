@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "prehistoricnature:block/lepidodendron_wood_stripped" },
+    "axis=z":   { "model": "prehistoricnature:block/lepidodendron_wood_stripped", "x": 90 },
+    "axis=x":   { "model": "prehistoricnature:block/lepidodendron_wood_stripped", "x": 90, "y": 90 }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "prehistoricnature:block/calamites_thatch_bundle" },
+        "axis=z": { "model": "prehistoricnature:block/calamites_thatch_bundle", "x": 90 },
+        "axis=x": { "model": "prehistoricnature:block/calamites_thatch_bundle", "x": 90, "y": 90 }
+    }
+}

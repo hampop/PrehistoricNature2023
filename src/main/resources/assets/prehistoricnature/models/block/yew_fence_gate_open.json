@@ -1,0 +1,7 @@
+{
+    "parent": "block/fence_gate_open",
+    "textures": {
+        "texture": "prehistoricnature:block/yew_planks",
+    "particle": "prehistoricnature:block/yew_planks"
+    }
+}

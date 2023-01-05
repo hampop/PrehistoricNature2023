@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/glossopteris_leaves",
+    "particle": "prehistoricnature:block/glossopteris_leaves"
+  }
+}

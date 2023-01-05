@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "prehistoricnature:block/agathis_slab_double"
+    }
+  }
+}

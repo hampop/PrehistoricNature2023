@@ -1,6 +1,11 @@
 package com.aechtrob.prehistoricnature;
 
+import com.aechtrob.prehistoricnature.blocks.ModBlocks;
+import com.aechtrob.prehistoricnature.blocks.trees.lepidodendron.ModBlocksTreeLepidodendron;
 import com.aechtrob.prehistoricnature.items.ModItems;
+import com.aechtrob.prehistoricnature.world.ModConfiguredFeatures;
+import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
+import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +28,13 @@ public class PrehistoricNatureMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModBlocksTreeLepidodendron.register(modEventBus);
+
+        PNTrunkPlacerType.TRUNK_PLACER_TYPES.register(modEventBus);
+        PNFoliagePlacerType.FOLIAGE_PLACER_TYPES.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -45,4 +56,5 @@ public class PrehistoricNatureMod
 
         }
     }
+
 }

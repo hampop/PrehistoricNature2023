@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/ladinia_sapling",
+    "particle": "prehistoricnature:block/ladinia_sapling"
+  }
+}

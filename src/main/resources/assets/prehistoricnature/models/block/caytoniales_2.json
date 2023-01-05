@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/caytoniales_b_e_var",
+"w":"prehistoricnature:block/caytoniales_b_w_var"
+}
+}

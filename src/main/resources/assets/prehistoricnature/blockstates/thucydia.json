@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/thucydia_inventory"
+    },
+    "var=false": {"model": "prehistoricnature:block/thucydia_var"},
+    "var=true": {"model": "prehistoricnature:block/thucydia"}
+  }
+}

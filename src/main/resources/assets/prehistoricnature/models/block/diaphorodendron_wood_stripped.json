@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "prehistoricnature:block/diaphorodendron_log_stripped",
+    "side": "prehistoricnature:block/diaphorodendron_log_stripped"
+  }
+}

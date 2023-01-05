@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "var=false": {"model": "prehistoricnature:block/baiera_top_1"},
+    "var=true": {"model": "prehistoricnature:block/baiera_top_2"}
+    }
+}

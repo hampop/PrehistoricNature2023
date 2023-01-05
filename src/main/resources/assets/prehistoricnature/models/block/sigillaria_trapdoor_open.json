@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_open",
+  "textures": {
+    "texture": "prehistoricnature:block/sigillaria_trapdoor",
+    "planktexture": "prehistoricnature:block/sigillaria_wood",
+    "particle": "prehistoricnature:block/sigillaria_trapdoor"
+  }
+}

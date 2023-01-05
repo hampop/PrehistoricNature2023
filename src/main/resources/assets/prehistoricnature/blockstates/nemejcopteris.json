@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/nemejcopteris"},
+      {"model": "prehistoricnature:block/nemejcopteris_rot"}
+    ]
+  }
+}

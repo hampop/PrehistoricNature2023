@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/schizoneura_3_e",
+"w":"prehistoricnature:block/schizoneura_3_w"
+}
+}

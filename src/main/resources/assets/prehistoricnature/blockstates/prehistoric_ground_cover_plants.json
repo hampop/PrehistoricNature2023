@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "": [
+      		{"model": "prehistoricnature:block/prehistoric_ground_cover_var0", "weight": 3},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var1"},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var2"},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var3", "weight": 8},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var4"},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var5", "weight": 10},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var6"},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var7", "weight": 5},
+        	
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var0", "weight": 3, "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var1", "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var2", "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var3", "weight": 8, "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var4", "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var5", "weight": 10, "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var6", "y": 90},
+        	{"model": "prehistoricnature:block/prehistoric_ground_cover_var7", "weight": 5, "y": 90}
+    ]
+  }
+}

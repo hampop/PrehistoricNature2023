@@ -1,0 +1,12 @@
+{
+  "parent": "prehistoricnature:block/cube_noao",
+  "textures": {
+    "down": "prehistoricnature:block/calamites_log_end",
+    "up": "prehistoricnature:block/calamites_log_end",
+    "north": "prehistoricnature:block/calamites_log",
+    "east": "prehistoricnature:block/calamites_log",
+    "south": "prehistoricnature:block/calamites_log",
+    "west": "prehistoricnature:block/calamites_log",
+    "particle": "prehistoricnature:block/calamites_log_end"
+  }
+}

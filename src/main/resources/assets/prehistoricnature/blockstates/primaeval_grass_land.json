@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/primeval_grass_land", "weight": 2},
+      {"model": "prehistoricnature:block/primeval_grass_land_var"}
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": -270
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": -90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": 0
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/primocandelabrum_1",
+      "y": 0
+    }
+  }
+}

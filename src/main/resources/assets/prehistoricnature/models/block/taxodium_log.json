@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/taxodium_log_end",
+    "up": "prehistoricnature:block/taxodium_log_end",
+    "north": "prehistoricnature:block/taxodium_log",
+    "east": "prehistoricnature:block/taxodium_log",
+    "south": "prehistoricnature:block/taxodium_log",
+    "west": "prehistoricnature:block/taxodium_log",
+    "particle": "prehistoricnature:block/taxodium_log_end"
+  }
+}

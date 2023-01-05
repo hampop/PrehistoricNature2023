@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "prehistoricnature:block/nothofagus_slab_double"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/podocarp_log_end",
+    "up": "prehistoricnature:block/podocarp_log_end",
+    "north": "prehistoricnature:block/podocarp_log",
+    "east": "prehistoricnature:block/podocarp_log",
+    "south": "prehistoricnature:block/podocarp_log",
+    "west": "prehistoricnature:block/podocarp_log",
+    "particle": "prehistoricnature:block/podocarp_log_end"
+  }
+}

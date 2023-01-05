@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "prehistoricnature:block/scorched_dirt" },
+      { "model": "prehistoricnature:block/scorched_dirt", "y": 90 },
+      { "model": "prehistoricnature:block/scorched_dirt", "y": 180 },
+      { "model": "prehistoricnature:block/scorched_dirt", "y": 270 }
+    ]
+  }
+}

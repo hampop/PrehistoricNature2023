@@ -1,0 +1,7 @@
+{
+  "parent": "prehistoricnature:block/websteroprion_burrow",
+  "textures": {
+    "texture": "prehistoricnature:block/clay_red",
+    "base": "prehistoricnature:block/websteroprion_burrow_clay_red"
+  }
+}

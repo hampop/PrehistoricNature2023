@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "ground=false,section=0": { "model": "prehistoricnature:block/prototaxites0" },
+        "ground=false,section=1": { "model": "prehistoricnature:block/prototaxites1" },
+        "ground=false,section=2": { "model": "prehistoricnature:block/prototaxites2" },
+        "ground=false,section=3": { "model": "prehistoricnature:block/prototaxites3" },
+        "ground=false,section=4": { "model": "prehistoricnature:block/prototaxites4" },
+        
+        "ground=true,section=0": { "model": "prehistoricnature:block/prototaxites0_ground" },
+        "ground=true,section=1": { "model": "prehistoricnature:block/prototaxites1_ground" },
+        "ground=true,section=2": { "model": "prehistoricnature:block/prototaxites2_ground" },
+        "ground=true,section=3": { "model": "prehistoricnature:block/prototaxites3_ground" },
+        "ground=true,section=4": { "model": "prehistoricnature:block/prototaxites4_ground" }
+    }
+}

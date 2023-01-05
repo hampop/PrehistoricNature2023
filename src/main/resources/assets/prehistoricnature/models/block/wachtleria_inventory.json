@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/wachtleria_inventory",
+    "particle": "prehistoricnature:items/wachtleria_inventory"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/liriodendronlogend",
+    "up": "prehistoricnature:block/liriodendronlogend",
+    "north": "prehistoricnature:block/liriodendronlog",
+    "east": "prehistoricnature:block/liriodendronlog",
+    "south": "prehistoricnature:block/liriodendronlog",
+    "west": "prehistoricnature:block/liriodendronlog",
+    "particle": "prehistoricnature:block/liriodendronlogend"
+  }
+}

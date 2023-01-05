@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/carboniferous_mud",
+    "particle": "prehistoricnature:block/carboniferous_mud"
+  }
+}

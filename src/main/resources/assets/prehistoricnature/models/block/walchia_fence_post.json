@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "prehistoricnature:block/walchia_planks",
+    "particle": "prehistoricnature:block/walchia_planks"
+  }
+}

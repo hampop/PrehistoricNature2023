@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "prehistoricnature:block/dirt_prehistoric_ground",
+        "bottom": "prehistoricnature:block/dirt_prehistoric_ground",
+        "top": "prehistoricnature:block/dirt_prehistoric_ground_top",
+        "side": "prehistoricnature:block/dirt_prehistoric_ground_side_snowed"
+    }
+}

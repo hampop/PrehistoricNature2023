@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/araucarioxylon_log_end",
+    "up": "prehistoricnature:block/araucarioxylon_log_end",
+    "north": "prehistoricnature:block/araucarioxylon_log",
+    "east": "prehistoricnature:block/araucarioxylon_log",
+    "south": "prehistoricnature:block/araucarioxylon_log",
+    "west": "prehistoricnature:block/araucarioxylon_log",
+    "particle": "prehistoricnature:block/araucarioxylon_log_end"
+  }
+}

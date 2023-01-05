@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/gangamopteris_planks",
+    "particle": "prehistoricnature:block/gangamopteris_planks"
+  }
+}

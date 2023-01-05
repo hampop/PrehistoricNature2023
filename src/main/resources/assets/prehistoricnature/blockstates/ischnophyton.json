@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/ischnophyton"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/ischnophyton_inventory"
+    }
+  }
+}

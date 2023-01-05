@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "snowy=false": [ 
+        	{"model": "prehistoricnature:block/lush_prehistoric_ground_cover" },
+        	{"model": "prehistoricnature:block/lush_prehistoric_ground_cover", "y": 90 }
+        	
+       ],
+        "snowy=true": [
+        	{ "model": "prehistoricnature:block/lush_prehistoric_ground_cover_snowed" },
+        	{ "model": "prehistoricnature:block/lush_prehistoric_ground_cover_snowed", "y": 90 }
+        ]
+    }
+}

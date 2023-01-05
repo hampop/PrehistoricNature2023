@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_bottom",
+  "textures": {
+    "texture": "prehistoricnature:block/dawn_redwood_trapdoor",
+    "planktexture": "prehistoricnature:block/dawn_redwood_planks",
+    "particle": "prehistoricnature:block/dawn_redwood_trapdoor"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/baragwanathia_1"},
+      {"model": "prehistoricnature:block/baragwanathia_2"},
+      {"model": "prehistoricnature:block/baragwanathia_3"}
+    ]
+  }
+}

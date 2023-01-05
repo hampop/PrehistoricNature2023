@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/sulphur_vent_1"},
+      {"model": "prehistoricnature:block/sulphur_vent_2"},
+      {"model": "prehistoricnature:block/sulphur_vent_3"}
+    ]
+  }
+}

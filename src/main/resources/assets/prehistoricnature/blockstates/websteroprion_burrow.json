@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "type=0": {
+      "model": "prehistoricnature:block/websteroprion_burrow_0"
+    },
+    "type=1": {
+      "model": "prehistoricnature:block/websteroprion_burrow_1"
+    },
+    "type=2": {
+      "model": "prehistoricnature:block/websteroprion_burrow_2"
+    },
+    "type=3": {
+      "model": "prehistoricnature:block/websteroprion_burrow_3"
+    },
+    "type=4": {
+      "model": "prehistoricnature:block/websteroprion_burrow_4"
+    },
+    "type=5": {
+      "model": "prehistoricnature:block/websteroprion_burrow_5"
+    },
+    "type=6": {
+      "model": "prehistoricnature:block/websteroprion_burrow_6"
+    },
+    "type=7": {
+      "model": "prehistoricnature:block/websteroprion_burrow_7"
+    }
+  }
+}

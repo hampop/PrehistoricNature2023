@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/calamites_fibre",
+    "particle": "prehistoricnature:block/calamites_fibre"
+  }
+}

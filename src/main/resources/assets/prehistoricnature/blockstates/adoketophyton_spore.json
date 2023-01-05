@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/adoketophyton_spore"},
+      {"model": "prehistoricnature:block/adoketophyton_spore2"},
+      {"model": "prehistoricnature:block/adoketophyton_spore3"},
+      {"model": "prehistoricnature:block/adoketophyton_spore_var"},
+      {"model": "prehistoricnature:block/adoketophyton_spore2_var"},
+      {"model": "prehistoricnature:block/adoketophyton_spore3_var"}
+    ]
+  }
+}

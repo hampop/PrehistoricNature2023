@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/magnolialog_top",
+    "up": "prehistoricnature:block/magnolialog_top",
+    "north": "prehistoricnature:block/magnolialog",
+    "east": "prehistoricnature:block/magnolialog",
+    "south": "prehistoricnature:block/magnolialog",
+    "west": "prehistoricnature:block/magnolialog",
+    "particle": "prehistoricnature:block/magnolialog_top"
+  }
+}

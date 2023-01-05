@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/coniopteris_inventory",
+    "particle": "prehistoricnature:items/coniopteris_inventory"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "prehistoricnature:block/agathis_planks",
+    "particle": "prehistoricnature:block/agathis_planks"
+  }
+}

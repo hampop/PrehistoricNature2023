@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "prehistoricnature:block/brachyphyllum_planks",
+    "top": "prehistoricnature:block/brachyphyllum_planks",
+    "side": "prehistoricnature:block/brachyphyllum_planks"
+  }
+}

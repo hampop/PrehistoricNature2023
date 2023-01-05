@@ -1,0 +1,10 @@
+{
+  "parent": "prehistoricnature:block/4x4_8pointedplant",
+  "textures": {
+    "e": "prehistoricnature:block/rufloria_top_t",
+    "w": "prehistoricnature:block/rufloria_top_t",
+    "ee": "prehistoricnature:block/rufloria_top_t_e",
+    "ww": "prehistoricnature:block/rufloria_top_t_w",
+    "particle": "prehistoricnature:block/rufloria_top_t"
+  }
+}

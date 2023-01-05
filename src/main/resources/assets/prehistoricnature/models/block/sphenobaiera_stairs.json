@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/sphenobaiera_planks",
+    "top": "prehistoricnature:block/sphenobaiera_planks",
+    "side": "prehistoricnature:block/sphenobaiera_planks"
+  }
+}

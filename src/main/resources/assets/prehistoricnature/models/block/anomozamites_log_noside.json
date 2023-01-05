@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "texture": "prehistoricnature:block/anomozamites_log",
+        "inside": "prehistoricnature:block/anomozamites_log",
+        "particle": "prehistoricnature:block/anomozamites_log"
+    },
+    "elements": [
+        {   "from": [ 4, 4, 4 ],
+            "to": [ 12, 12, 12 ],
+            "faces": {
+                "north": { "texture": "#inside" }
+            }
+        }
+    ]
+}

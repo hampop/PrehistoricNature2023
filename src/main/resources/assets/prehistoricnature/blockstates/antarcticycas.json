@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/antarcticycas"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/antarcticycas_inventory"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "prehistoricnature:block/microbial_mat_0",
+    "top": "prehistoricnature:block/microbial_mat_3",
+    "side": "prehistoricnature:block/microbial_mat_0",
+    "particle": "prehistoricnature:block/microbial_mat_0"
+  }
+}

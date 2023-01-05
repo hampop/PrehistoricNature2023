@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+		{"model": "prehistoricnature:block/sigillaria_shoot_top" },
+		{"model": "prehistoricnature:block/sigillaria_shoot_top_small" }
+    ]
+  }
+}

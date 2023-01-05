@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/sahnioxylon_flower_small1",
+    "particle": "prehistoricnature:block/sahnioxylon_flower_small1"
+  }
+}

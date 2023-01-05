@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/aneurophyton_sapling",
+    "particle": "prehistoricnature:block/aneurophyton_sapling"
+  }
+}

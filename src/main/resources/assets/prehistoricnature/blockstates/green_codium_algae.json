@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/green_codium_algae"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/green_codium_algae_side", "x": 90}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/green_codium_algae_side", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/green_codium_algae_side", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/green_codium_algae_side", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/green_codium_algae"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/green_codium_algae", "x": 180}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/bjuvia_shoot_inventory",
+    "particle": "prehistoricnature:items/bjuvia_shoot_inventory"
+  }
+}

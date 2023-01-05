@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/marattia_top"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/marattia_top"
+    }
+  }
+}

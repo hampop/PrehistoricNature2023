@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/bjuvia_shoot_cone"
+    },
+    
+    "inventory": {
+      "model": "prehistoricnature:block/bjuvia_shoot_inventory"
+    }
+  }
+}

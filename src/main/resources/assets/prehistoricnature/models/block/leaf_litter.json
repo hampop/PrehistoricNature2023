@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/leaf_litter",
+    "particle": "prehistoricnature:block/leaf_litter"
+  }
+}

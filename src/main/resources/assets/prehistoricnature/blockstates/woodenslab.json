@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/woodenslab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/woodenslab_top"
+    }
+  }
+}

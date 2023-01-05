@@ -1,0 +1,6 @@
+{
+    "parent": "prehistoricnature:block/pallisade_side_full",
+    "textures": {
+        "pallisade": "prehistoricnature:block/encblue_log"
+    }
+}

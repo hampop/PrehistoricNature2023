@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/otozamites_t_e_noseed",
+"w":"prehistoricnature:block/otozamites_t_w_noseed"
+}
+}

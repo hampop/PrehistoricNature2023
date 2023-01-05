@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/bristlecone_door_bottom",
+        "top": "prehistoricnature:block/bristlecone_door_top"
+    }
+}

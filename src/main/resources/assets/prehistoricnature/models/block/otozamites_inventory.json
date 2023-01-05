@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/otozamites_inventory",
+    "particle": "prehistoricnature:items/otozamites_inventory"
+  }
+}

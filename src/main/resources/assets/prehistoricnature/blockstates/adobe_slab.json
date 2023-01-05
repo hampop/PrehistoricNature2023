@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/adobe_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/adobe_slab_top"
+    }
+  }
+}

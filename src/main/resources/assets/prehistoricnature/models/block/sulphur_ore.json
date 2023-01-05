@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/sulphur_ore",
+    "particle": "prehistoricnature:block/sulphur_ore"
+  }
+}

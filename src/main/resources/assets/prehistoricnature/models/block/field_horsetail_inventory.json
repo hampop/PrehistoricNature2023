@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/field_horsetail",
+    "particle": "prehistoricnature:block/field_horsetail"
+  }
+}

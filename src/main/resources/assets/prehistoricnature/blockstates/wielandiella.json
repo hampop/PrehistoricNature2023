@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/wielandiella_inventory"
+    },
+    "": {
+      "model": "prehistoricnature:block/wielandiella"
+    }
+  }
+}

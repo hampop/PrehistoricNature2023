@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/hironoia_leaves",
+    "particle": "prehistoricnature:block/hironoia_leaves"
+  }
+}

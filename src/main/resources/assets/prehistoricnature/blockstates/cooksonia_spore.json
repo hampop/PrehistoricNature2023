@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/cooksonia_spore1"},
+      {"model": "prehistoricnature:block/cooksonia_spore2"},
+      {"model": "prehistoricnature:block/cooksonia_spore3"},
+      {"model": "prehistoricnature:block/cooksonia_spore1_var"},
+      {"model": "prehistoricnature:block/cooksonia_spore2_var"},
+      {"model": "prehistoricnature:block/cooksonia_spore3_var"}
+    ]
+  }
+}

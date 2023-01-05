@@ -1,0 +1,11 @@
+{
+  "variants": 
+  {"inventory": {
+      "model": "prehistoricnature:block/scrambling_sphenophyllales_inventory"
+    },
+    "": [
+      {"model": "prehistoricnature:block/scrambling_sphenophyllales"},
+      {"model": "prehistoricnature:block/scrambling_sphenophyllales_spore"}
+    ]
+  }
+}

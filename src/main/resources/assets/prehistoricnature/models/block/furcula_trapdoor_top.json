@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_top",
+  "textures": {
+    "texture": "prehistoricnature:block/furcula_trapdoor",
+    "planktexture": "prehistoricnature:block/furcula_planks",
+    "particle": "prehistoricnature:block/furcula_trapdoor"
+  }
+}

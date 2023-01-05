@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/eggs_listracanthus"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/eggs_listracanthus", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/eggs_listracanthus", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/eggs_listracanthus", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/eggs_listracanthus", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/eggs_listracanthus"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/eggs_listracanthus", "x": 180}
+    ]
+  }
+}

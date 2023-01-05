@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/baltic_amber_ore",
+    "particle": "prehistoricnature:block/baltic_amber_ore"
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"parent": "prehistoricnature:block/block_noao",
+	"textures": {
+        "particle": "prehistoricnature:block/magnoliaflowersidew",
+        "down": "prehistoricnature:block/magnoliaflowersideb",
+        "up": "prehistoricnature:block/magnoliaflowersidet",
+        "north": "prehistoricnature:block/magnoliaflowersiden",
+        "south": "prehistoricnature:block/magnoliaflowersides",
+        "west": "prehistoricnature:block/magnoliaflowersidew",
+        "east": "prehistoricnature:block/magnoliaflowersidee"
+    },
+    "elements": [
+        {   "from": [ 5, 0, 5 ],
+            "to": [ 12, 6, 12 ],
+            "faces": {
+                "down":  { "uv": [ 5, 9, 12, 16 ],  "texture": "#down", "cullface": "down" },
+                "up":    { "uv": [ 5, 9, 12, 16 ], "texture": "#up" },
+                "north": { "uv": [ 5, 11, 12, 16 ],  "texture": "#north" },
+                "south": { "uv": [ 5, 11, 12, 16 ],  "texture": "#south" },
+                "west":  { "uv": [ 5, 11, 12, 16 ], "texture": "#west" },
+                "east":  { "uv": [ 5, 11, 12, 16 ],  "texture": "#east" }
+            }
+        }
+    ]
+}

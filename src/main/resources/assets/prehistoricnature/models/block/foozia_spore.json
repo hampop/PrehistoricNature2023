@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/foozia_spores",
+    "particle": "prehistoricnature:block/foozia_spores"
+  }
+}

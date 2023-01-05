@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/telemachus_planks",
+    "top": "prehistoricnature:block/telemachus_planks",
+    "side": "prehistoricnature:block/telemachus_planks"
+  }
+}

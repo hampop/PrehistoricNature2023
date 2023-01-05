@@ -1,0 +1,72 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dinomischus_1"},
+      {"model": "prehistoricnature:block/dinomischus_2"},
+      {"model": "prehistoricnature:block/dinomischus_3"},
+      {"model": "prehistoricnature:block/dinomischus_4"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 90},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 90},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 90},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/dinomischus_1"},
+      {"model": "prehistoricnature:block/dinomischus_2"},
+      {"model": "prehistoricnature:block/dinomischus_3"},
+      {"model": "prehistoricnature:block/dinomischus_4"},
+      {"model": "prehistoricnature:block/dinomischus_1", "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_2", "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_3", "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_4", "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_1", "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_2", "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_3", "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_4", "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_1", "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_2", "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_3", "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_4", "y": 270}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 180},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 180},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 180},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 180},
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 180, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 180, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 180, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 180, "y": 180},
+      {"model": "prehistoricnature:block/dinomischus_1", "x": 180, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_2", "x": 180, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_3", "x": 180, "y": 270},
+      {"model": "prehistoricnature:block/dinomischus_4", "x": 180, "y": 270}
+    ]
+  }
+}

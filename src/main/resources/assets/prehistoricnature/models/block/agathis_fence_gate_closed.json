@@ -1,0 +1,7 @@
+{
+    "parent": "block/fence_gate_closed",
+    "textures": {
+        "texture": "prehistoricnature:block/agathis_planks",
+    "particle": "prehistoricnature:block/agathis_planks"
+    }
+}

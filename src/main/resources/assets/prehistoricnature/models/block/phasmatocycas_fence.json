@@ -1,0 +1,7 @@
+{
+  "parent": "prehistoricnature:block/fence_side_thin",
+  "textures": {
+    "texture": "prehistoricnature:block/phasmatocycas_log",
+    "particle": "prehistoricnature:block/phasmatocycas_log"
+  }
+}

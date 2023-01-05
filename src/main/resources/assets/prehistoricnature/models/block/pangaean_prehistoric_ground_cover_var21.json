@@ -1,0 +1,7 @@
+{
+    "parent": "prehistoricnature:block/prehistoric_ground_cover_var",
+    "textures": {
+    	"particle": "prehistoricnature:block/pangaean_prehistoric_ground_var21",
+        "var": "prehistoricnature:block/pangaean_prehistoric_ground_var21"
+    }
+}

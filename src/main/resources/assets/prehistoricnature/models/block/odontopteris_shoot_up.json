@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/odontopteris_leaves_shoot",
+    "particle": "prehistoricnature:block/odontopteris_leaves_shoot"
+  }
+}

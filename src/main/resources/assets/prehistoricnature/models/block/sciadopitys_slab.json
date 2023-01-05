@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "prehistoricnature:block/sciadopitys_wood",
+    "top": "prehistoricnature:block/sciadopitys_wood",
+    "side": "prehistoricnature:block/sciadopitys_wood"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/namapoikia_1"},
+      {"model": "prehistoricnature:block/namapoikia_2"},
+      {"model": "prehistoricnature:block/namapoikia_3"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 90},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 90},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/namapoikia_1"},
+      {"model": "prehistoricnature:block/namapoikia_2"},
+      {"model": "prehistoricnature:block/namapoikia_3"},
+      {"model": "prehistoricnature:block/namapoikia_1", "y": 90 },
+      {"model": "prehistoricnature:block/namapoikia_2", "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_3", "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_1", "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_2", "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_3", "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_1", "y": 270 },
+      {"model": "prehistoricnature:block/namapoikia_2", "y": 270},
+      {"model": "prehistoricnature:block/namapoikia_3", "y": 270}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 180},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 180},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 180},
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 180, "y": 90},
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 180, "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 180, "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 180, "y": 180 },
+      {"model": "prehistoricnature:block/namapoikia_1", "x": 180, "y": 270},
+      {"model": "prehistoricnature:block/namapoikia_2", "x": 180, "y": 270},
+      {"model": "prehistoricnature:block/namapoikia_3", "x": 180, "y": 270}
+    ]
+  }
+}

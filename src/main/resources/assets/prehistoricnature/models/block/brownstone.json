@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/brownstone",
+    "particle": "prehistoricnature:block/brownstone"
+  }
+}

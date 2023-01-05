@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/sycamore_log_end",
+    "up": "prehistoricnature:block/sycamore_log_end",
+    "north": "prehistoricnature:block/sycamore_log",
+    "east": "prehistoricnature:block/sycamore_log",
+    "south": "prehistoricnature:block/sycamore_log",
+    "west": "prehistoricnature:block/sycamore_log",
+    "particle": "prehistoricnature:block/sycamore_log_end"
+  }
+}

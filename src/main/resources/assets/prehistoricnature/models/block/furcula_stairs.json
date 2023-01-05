@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/furcula_planks",
+    "top": "prehistoricnature:block/furcula_planks",
+    "side": "prehistoricnature:block/furcula_planks"
+  }
+}

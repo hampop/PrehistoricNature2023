@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/baragwanathia_inventory",
+    "particle": "prehistoricnature:items/baragwanathia_inventory"
+  }
+}

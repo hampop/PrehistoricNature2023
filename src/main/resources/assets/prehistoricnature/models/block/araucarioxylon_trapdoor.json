@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_bottom",
+  "textures": {
+    "texture": "prehistoricnature:block/araucarioxylon_trapdoor",
+    "planktexture": "prehistoricnature:block/araucarioxylon_wood",
+    "particle": "prehistoricnature:block/araucarioxylon_trapdoor"
+  }
+}

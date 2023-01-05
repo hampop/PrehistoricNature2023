@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_open",
+  "textures": {
+    "texture": "prehistoricnature:block/walchia_trapdoor",
+    "planktexture": "prehistoricnature:block/walchia_planks",
+    "particle": "prehistoricnature:block/walchia_trapdoor"
+  }
+}

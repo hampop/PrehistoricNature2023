@@ -1,0 +1,7 @@
+{
+    "parent": "block/wall_gate_closed",
+    "textures": {
+        "texture": "prehistoricnature:block/hironoia_planks",
+    "particle": "prehistoricnature:block/hironoia_planks"
+    }
+}

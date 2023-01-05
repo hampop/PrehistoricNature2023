@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/bunya_fruit_1"},
+      {"model": "prehistoricnature:block/bunya_fruit_2"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/bunya_fruit_block_inventory"
+    }
+  }
+}

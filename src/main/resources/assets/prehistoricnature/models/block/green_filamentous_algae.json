@@ -1,0 +1,16 @@
+{
+    "parent": "prehistoricnature:block/cube_noao",
+    "textures": {
+        "particle": "prehistoricnature:block/green_filamentous_algae",
+        "texture": "prehistoricnature:block/green_filamentous_algae"
+    },
+    "elements": [
+        {   "from": [0, 0.012, 0 ],
+            "to": [ 16, 0.012, 16 ],
+            "faces": {
+                "up": { "uv": [ 0, 0, 16, 16 ],  "texture": "#texture" },
+                "down": { "uv": [ 16, 0, 0, 16 ],  "texture": "#texture" }
+            }
+        }
+    ]
+}

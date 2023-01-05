@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/bricks3",
+    "up": "prehistoricnature:block/bricks1",
+    "north": "prehistoricnature:block/bricks3",
+    "east": "prehistoricnature:block/bricks2",
+    "south": "prehistoricnature:block/bricks2",
+    "west": "prehistoricnature:block/bricks1",
+    "particle": "prehistoricnature:block/bricks3"
+  }
+}

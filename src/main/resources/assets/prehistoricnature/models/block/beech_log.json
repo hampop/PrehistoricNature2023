@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/beech_log_end",
+    "up": "prehistoricnature:block/beech_log_end",
+    "north": "prehistoricnature:block/beech_log",
+    "east": "prehistoricnature:block/beech_log",
+    "south": "prehistoricnature:block/beech_log",
+    "west": "prehistoricnature:block/beech_log",
+    "particle": "prehistoricnature:block/beech_log_end"
+  }
+}

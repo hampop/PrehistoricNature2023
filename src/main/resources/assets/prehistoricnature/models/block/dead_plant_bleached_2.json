@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/dead_plant_bleached_2",
+    "particle": "prehistoricnature:block/dead_plant_bleached_2"
+  }
+}

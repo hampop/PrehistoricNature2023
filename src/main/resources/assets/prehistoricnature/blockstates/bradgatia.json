@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/bradgatia"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/bradgatia", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/bradgatia", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/bradgatia", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/bradgatia", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/bradgatia"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/bradgatia", "x": 180}
+    ]
+  }
+}

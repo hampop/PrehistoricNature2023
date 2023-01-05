@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/beech_log"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/beech_log"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/beech_log"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/beech_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/beech_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/beech_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/beech_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

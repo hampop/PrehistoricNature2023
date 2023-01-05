@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/umaltolepis_inventory",
+    "particle": "prehistoricnature:items/umaltolepis_inventory"
+  }
+}

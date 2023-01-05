@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/lava_rock",
+    "top": "prehistoricnature:block/lava_rock",
+    "side": "prehistoricnature:block/lava_rock"
+  }
+}

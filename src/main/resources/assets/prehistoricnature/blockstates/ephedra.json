@@ -1,0 +1,11 @@
+{
+  "variants": 
+  {"inventory": {
+      "model": "prehistoricnature:block/ephedra"
+    },
+    "": [
+      {"model": "prehistoricnature:block/ephedra", "weight": 2},
+      {"model": "prehistoricnature:block/ephedra_large"}
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/prototaxites_block"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/prototaxites_block"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/prototaxites_block"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/prototaxites_block",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/prototaxites_block",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/prototaxites_block",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/prototaxites_block",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/lepidopteris"},
+      {"model": "prehistoricnature:block/lepidopteris_seed"}
+    ]
+  }
+}

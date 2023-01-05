@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/cloudina_1"},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_2"},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_3"},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_4"},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 270}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/cloudina_1", "x": 90},
+      {"model": "prehistoricnature:block/cloudina_2", "x": 90},
+      {"model": "prehistoricnature:block/cloudina_3", "x": 90},
+      {"model": "prehistoricnature:block/cloudina_4", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/cloudina_1", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/cloudina_2", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/cloudina_3", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/cloudina_4", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/cloudina_1", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/cloudina_1", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/cloudina_2", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/cloudina_3", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/cloudina_4", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/cloudina_1"},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_2"},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_3"},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 270},
+      {"model": "prehistoricnature:block/cloudina_4"},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 90},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 270}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/cloudina_1", "x": 180},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_1", "y": 270, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "x": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_2", "y": 270, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "x": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_3", "y": 270, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "x": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 90, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 180, "x": 180},
+      {"model": "prehistoricnature:block/cloudina_4", "y": 270, "x": 180}
+    ]
+  }
+}

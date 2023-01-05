@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dendrograptus_1"},
+      {"model": "prehistoricnature:block/dendrograptus_2"},
+      {"model": "prehistoricnature:block/dendrograptus_1_rot"},
+      {"model": "prehistoricnature:block/dendrograptus_2_rot"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/dendrograptus_1_side"},
+      {"model": "prehistoricnature:block/dendrograptus_2_side"}
+      ],
+      "facing=east": [
+      {"model": "prehistoricnature:block/dendrograptus_1_side", "y": 90},
+      {"model": "prehistoricnature:block/dendrograptus_2_side", "y": 90}
+      ],
+      "facing=south": [
+      {"model": "prehistoricnature:block/dendrograptus_1_side", "y": 180},
+      {"model": "prehistoricnature:block/dendrograptus_2_side", "y": 180}
+      ],
+
+      "facing=west": [
+      {"model": "prehistoricnature:block/dendrograptus_1_side","y": 270},
+      {"model": "prehistoricnature:block/dendrograptus_2_side","y": 270}
+      ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/dendrograptus_1"},
+      {"model": "prehistoricnature:block/dendrograptus_2" },
+      {"model": "prehistoricnature:block/dendrograptus_1_rot"},
+      {"model": "prehistoricnature:block/dendrograptus_2_rot" }
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/dendrograptus_1", "x": 180},
+      {"model": "prehistoricnature:block/dendrograptus_2", "x": 180},
+      {"model": "prehistoricnature:block/dendrograptus_1_rot", "x": 180},
+      {"model": "prehistoricnature:block/dendrograptus_2_rot", "x": 180}
+    ]
+  }
+}

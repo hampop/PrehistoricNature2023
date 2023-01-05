@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/baikalophyllum_c_e_seed",
+"w":"prehistoricnature:block/baikalophyllum_c_w_seed"
+}
+}

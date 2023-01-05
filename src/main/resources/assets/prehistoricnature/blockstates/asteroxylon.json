@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/asteroxylon1"},
+      {"model": "prehistoricnature:block/asteroxylon2"},
+      {"model": "prehistoricnature:block/asteroxylon3"},
+      {"model": "prehistoricnature:block/asteroxylon4"},
+      {"model": "prehistoricnature:block/asteroxylon5"},
+      {"model": "prehistoricnature:block/asteroxylon6"},
+      {"model": "prehistoricnature:block/asteroxylon7"},
+      {"model": "prehistoricnature:block/asteroxylon8"},
+      
+      {"model": "prehistoricnature:block/asteroxylon1", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon2", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon3", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon4", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon5", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon6", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon7", "y":90},
+      {"model": "prehistoricnature:block/asteroxylon8", "y":90},
+      
+      {"model": "prehistoricnature:block/asteroxylon1", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon2", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon3", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon4", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon5", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon6", "y":180},
+      {"model": "prehistoricnature:block/asteroxylon7", "y":1800},
+      {"model": "prehistoricnature:block/asteroxylon8", "y":180},
+      
+      {"model": "prehistoricnature:block/asteroxylon1", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon2", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon3", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon4", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon5", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon6", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon7", "y":270},
+      {"model": "prehistoricnature:block/asteroxylon8", "y":270}
+    ]
+  }
+}

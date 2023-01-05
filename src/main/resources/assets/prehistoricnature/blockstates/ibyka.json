@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/ibyka_1"},
+      {"model": "prehistoricnature:block/ibyka_2"}
+    ]
+  }
+}

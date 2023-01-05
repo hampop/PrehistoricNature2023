@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/sphenobaiera_door_bottom",
+        "top": "prehistoricnature:block/sphenobaiera_door_top"
+    }
+}

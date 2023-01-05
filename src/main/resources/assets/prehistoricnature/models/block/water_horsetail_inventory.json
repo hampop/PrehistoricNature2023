@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/water_horsetail_inventory",
+    "particle": "prehistoricnature:items/water_horsetail_inventory"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dead_lycopod_1"},
+      {"model": "prehistoricnature:block/dead_lycopod_2"},
+      {"model": "prehistoricnature:block/dead_lycopod_3"},
+      {"model": "prehistoricnature:block/dead_lycopod_4"}
+    ]
+  }
+}

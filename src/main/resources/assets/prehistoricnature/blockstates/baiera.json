@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/baiera_inventory"
+    },
+    "var=false": {"model": "prehistoricnature:block/baiera_1"},
+    "var=true": {"model": "prehistoricnature:block/baiera_2"}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_open",
+  "textures": {
+    "texture": "prehistoricnature:block/podozamites_trapdoor",
+    "planktexture": "prehistoricnature:block/podozamites_planks",
+    "particle": "prehistoricnature:block/podozamites_trapdoor"
+  }
+}

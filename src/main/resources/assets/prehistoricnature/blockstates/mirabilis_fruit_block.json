@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/mirabilis_fruit_1"},
+      {"model": "prehistoricnature:block/mirabilis_fruit_2"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/mirabilis_fruit_block_inventory"
+    }
+  }
+}

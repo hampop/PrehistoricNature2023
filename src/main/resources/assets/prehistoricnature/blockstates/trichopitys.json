@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/trichopitys_inventory"
+    },
+    "var=false": {"model": "prehistoricnature:block/trichopitys_1"},
+    "var=true": {"model": "prehistoricnature:block/trichopitys_2"}
+  }
+}

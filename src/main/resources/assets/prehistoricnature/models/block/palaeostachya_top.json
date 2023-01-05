@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_4pointedplant",
+"textures":{
+"e":"prehistoricnature:block/palaeostachya_t_c",
+"w":"prehistoricnature:block/palaeostachya_t_c",
+"ee":"prehistoricnature:block/palaeostachya_t_e",
+"ww":"prehistoricnature:block/palaeostachya_t_w"
+}
+}

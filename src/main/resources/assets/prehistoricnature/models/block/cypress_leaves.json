@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/cypress_leaves",
+    "particle": "prehistoricnature:block/cypress_leaves"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=1": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=2": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=3": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=4": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=5": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=6": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=7": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=8": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=9": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=10": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=11": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=12": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=13": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=14": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    },
+    "age=15": {
+      "model": "prehistoricnature:block/guangdedendron_top_nospore"
+    }
+  }
+}

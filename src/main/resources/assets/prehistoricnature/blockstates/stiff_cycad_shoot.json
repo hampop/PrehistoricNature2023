@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/stiff_cycad_shoot"}
+    ],
+
+    "inventory": {
+      "model": "prehistoricnature:block/stiff_cycad_shoot_inventory"
+    }
+  }
+}

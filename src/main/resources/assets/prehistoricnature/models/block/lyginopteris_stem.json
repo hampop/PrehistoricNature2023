@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/lyginopteris_stem",
+    "up": "prehistoricnature:block/lyginopteris_stem",
+    "north": "prehistoricnature:block/lyginopteris_stem",
+    "east": "prehistoricnature:block/lyginopteris_stem",
+    "south": "prehistoricnature:block/lyginopteris_stem",
+    "west": "prehistoricnature:block/lyginopteris_stem",
+    "particle": "prehistoricnature:block/lyginopteris_stem"
+  }
+}

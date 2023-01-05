@@ -1,0 +1,6 @@
+{
+	"parent": "prehistoricnature:block/insect_eggs",
+	"textures": {
+		"texture": "prehistoricnature:block/insect_eggs_palaeodictyoptera_perm"
+	}
+}

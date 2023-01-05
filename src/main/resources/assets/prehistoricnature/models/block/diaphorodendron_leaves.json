@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "prehistoricnature:block/diaphorodendron_leaves"
+  }
+}

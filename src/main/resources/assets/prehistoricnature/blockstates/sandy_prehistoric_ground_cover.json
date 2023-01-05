@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "snowy=false": [ 
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover", "weight": 2 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_light", "weight": 3 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover", "weight": 2, "y": 90 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_light", "weight": 3, "y": 90 }
+       ],
+        "snowy=true": [
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed" },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed", "y": 90 }
+        ]
+    }
+}

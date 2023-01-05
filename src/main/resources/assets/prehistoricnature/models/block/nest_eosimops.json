@@ -1,0 +1,8 @@
+{
+	"parent": "prehistoricnature:block/nest",
+	"textures": {
+		"bottom_right": "prehistoricnature:block/nest_eosimops",
+		"top_right": "prehistoricnature:block/empty_texture",
+		"centre": "prehistoricnature:block/empty_texture"
+	}
+}

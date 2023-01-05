@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/pachypteris_shoot", "weight": 2 },
+      {"model": "prehistoricnature:block/pachypteris_shoot_flower"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/pachypteris_shoot_inventory"
+    }
+  }
+}

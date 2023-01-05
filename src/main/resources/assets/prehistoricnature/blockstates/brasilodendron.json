@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/brasilodendron_inventory"
+    },
+    "": {
+      "model": "prehistoricnature:block/brasilodendron_b"
+    }
+  }
+}

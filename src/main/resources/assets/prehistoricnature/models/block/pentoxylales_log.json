@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/pentoxylales_log_end",
+    "up": "prehistoricnature:block/pentoxylales_log_end",
+    "north": "prehistoricnature:block/pentoxylales_log",
+    "east": "prehistoricnature:block/pentoxylales_log",
+    "south": "prehistoricnature:block/pentoxylales_log",
+    "west": "prehistoricnature:block/pentoxylales_log",
+    "particle": "prehistoricnature:block/pentoxylales_log_end"
+  }
+}

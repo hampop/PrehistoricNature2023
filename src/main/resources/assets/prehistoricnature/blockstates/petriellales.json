@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/petriellales_1"},
+      {"model": "prehistoricnature:block/petriellales_2"},
+      {"model": "prehistoricnature:block/petriellales_3"},
+      {"model": "prehistoricnature:block/petriellales_4"},
+      {"model": "prehistoricnature:block/petriellales_5"},
+      {"model": "prehistoricnature:block/petriellales_6"},
+      {"model": "prehistoricnature:block/petriellales_7"},
+      {"model": "prehistoricnature:block/petriellales_8"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/pseudovoltzia_1_e_var",
+"w":"prehistoricnature:block/pseudovoltzia_1_w_var"
+}
+}

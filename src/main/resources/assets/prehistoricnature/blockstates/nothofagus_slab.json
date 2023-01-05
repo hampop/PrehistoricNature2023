@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/nothofagus_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/nothofagus_slab_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "var=false": {"model": "prehistoricnature:block/trichopitys_top_1"},
+    "var=true": {"model": "prehistoricnature:block/trichopitys_top_2"}
+    }
+}

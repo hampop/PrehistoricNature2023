@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/redwood_fruit_1"},
+      {"model": "prehistoricnature:block/redwood_fruit_2"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/redwood_fruit_block_inventory"
+    }
+  }
+}

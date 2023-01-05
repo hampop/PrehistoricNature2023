@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/anomozamites_sapling",
+    "particle": "prehistoricnature:block/anomozamites_sapling"
+  }
+}

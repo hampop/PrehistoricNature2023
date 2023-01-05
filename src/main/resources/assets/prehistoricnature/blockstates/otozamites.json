@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/otozamites_inventory"
+    },
+    "": {
+      "model": "prehistoricnature:block/otozamites"
+    }
+  }
+}

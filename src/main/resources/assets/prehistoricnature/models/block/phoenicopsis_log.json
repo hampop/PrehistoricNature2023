@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/phoenicopsis_log_end",
+    "up": "prehistoricnature:block/phoenicopsis_log_end",
+    "north": "prehistoricnature:block/phoenicopsis_log",
+    "east": "prehistoricnature:block/phoenicopsis_log",
+    "south": "prehistoricnature:block/phoenicopsis_log",
+    "west": "prehistoricnature:block/phoenicopsis_log",
+    "particle": "prehistoricnature:block/phoenicopsis_log_end"
+  }
+}

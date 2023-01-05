@@ -1,0 +1,44 @@
+{
+  "variants": {
+  	"inventory": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large" },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2 }
+    ],
+  	"": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large" },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2 }
+    ],
+    "facing=north": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5, "x": 90 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large", "x": 90 },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2, "x": 90 }
+    ],
+    "facing=east": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5, "x": 90, "y": 90 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large", "x": 90, "y": 90 },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2, "x": 90, "y": 90 }
+    ],
+    "facing=south": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5, "x": 90, "y": 180 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large", "x": 90, "y": 180 },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2, "x": 90, "y": 180 }
+    ],
+    "facing=west": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5, "x": 90, "y": 270 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large", "x": 90, "y": 270 },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2, "x": 90, "y": 270 }
+    ],
+    "facing=up": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large" },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2 }
+    ],
+    "facing=down": [
+		{ "model": "prehistoricnature:block/williamsonia_leaves", "weight": 5, "x": 180 },
+		{ "model": "prehistoricnature:block/williamsonia_leaves_large", "x": 180 },
+		{ "model": "prehistoricnature:block/williamsonia_flower", "weight": 2, "x": 180 }
+    ]
+  }
+}

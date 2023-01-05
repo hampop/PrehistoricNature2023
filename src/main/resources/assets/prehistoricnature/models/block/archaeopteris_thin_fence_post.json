@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "prehistoricnature:block/archaeopteris_log",
+    "particle": "prehistoricnature:block/archaeopteris_log"
+  }
+}

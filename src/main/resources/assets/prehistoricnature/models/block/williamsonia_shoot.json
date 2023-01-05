@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/williamsonia_shoot_b_e",
+"w":"prehistoricnature:block/williamsonia_shoot_b_w"
+}
+}

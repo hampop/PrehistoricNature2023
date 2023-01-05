@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/columnaris_log_end",
+    "up": "prehistoricnature:block/columnaris_log_end",
+    "north": "prehistoricnature:block/columnaris_log",
+    "east": "prehistoricnature:block/columnaris_log",
+    "south": "prehistoricnature:block/columnaris_log",
+    "west": "prehistoricnature:block/columnaris_log",
+    "particle": "prehistoricnature:block/columnaris_log_end"
+  }
+}

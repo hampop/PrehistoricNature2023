@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/cordaites_log"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/cordaites_log"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/cordaites_log"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/cordaites_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/cordaites_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/cordaites_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/cordaites_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

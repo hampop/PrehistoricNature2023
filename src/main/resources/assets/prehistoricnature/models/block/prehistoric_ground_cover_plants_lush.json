@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/dirt_prehistoric_ground_var4",
+    "particle": "prehistoricnature:block/dirt_prehistoric_ground_var4"
+  }
+}

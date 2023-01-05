@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/lyracystis"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/lyracystis_side"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/lyracystis_side", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/lyracystis_side", "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/lyracystis_side", "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/lyracystis"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/lyracystis", "x": 180}
+    ]
+  }
+}

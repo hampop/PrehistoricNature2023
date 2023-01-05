@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/resin_extractor"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/resin_extractor"}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/resin_extractor", "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/resin_extractor", "y": 180}
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/resin_extractor", "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/resin_extractor"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/resin_extractor"}
+    ]
+  }
+}

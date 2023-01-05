@@ -1,0 +1,28 @@
+{
+  "variants": {
+  	"inventory": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot_inventory" }
+    ],
+  	"": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot" }
+    ],
+    "facing=north": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot", "x": 90 }
+    ],
+    "facing=east": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot","x": 90, "y": 90 }
+    ],
+    "facing=south": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot", "x": 90, "y": 180 }
+    ],
+    "facing=west": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot", "x": 90, "y": 270 }
+    ],
+    "facing=up": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot" }
+    ],
+    "facing=down": [
+		{ "model": "prehistoricnature:block/xenocladia_shoot", "x": 180 }
+    ]
+  }
+}

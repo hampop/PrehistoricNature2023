@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": -270
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": -90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": 0
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/shell_parapuzosia",
+      "y": 0
+    }
+  }
+}

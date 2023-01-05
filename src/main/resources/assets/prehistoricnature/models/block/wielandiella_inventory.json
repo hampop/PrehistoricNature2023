@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/wielandiella_inventory",
+    "particle": "prehistoricnature:items/wielandiella_inventory"
+  }
+}

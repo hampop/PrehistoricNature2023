@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/cordaites_log_top",
+    "up": "prehistoricnature:block/cordaites_log_top",
+    "north": "prehistoricnature:block/cordaites_log",
+    "east": "prehistoricnature:block/cordaites_log",
+    "south": "prehistoricnature:block/cordaites_log",
+    "west": "prehistoricnature:block/cordaites_log",
+    "particle": "prehistoricnature:block/cordaites_log_top"
+  }
+}

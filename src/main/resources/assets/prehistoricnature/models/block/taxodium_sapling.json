@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/taxodium_sapling",
+    "particle": "prehistoricnature:block/taxodium_sapling"
+  }
+}

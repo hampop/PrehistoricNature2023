@@ -1,0 +1,53 @@
+{
+  "variants": {
+  	"inventory": [
+      {"model": "prehistoricnature:block/normal_horsetail_inventory"}
+  		],
+    "": [
+      {"model": "prehistoricnature:block/normal_horsetail_1"},
+      {"model": "prehistoricnature:block/normal_horsetail_1", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_1", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_1", "y": 270},
+
+      {"model": "prehistoricnature:block/normal_horsetail_2"},
+      {"model": "prehistoricnature:block/normal_horsetail_2", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_2", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_2", "y": 270},
+
+      {"model": "prehistoricnature:block/normal_horsetail_3"},
+      {"model": "prehistoricnature:block/normal_horsetail_3", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_3", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_3", "y": 270},
+
+      {"model": "prehistoricnature:block/normal_horsetail_4"},
+      {"model": "prehistoricnature:block/normal_horsetail_4", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_4", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_4", "y": 270},
+
+      {"model": "prehistoricnature:block/normal_horsetail_5", "weight": 6 },
+      
+      {"model": "prehistoricnature:block/normal_horsetail_flower_1"},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_1", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_1", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_1", "y": 270},
+      
+      {"model": "prehistoricnature:block/normal_horsetail_flower_2"},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_2", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_2", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_2", "y": 270},
+      
+      {"model": "prehistoricnature:block/normal_horsetail_flower_3"},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_3", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_3", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_3", "y": 270},
+      
+      {"model": "prehistoricnature:block/normal_horsetail_flower_4"},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_4", "y": 90},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_4", "y": 180},
+      {"model": "prehistoricnature:block/normal_horsetail_flower_4", "y": 270},
+
+      {"model": "prehistoricnature:block/normal_horsetail_flower_5", "weight": 6 }
+      
+    ]
+  }
+}

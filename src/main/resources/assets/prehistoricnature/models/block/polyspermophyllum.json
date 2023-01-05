@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/polyspermophyllum_b_e",
+"w":"prehistoricnature:block/polyspermophyllum_b_w"
+}
+}

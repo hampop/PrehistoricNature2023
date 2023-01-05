@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/glossopterislog"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/glossopterislog"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/glossopterislog"
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/glossopterislog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/glossopterislog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/glossopterislog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/glossopterislog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

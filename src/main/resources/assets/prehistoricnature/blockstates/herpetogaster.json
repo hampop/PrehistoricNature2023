@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/herpetogaster"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/herpetogaster"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/herpetogaster", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/herpetogaster", "y": 180}
+    ],
+
+    "facing=west": [
+      	{"model": "prehistoricnature:block/herpetogaster", "y": 270}
+    ],
+
+    "facing=up": [
+      	{"model": "prehistoricnature:block/herpetogaster"}
+    ],
+    "facing=down": [
+      	{"model": "prehistoricnature:block/herpetogaster", "x": 180}
+    ]
+  }
+}

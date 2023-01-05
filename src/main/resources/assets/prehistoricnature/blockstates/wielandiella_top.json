@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+		{"model": "prehistoricnature:block/wielandiella_top", "weight": 2 },
+		{"model": "prehistoricnature:block/wielandiella_top_seeds" },
+		{"model": "prehistoricnature:block/wielandiella_top_seeds_var" }
+    ]
+  }
+}

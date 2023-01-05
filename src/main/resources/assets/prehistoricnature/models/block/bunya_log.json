@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/bunya_log_end",
+    "up": "prehistoricnature:block/bunya_log_end",
+    "north": "prehistoricnature:block/bunya_log",
+    "east": "prehistoricnature:block/bunya_log",
+    "south": "prehistoricnature:block/bunya_log",
+    "west": "prehistoricnature:block/bunya_log",
+    "particle": "prehistoricnature:block/bunya_log_end"
+  }
+}

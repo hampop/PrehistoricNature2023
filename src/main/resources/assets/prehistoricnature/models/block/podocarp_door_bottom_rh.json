@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/podocarp_door_bottom",
+        "top": "prehistoricnature:block/podocarp_door_top"
+    }
+}

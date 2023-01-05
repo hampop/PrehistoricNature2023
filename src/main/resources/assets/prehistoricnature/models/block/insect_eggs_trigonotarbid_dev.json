@@ -1,0 +1,6 @@
+{
+	"parent": "prehistoricnature:block/trigonotarbid_eggs",
+	"textures": {
+		"texture": "prehistoricnature:entities/trigonotarbid_dev_eggs"
+	}
+}

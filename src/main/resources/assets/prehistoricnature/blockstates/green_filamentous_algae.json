@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/green_filamentous_algae"},
+      {"model": "prehistoricnature:block/green_filamentous_algae", "y": 90 },
+      {"model": "prehistoricnature:block/green_filamentous_algae", "y": 180 },
+      {"model": "prehistoricnature:block/green_filamentous_algae", "y": 270 }
+    ]
+  }
+}

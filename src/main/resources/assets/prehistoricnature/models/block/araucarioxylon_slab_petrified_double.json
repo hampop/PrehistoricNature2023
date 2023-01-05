@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/araucarioxylon_wood_petrified",
+    "particle": "prehistoricnature:block/araucarioxylon_wood_petrified"
+  }
+}

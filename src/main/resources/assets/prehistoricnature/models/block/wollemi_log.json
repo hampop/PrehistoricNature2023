@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/wollemi_log_end",
+    "up": "prehistoricnature:block/wollemi_log_end",
+    "north": "prehistoricnature:block/wollemi_log",
+    "east": "prehistoricnature:block/wollemi_log",
+    "south": "prehistoricnature:block/wollemi_log",
+    "west": "prehistoricnature:block/wollemi_log",
+    "particle": "prehistoricnature:block/wollemi_log_end"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "prehistoricnature:block/prehistoric_ground_cover_var",
+    "textures": {
+    	"particle": "prehistoricnature:block/dirt_prehistoric_ground_var3",
+        "var": "prehistoricnature:block/dirt_prehistoric_ground_var6"
+    }
+}

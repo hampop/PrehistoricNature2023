@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/medullosales_shoot", "weight": 2 },
+      {"model": "prehistoricnature:block/medullosales_shoot_var", "weight": 2 },
+
+      {"model": "prehistoricnature:block/medullosales_shoot", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/medullosales_shoot_var", "weight": 2, "y": 90 }
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/medullosales_shoot_inventory"
+    }
+  }
+}

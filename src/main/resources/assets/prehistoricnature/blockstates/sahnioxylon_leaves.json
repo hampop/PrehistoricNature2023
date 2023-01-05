@@ -1,0 +1,35 @@
+{
+  "variants": {
+  	"inventory": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower_inventory" }
+    ],
+  	"": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1" },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2" }
+    ],
+    "facing=north": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1", "x": 90 },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2", "x": 90 }
+    ],
+    "facing=east": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1", "x": 90, "y": 90 },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2", "x": 90, "y": 90 }
+    ],
+    "facing=south": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1", "x": 90, "y": 180 },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2", "x": 90, "y": 180 }
+    ],
+    "facing=west": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1", "x": 90, "y": 270 },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2", "x": 90, "y": 270 }
+    ],
+    "facing=up": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1" },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2" }
+    ],
+    "facing=down": [
+		{ "model": "prehistoricnature:block/sahnioxylon_flower1", "x": 180 },
+		{ "model": "prehistoricnature:block/sahnioxylon_flower2", "x": 180 }
+    ]
+  }
+}

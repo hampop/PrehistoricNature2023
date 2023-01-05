@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/araucarioxylon_planks_petrified_bricks"},
+      {"model": "prehistoricnature:block/araucarioxylon_planks_petrified_bricks", "y": 90 },
+      {"model": "prehistoricnature:block/araucarioxylon_planks_petrified_bricks", "y": 180 },
+      {"model": "prehistoricnature:block/araucarioxylon_planks_petrified_bricks", "y": 270 }
+    ]
+  }
+}

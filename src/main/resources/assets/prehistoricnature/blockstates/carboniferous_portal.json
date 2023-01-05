@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "prehistoricnature:block/carboniferous_portal_ew"
+    },
+    "axis=x": {
+      "model": "prehistoricnature:block/carboniferous_portal_ns"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/carboniferous_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/artocarpus_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/artocarpus_slab_top"
+    }
+  }
+}

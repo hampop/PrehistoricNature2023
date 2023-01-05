@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "prehistoricnature:block/pentoxylales_leaves_seeds"
+    }
+}

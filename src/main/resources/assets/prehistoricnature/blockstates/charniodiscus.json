@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": -270
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": -90
+    },
+    "facing=up": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": 0
+    },
+    "facing=down": {
+      "model": "prehistoricnature:block/charniodiscus",
+      "y": 0
+    }
+  }
+}

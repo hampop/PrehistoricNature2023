@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/zamites_flower",
+    "particle": "prehistoricnature:block/zamites_flower"
+  }
+}

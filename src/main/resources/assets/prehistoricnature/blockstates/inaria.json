@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/inaria"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/inaria", "x": 90},
+      {"model": "prehistoricnature:block/inaria_var", "x": 90}
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/inaria", "x": 90, "y": 90},
+      {"model": "prehistoricnature:block/inaria_var", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/inaria", "x": 90, "y": 180},
+      {"model": "prehistoricnature:block/inaria_var", "x": 90, "y": 180}
+    ],
+
+    "facing=west": [
+      {"model": "prehistoricnature:block/inaria", "x": 90, "y": 270},
+      {"model": "prehistoricnature:block/inaria_var", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/inaria"},
+      {"model": "prehistoricnature:block/inaria_var"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/inaria", "x": 180},
+      {"model": "prehistoricnature:block/inaria_var", "x": 180}
+    ]
+  }
+}

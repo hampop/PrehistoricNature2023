@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/bothrodendron_log_end",
+    "up": "prehistoricnature:block/bothrodendron_log_end",
+    "north": "prehistoricnature:block/bothrodendron_log",
+    "east": "prehistoricnature:block/bothrodendron_log",
+    "south": "prehistoricnature:block/bothrodendron_log",
+    "west": "prehistoricnature:block/bothrodendron_log",
+    "particle": "prehistoricnature:block/bothrodendron_log_end"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_bottom",
+  "textures": {
+    "texture": "prehistoricnature:block/gangamopteris_trapdoor",
+    "planktexture": "prehistoricnature:block/gangamopteris_planks",
+    "particle": "prehistoricnature:block/gangamopteris_trapdoor"
+  }
+}

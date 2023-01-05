@@ -1,0 +1,17 @@
+{
+    "multipart": [
+		{ 	"apply": { "model": "prehistoricnature:block/gigantopterid_shoot" } },
+    	
+        {   "when": { "stem": true },
+            "apply": { "model": "prehistoricnature:block/gigantopterid_stem" }
+        },
+
+        {   "when": { "top": true },
+            "apply": [
+            	{ "model": "prehistoricnature:block/gigantopterid_flower" },
+				{ "model": "prehistoricnature:block/gigantopterid_noflower" }
+            ]
+        }
+        
+    ]
+}

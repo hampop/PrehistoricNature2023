@@ -1,0 +1,8 @@
+{
+  "parent": "prehistoricnature:block/trapdoor_open",
+  "textures": {
+    "texture": "prehistoricnature:block/agathis_trapdoor",
+    "planktexture": "prehistoricnature:block/agathis_planks",
+    "particle": "prehistoricnature:block/agathis_trapdoor"
+  }
+}

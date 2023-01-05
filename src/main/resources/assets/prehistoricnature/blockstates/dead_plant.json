@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dead_plant_1"},
+      {"model": "prehistoricnature:block/dead_plant_2"},
+      {"model": "prehistoricnature:block/dead_plant_3"},
+      {"model": "prehistoricnature:block/dead_plant_4"}
+    ]
+  }
+}

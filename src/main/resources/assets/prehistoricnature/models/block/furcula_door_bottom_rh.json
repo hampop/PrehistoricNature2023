@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "prehistoricnature:block/furcula_door_bottom",
+        "top": "prehistoricnature:block/furcula_door_top"
+    }
+}

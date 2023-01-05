@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/calamites_fibre",
+    "top": "prehistoricnature:block/calamites_fibre",
+    "side": "prehistoricnature:block/calamites_fibre"
+  }
+}

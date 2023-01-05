@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/utrechtia_leaves_small"
+    },
+    "inventory": {
+      "model": "prehistoricnature:block/utrechtia_leaves_small_inventory"
+    },
+    "facing=north": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small", "x": 90 }
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small", "x": 90, "y": 90}
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small", "x": 90, "y": 180}
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small", "x": 90, "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small_shoot"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/utrechtia_leaves_small_shoot", "x": 180}
+    ]
+  }
+}

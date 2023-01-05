@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/thucydia_1_e_var",
+"w":"prehistoricnature:block/thucydia_1_w_var"
+}
+}

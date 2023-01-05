@@ -1,0 +1,7 @@
+{
+  "parent": "prehistoricnature:block/fence_inventory_thin",
+  "textures": {
+    "texture": "prehistoricnature:block/aneurophyton_log",
+    "particle": "prehistoricnature:block/aneurophyton_log"
+  }
+}

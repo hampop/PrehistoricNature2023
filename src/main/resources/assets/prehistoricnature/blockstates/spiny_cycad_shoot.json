@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/spiny_cycad_shoot"},
+      {"model": "prehistoricnature:block/spiny_cycad_shoot_flower", "weight":  2},
+      {"model": "prehistoricnature:block/spiny_cycad_shoot_var"}
+    ],
+
+    "inventory": {
+      "model": "prehistoricnature:block/spiny_cycad_shoot_inventory"
+    }
+  }
+}

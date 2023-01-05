@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/ptilophyllum_shoot"
+    },
+    
+    "inventory": {
+      "model": "prehistoricnature:block/ptilophyllum_shoot_inventory"
+    }
+  }
+}

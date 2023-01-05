@@ -1,0 +1,11 @@
+{
+  "variants": {
+  	"inventory": [
+      {"model": "prehistoricnature:block/nelumbo_flower_inventory"}
+  		],
+    "": [
+      {"model": "prehistoricnature:block/nelumbo_flower"},
+      {"model": "prehistoricnature:block/nelumbo_flower_var"}
+    ]
+  }
+}

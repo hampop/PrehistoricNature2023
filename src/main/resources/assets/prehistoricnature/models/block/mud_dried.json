@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/mud_dried",
+    "particle": "prehistoricnature:block/mud_dried"
+  }
+}

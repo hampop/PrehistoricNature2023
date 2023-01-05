@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/araucarioxylon_fruit_1"},
+      {"model": "prehistoricnature:block/araucarioxylon_fruit_2"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/araucarioxylon_fruit_block_inventory"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "variants": {
+    "": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner" }
+    ],
+    "facing=north,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner", "y": 180 }
+    ],
+    "facing=south,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner" }
+    ],
+    "facing=east,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner", "y": 270 }
+    ],
+    "facing=west,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner", "y": 90 }
+    ],
+    "facing=up,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner" }
+    ],
+    "facing=down,joined=false": [
+     	{"model": "prehistoricnature:block/xenocladia_stem_corner" }
+    ],
+
+    "facing=north,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join", "y": 180 }
+    ],
+    "facing=south,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join" }
+    ],
+    "facing=east,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join", "y": 270 }
+    ],
+    "facing=west,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join", "y": 90 }
+    ],
+    "facing=up,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join" }
+    ],
+    "facing=down,joined=true": [
+     	{"model": "prehistoricnature:block/xenocladia_corner_join" }
+    ]
+    
+  }
+}

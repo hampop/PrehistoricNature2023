@@ -1,0 +1,27 @@
+{
+	"parent": "block/cube",
+    "textures": {
+        "particle": "prehistoricnature:block/psaronius_branch",
+        "down": "prehistoricnature:block/psaronius_branch_end",
+        "up": "prehistoricnature:block/psaronius_branch_end",
+        "north": "prehistoricnature:block/psaronius_branch",
+        "south": "prehistoricnature:block/psaronius_branch",
+        "west": "prehistoricnature:block/psaronius_branch",
+        "east": "prehistoricnature:block/psaronius_branch"
+
+    },
+    
+    "elements": [
+        {   "from": [ 6, 0, 6 ],
+            "to": [ 10, 16, 10 ],
+            "faces": {
+                "down":  { "uv": [ 6, 12, 9, 16 ],  "texture": "#down", "cullface": "down" },
+                "up":    { "uv": [ 6, 12, 9, 16 ], "texture": "#up" },
+                "north": { "uv": [ 6, 0, 9, 16 ],  "texture": "#north" },
+                "south": { "uv": [ 6, 0, 9, 16 ],  "texture": "#south" },
+                "west":  { "uv": [ 6, 0, 9, 16 ], "texture": "#west" },
+                "east":  { "uv": [ 6, 0, 9, 16 ],  "texture": "#east" }
+            }
+        }
+    ]
+}

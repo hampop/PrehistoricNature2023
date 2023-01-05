@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoricnature:block/archaeopteris_log_end",
+    "up": "prehistoricnature:block/archaeopteris_log_end",
+    "north": "prehistoricnature:block/archaeopteris_log",
+    "east": "prehistoricnature:block/archaeopteris_log",
+    "south": "prehistoricnature:block/archaeopteris_log",
+    "west": "prehistoricnature:block/archaeopteris_log",
+    "particle": "prehistoricnature:block/archaeopteris_log_end"
+  }
+}

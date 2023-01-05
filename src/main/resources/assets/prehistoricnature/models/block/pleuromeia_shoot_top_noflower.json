@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/pleuromeia_shoot_t_e",
+"w":"prehistoricnature:block/pleuromeia_shoot_t_w"
+}
+}

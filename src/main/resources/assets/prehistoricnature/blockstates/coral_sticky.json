@@ -1,0 +1,344 @@
+{
+	"multipart" : [
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_1_main"},
+				{"model": "prehistoricnature:block/coral_2_main"},
+				{"model": "prehistoricnature:block/coral_3_main"},
+				{"model": "prehistoricnature:block/coral_4_main"},
+				{"model": "prehistoricnature:block/coral_5_main"},
+				{"model": "prehistoricnature:block/coral_6_main"},
+				{"model": "prehistoricnature:block/coral_7_main"},
+				{"model": "prehistoricnature:block/coral_8_main"},
+				{"model": "prehistoricnature:block/coral_9_main"},
+				{"model": "prehistoricnature:block/coral_10_main"}
+			]
+		},
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_2_top"},
+				{"model": "prehistoricnature:block/coral_3_top"},
+				{"model": "prehistoricnature:block/coral_4_top"},
+				{"model": "prehistoricnature:block/coral_5_top"},
+				{"model": "prehistoricnature:block/coral_6_top"},
+				{"model": "prehistoricnature:block/coral_7_top"},
+				{"model": "prehistoricnature:block/coral_8_top"},
+				{"model": "prehistoricnature:block/coral_9_top"},
+				{"model": "prehistoricnature:block/coral_10_top"},
+				{"model": "prehistoricnature:block/coral_1_top"}
+			]
+		},
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_3_sub1"},
+				{"model": "prehistoricnature:block/coral_4_sub1"},
+				{"model": "prehistoricnature:block/coral_5_sub1"},
+				{"model": "prehistoricnature:block/coral_6_sub1"},
+				{"model": "prehistoricnature:block/coral_7_sub1"},
+				{"model": "prehistoricnature:block/coral_8_sub1"},
+				{"model": "prehistoricnature:block/coral_9_sub1"},
+				{"model": "prehistoricnature:block/coral_10_sub1"},
+				{"model": "prehistoricnature:block/coral_1_sub1"},
+				{"model": "prehistoricnature:block/coral_2_sub1"}
+			]
+		},
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_4_sub2"},
+				{"model": "prehistoricnature:block/coral_5_sub2"},
+				{"model": "prehistoricnature:block/coral_6_sub2"},
+				{"model": "prehistoricnature:block/coral_7_sub2"},
+				{"model": "prehistoricnature:block/coral_8_sub2"},
+				{"model": "prehistoricnature:block/coral_9_sub2"},
+				{"model": "prehistoricnature:block/coral_10_sub2"},
+				{"model": "prehistoricnature:block/coral_1_sub2"},
+				{"model": "prehistoricnature:block/coral_2_sub2"},
+				{"model": "prehistoricnature:block/coral_3_sub2"}
+			]
+		},
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_5_sub3"},
+				{"model": "prehistoricnature:block/coral_6_sub3"},
+				{"model": "prehistoricnature:block/coral_7_sub3"},
+				{"model": "prehistoricnature:block/coral_8_sub3"},
+				{"model": "prehistoricnature:block/coral_9_sub3"},
+				{"model": "prehistoricnature:block/coral_10_sub3"},
+				{"model": "prehistoricnature:block/coral_1_sub3"},
+				{"model": "prehistoricnature:block/coral_2_sub3"},
+				{"model": "prehistoricnature:block/coral_3_sub3"},
+				{"model": "prehistoricnature:block/coral_4_sub3"}
+			]
+		},
+		{	"when": { "facing": "north" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_6_bracket"},
+				{"model": "prehistoricnature:block/coral_7_bracket"},
+				{"model": "prehistoricnature:block/coral_8_bracket"},
+				{"model": "prehistoricnature:block/coral_9_bracket"},
+				{"model": "prehistoricnature:block/coral_10_bracket"},
+				{"model": "prehistoricnature:block/coral_1_bracket"},
+				{"model": "prehistoricnature:block/coral_2_bracket"},
+				{"model": "prehistoricnature:block/coral_3_bracket"},
+				{"model": "prehistoricnature:block/coral_4_bracket"},
+				{"model": "prehistoricnature:block/coral_5_bracket"}
+			]
+		},
+
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_7_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_8_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_9_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_10_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_main", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_main", "y": 90 }
+			]
+		},
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_8_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_9_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_10_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_top", "y": 90 },
+				{"model": "prehistoricnature:block/coral_7_top", "y": 90 }
+			]
+		},
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_9_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_10_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_7_sub1", "y": 90 },
+				{"model": "prehistoricnature:block/coral_8_sub1", "y": 90 }
+			]
+		},
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_10_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_7_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_8_sub2", "y": 90 },
+				{"model": "prehistoricnature:block/coral_9_sub2", "y": 90 }
+			]
+		},
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_9_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_8_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_7_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_sub3", "y": 90 },
+				{"model": "prehistoricnature:block/coral_10_sub3", "y": 90 }
+			]
+		},
+		{	"when": { "facing": "east" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_8_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_7_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_6_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_5_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_4_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_3_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_2_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_1_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_10_bracket_a", "y": 90 },
+				{"model": "prehistoricnature:block/coral_9_bracket_a", "y": 90 }
+			]
+		},
+
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_7_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_6_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_5_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_4_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_3_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_2_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_main", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_main", "y": 180 }
+			]
+		},
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_6_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_5_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_4_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_3_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_2_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_top", "y": 180 },
+				{"model": "prehistoricnature:block/coral_7_top", "y": 180 }
+			]
+		},
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_5_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_4_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_3_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_2_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_7_sub1", "y": 180 },
+				{"model": "prehistoricnature:block/coral_6_sub1", "y": 180 }
+			]
+		},
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_4_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_3_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_2_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_7_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_6_sub2", "y": 180 },
+				{"model": "prehistoricnature:block/coral_5_sub2", "y": 180 }
+			]
+		},
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_3_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_2_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_7_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_6_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_5_sub3", "y": 180 },
+				{"model": "prehistoricnature:block/coral_4_sub3", "y": 180 }
+			]
+		},
+		{	"when": { "facing": "south" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_2_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_1_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_10_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_9_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_8_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_7_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_6_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_5_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_4_bracket_b", "y": 180 },
+				{"model": "prehistoricnature:block/coral_3_bracket_b", "y": 180 }
+			]
+		},
+
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_5_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_6_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_7_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_8_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_9_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_2_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_main", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_main", "y": 270 }
+			]
+		},
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_6_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_7_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_8_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_9_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_2_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_top", "y": 270 },
+				{"model": "prehistoricnature:block/coral_5_top", "y": 270 }
+			]
+		},
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_7_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_8_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_9_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_2_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_5_sub1", "y": 270 },
+				{"model": "prehistoricnature:block/coral_6_sub1", "y": 270 }
+			]
+		},
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_8_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_9_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_2_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_5_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_6_sub2", "y": 270 },
+				{"model": "prehistoricnature:block/coral_7_sub2", "y": 270 }
+			]
+		},
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_9_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_2_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_5_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_6_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_7_sub3", "y": 270 },
+				{"model": "prehistoricnature:block/coral_8_sub3", "y": 270 }
+			]
+		},
+		{	"when": { "facing": "west" },
+			"apply": [
+				{"model": "prehistoricnature:block/coral_2_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_3_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_4_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_5_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_6_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_7_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_8_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_9_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_10_bracket_c", "y": 270 },
+				{"model": "prehistoricnature:block/coral_1_bracket_c", "y": 270 }
+			]
+		}
+	]
+
+}

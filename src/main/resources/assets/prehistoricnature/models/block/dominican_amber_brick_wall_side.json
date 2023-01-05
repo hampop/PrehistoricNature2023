@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "prehistoricnature:block/dominican_amber_bricks"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:items/sphenophyllales1_inventory",
+    "particle": "prehistoricnature:items/sphenophyllales1_inventory"
+  }
+}

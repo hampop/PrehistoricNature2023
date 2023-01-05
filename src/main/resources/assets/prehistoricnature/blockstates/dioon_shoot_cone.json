@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/dioon_shoot_cone"}
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/dioon_shoot_inventory"
+    }
+  }
+}

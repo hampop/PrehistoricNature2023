@@ -1,0 +1,7 @@
+{
+"parent":"prehistoricnature:block/8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/cycadeoidea_leaves_e",
+"w":"prehistoricnature:block/cycadeoidea_leaves_w"
+}
+}

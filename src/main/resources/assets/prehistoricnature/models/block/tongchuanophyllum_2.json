@@ -1,0 +1,7 @@
+{
+  "parent":"prehistoricnature:block/8pointedplant",
+  "textures":{
+    "e":"prehistoricnature:block/tongchuanophyllum_b_e_var",
+    "w":"prehistoricnature:block/tongchuanophyllum_b_w_var"
+  }
+}

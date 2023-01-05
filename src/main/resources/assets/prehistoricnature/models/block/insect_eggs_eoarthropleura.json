@@ -1,0 +1,6 @@
+{
+	"parent": "prehistoricnature:block/insect_eggs",
+	"textures": {
+		"texture": "prehistoricnature:entities/insect_eggs_eoarthropleura"
+	}
+}

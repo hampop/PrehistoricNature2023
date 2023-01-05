@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "": [
+      	{"model": "prehistoricnature:block/siphusauctum_1"},
+        {"model": "prehistoricnature:block/siphusauctum_1_var"},
+        {"model": "prehistoricnature:block/siphusauctum_2"},
+        {"model": "prehistoricnature:block/siphusauctum_2_var"}
+    ],
+    "facing=north": [
+      	{"model": "prehistoricnature:block/siphusauctum_side"}
+    ],
+    "facing=east": [
+      	{"model": "prehistoricnature:block/siphusauctum_side", "y": 90}
+    ],
+    "facing=south": [
+      	{"model": "prehistoricnature:block/siphusauctum_side", "y": 180}
+    ],
+    
+    "facing=west": [
+      	{"model": "prehistoricnature:block/siphusauctum_side", "y": 270}
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/siphusauctum_1"},
+      {"model": "prehistoricnature:block/siphusauctum_1_var"},
+      {"model": "prehistoricnature:block/siphusauctum_2"},
+      {"model": "prehistoricnature:block/siphusauctum_2_var"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/siphusauctum_1", "x": 180},
+      {"model": "prehistoricnature:block/siphusauctum_1_var", "x": 180},
+      {"model": "prehistoricnature:block/siphusauctum_2", "x": 180},
+      {"model": "prehistoricnature:block/siphusauctum_2_var", "x": 180}
+    ]
+  }
+}

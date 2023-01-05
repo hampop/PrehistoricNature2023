@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/pterophyllum_shoot", "weight": 2 },
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flower"},
+
+      {"model": "prehistoricnature:block/pterophyllum_shoot", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flower", "y": 90 },
+
+      
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flipped", "weight": 2 },
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flower_flipped"},
+
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flipped", "weight": 2, "y": 90 },
+      {"model": "prehistoricnature:block/pterophyllum_shoot_flower_flipped", "y": 90 }
+      
+    ],
+    
+    "inventory": {
+      "model": "prehistoricnature:block/pterophyllum_shoot_inventory"
+    }
+  }
+}

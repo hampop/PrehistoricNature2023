@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/coniopteris"
+    },
+    "facing=north": {
+      "model": "prehistoricnature:block/coniopteris_side_02", "y": -90
+    },
+    "facing=east": {
+      "model": "prehistoricnature:block/coniopteris_side_02"
+    },
+    "facing=south": {
+      "model": "prehistoricnature:block/coniopteris_side_02", "y": 90
+    },
+    "facing=west": {
+      "model": "prehistoricnature:block/coniopteris_side_02", "y": 180
+    }
+  }
+}

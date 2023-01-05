@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/liknopetalon_1"},
+      {"model": "prehistoricnature:block/liknopetalon_2"},
+      {"model": "prehistoricnature:block/liknopetalon_3"},
+      {"model": "prehistoricnature:block/liknopetalon_4"},
+      {"model": "prehistoricnature:block/liknopetalon_5"},
+      {"model": "prehistoricnature:block/liknopetalon_6"}
+    ],
+    "facing=north": [
+      {"model": "prehistoricnature:block/liknopetalon_1", "y": 270 },
+      {"model": "prehistoricnature:block/liknopetalon_2", "y": 270 },
+      {"model": "prehistoricnature:block/liknopetalon_3", "y": 270 },
+      {"model": "prehistoricnature:block/liknopetalon_4", "y": 270 },
+      {"model": "prehistoricnature:block/liknopetalon_5", "y": 270 },
+      {"model": "prehistoricnature:block/liknopetalon_6", "y": 270 }
+    ],
+    "facing=east": [
+      {"model": "prehistoricnature:block/liknopetalon_1" },
+      {"model": "prehistoricnature:block/liknopetalon_2" },
+      {"model": "prehistoricnature:block/liknopetalon_3" },
+      {"model": "prehistoricnature:block/liknopetalon_4" },
+      {"model": "prehistoricnature:block/liknopetalon_5" },
+      {"model": "prehistoricnature:block/liknopetalon_6" }
+    ],
+    "facing=south": [
+      {"model": "prehistoricnature:block/liknopetalon_1", "y": 90 },
+      {"model": "prehistoricnature:block/liknopetalon_2", "y": 90 },
+      {"model": "prehistoricnature:block/liknopetalon_3", "y": 90 },
+      {"model": "prehistoricnature:block/liknopetalon_4", "y": 90 },
+      {"model": "prehistoricnature:block/liknopetalon_5", "y": 90 },
+      {"model": "prehistoricnature:block/liknopetalon_6", "y": 90 }
+    ],
+    
+    "facing=west": [
+      {"model": "prehistoricnature:block/liknopetalon_1", "y": 180 },
+      {"model": "prehistoricnature:block/liknopetalon_2", "y": 180 },
+      {"model": "prehistoricnature:block/liknopetalon_3", "y": 180 },
+      {"model": "prehistoricnature:block/liknopetalon_4", "y": 180 },
+      {"model": "prehistoricnature:block/liknopetalon_5", "y": 180 },
+      {"model": "prehistoricnature:block/liknopetalon_6", "y": 180 }
+    ],
+
+    "facing=up": [
+      {"model": "prehistoricnature:block/liknopetalon_1"},
+      {"model": "prehistoricnature:block/liknopetalon_2"},
+      {"model": "prehistoricnature:block/liknopetalon_3"},
+      {"model": "prehistoricnature:block/liknopetalon_4"},
+      {"model": "prehistoricnature:block/liknopetalon_5"},
+      {"model": "prehistoricnature:block/liknopetalon_6"}
+    ],
+    "facing=down": [
+      {"model": "prehistoricnature:block/liknopetalon_1"},
+      {"model": "prehistoricnature:block/liknopetalon_2"},
+      {"model": "prehistoricnature:block/liknopetalon_3"},
+      {"model": "prehistoricnature:block/liknopetalon_4"},
+      {"model": "prehistoricnature:block/liknopetalon_5"},
+      {"model": "prehistoricnature:block/liknopetalon_6"}
+    ]
+  }
+}

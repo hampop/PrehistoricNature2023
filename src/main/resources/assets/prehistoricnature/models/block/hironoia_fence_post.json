@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "prehistoricnature:block/hironoia_planks",
+    "particle": "prehistoricnature:block/hironoia_planks"
+  }
+}

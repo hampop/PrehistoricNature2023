@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/cobbania"},
+      {"model": "prehistoricnature:block/cobbania", "y": 90 },
+      {"model": "prehistoricnature:block/cobbania", "y": 180 },
+      {"model": "prehistoricnature:block/cobbania", "y": 270 }
+    ]
+  }
+}

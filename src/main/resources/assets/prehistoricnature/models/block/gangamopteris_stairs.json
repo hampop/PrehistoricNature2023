@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "prehistoricnature:block/gangamopteris_planks",
+    "top": "prehistoricnature:block/gangamopteris_planks",
+    "side": "prehistoricnature:block/gangamopteris_planks"
+  }
+}

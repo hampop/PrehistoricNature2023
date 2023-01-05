@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": {
+      "model": "prehistoricnature:block/pleuromeia_shoot"
+    },
+    
+    "inventory": {
+      "model": "prehistoricnature:block/pleuromeia_shoot_inventory"
+    }
+  }
+}

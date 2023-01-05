@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/rhynia_land_1"},
+      {"model": "prehistoricnature:block/rhynia_land_2"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/ibyka_1",
+    "particle": "prehistoricnature:block/ibyka_1"
+  }
+}

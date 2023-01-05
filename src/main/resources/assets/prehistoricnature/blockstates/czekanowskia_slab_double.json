@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": [
+      {"model": "prehistoricnature:block/czekanowskia_slab_double"}
+    ]
+  }
+}

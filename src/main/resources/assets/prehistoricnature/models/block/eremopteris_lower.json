@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/eremopteris_lower_c",
+"w":"prehistoricnature:block/eremopteris_lower_c",
+"ee":"prehistoricnature:block/eremopteris_lower_e",
+"ww":"prehistoricnature:block/eremopteris_lower_w"
+}
+}

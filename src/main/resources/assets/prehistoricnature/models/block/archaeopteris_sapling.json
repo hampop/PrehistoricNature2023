@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/archaeopteris_sapling",
+    "particle": "prehistoricnature:block/archaeopteris_sapling"
+  }
+}

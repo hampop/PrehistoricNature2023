@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/rhynia_water_1_spore"},
+      {"model": "prehistoricnature:block/rhynia_water_2_spore"}
+    ]
+  }
+}

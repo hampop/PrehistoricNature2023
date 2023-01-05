@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/podocarp_planks",
+    "particle": "prehistoricnature:block/podocarp_planks"
+  }
+}

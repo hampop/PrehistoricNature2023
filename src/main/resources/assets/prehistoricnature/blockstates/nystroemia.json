@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": {
+      "model": "prehistoricnature:block/nystroemia_inventory"
+    },
+    "": {
+    "model": "prehistoricnature:block/nystroemia"}
+  }
+}

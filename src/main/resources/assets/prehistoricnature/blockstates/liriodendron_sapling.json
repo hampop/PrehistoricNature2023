@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "stage=0": { "model": "prehistoricnature:block/liriodendron_sapling" },
+        "stage=1": { "model": "prehistoricnature:block/liriodendron_sapling" }
+    }
+}

@@ -1,0 +1,9 @@
+{
+"parent":"prehistoricnature:block/4x4_8pointedplant",
+"textures":{
+"e":"prehistoricnature:block/pseudobornia_2_c",
+"w":"prehistoricnature:block/pseudobornia_2_c",
+"ee":"prehistoricnature:block/pseudobornia_2_e",
+"ww":"prehistoricnature:block/pseudobornia_2_w"
+}
+}

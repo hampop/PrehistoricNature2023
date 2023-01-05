@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/zosterophyllum_spore1"},
+      {"model": "prehistoricnature:block/zosterophyllum_spore2"},
+      {"model": "prehistoricnature:block/zosterophyllum_spore3"},
+      {"model": "prehistoricnature:block/zosterophyllum_spore1_var"},
+      {"model": "prehistoricnature:block/zosterophyllum_spore2_var"},
+      {"model": "prehistoricnature:block/zosterophyllum_spore3_var"}
+    ]
+  }
+}

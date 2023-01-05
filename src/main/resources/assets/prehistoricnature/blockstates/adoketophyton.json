@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/adoketophyton"},
+      {"model": "prehistoricnature:block/adoketophyton2"},
+      {"model": "prehistoricnature:block/adoketophyton3"},
+      {"model": "prehistoricnature:block/adoketophyton_var"},
+      {"model": "prehistoricnature:block/adoketophyton2_var"},
+      {"model": "prehistoricnature:block/adoketophyton3_var"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/dioon_sapling",
+    "particle": "prehistoricnature:block/dioon_sapling"
+  }
+}

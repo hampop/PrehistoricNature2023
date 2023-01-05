@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "prehistoricnature:block/arid_horsetail"},
+      {"model": "prehistoricnature:block/arid_horsetail_var"}
+    ]
+  }
+}

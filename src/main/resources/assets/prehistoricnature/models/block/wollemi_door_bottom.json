@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "prehistoricnature:block/wollemi_door_bottom",
+        "top": "prehistoricnature:block/wollemi_door_top"
+    }
+}

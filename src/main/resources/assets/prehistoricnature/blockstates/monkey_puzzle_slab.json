@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "prehistoricnature:block/monkey_puzzle_slab"
+    },
+    "half=top,variant=default": {
+      "model": "prehistoricnature:block/monkey_puzzle_slab_top"
+    }
+  }
+}

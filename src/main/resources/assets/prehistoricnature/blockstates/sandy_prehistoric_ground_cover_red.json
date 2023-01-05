@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "snowy=false": [ 
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var1" },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var2"},
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var3"},
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var4"},
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var5"},
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var1", "y": 90 },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var2", "y": 90 },
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var3", "y": 90 },
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var4", "y": 90 },
+            {"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_red_var5", "y": 90 }
+       ],
+        "snowy=true": [
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed_red" },
+        	{"model": "prehistoricnature:block/sandy_prehistoric_ground_cover_snowed_red", "y": 90 }
+        ]
+    }
+}

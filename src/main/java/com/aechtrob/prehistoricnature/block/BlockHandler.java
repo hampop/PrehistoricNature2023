@@ -89,6 +89,21 @@ public class BlockHandler {
         return returnBlock;
     }
 
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, String translation){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        LanguageHelper.addBlockTranslation(returnBlock,translation);
+        registerBlockItem(name, returnBlock);
+        return returnBlock;
+    }
+
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        registerBlockItem(name, returnBlock);
+        return returnBlock;
+    }
+
+
+
     //These methods should not be called on their own. They are used to register the Block items for the blocks that are
     //Being registered using the above registration methods.
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, List<TagKey<Item>> itemTags) {

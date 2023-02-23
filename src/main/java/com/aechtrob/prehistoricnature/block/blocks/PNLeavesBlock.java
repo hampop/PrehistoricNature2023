@@ -1,14 +1,14 @@
-package com.aechtrob.prehistoricnature.blocks.blocks;
+package com.aechtrob.prehistoricnature.block.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class PNPlanksFlammableBlock extends Block {
+public class PNLeavesBlock extends LeavesBlock {
 
-    public PNPlanksFlammableBlock(Properties properties) {
+    public PNLeavesBlock(Properties properties) {
         super(properties);
     }
 

@@ -1,6 +1,6 @@
-package com.aechtrob.prehistoricnature.blocks.trees.lepidodendron;
+package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
-import com.aechtrob.prehistoricnature.blocks.blocks.PNDecayableDirectional;
+import com.aechtrob.prehistoricnature.block.blocks.PNDecayableDirectional;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import net.minecraft.core.BlockPos;

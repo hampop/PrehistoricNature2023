@@ -1,4 +1,4 @@
-package com.aechtrob.prehistoricnature.blocks.blocks;
+package com.aechtrob.prehistoricnature.block.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,16 +1,15 @@
-package com.aechtrob.prehistoricnature.blocks.blocks;
+package com.aechtrob.prehistoricnature.block.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class PNFenceGateFlammableBlock extends FenceGateBlock {
+public class PNSlabFlammableBlock extends SlabBlock {
 
-    public PNFenceGateFlammableBlock(Properties properties, SoundEvent soundClose, SoundEvent soundOpen) {
-        super(properties, soundClose, soundOpen);
+    public PNSlabFlammableBlock(Properties properties) {
+        super(properties);
     }
 
     @Override

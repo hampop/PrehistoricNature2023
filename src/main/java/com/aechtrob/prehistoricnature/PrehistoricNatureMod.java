@@ -1,14 +1,15 @@
 package com.aechtrob.prehistoricnature;
 
-import com.aechtrob.prehistoricnature.blocks.ModBlocks;
-import com.aechtrob.prehistoricnature.blocks.trees.lepidodendron.ModBlocksTreeLepidodendron;
-import com.aechtrob.prehistoricnature.items.ModItems;
+import com.aechtrob.prehistoricnature.block.*;
+import com.aechtrob.prehistoricnature.creativetabs.*;
+import com.aechtrob.prehistoricnature.item.*;
 import com.aechtrob.prehistoricnature.world.ModConfiguredFeatures;
 import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -28,20 +29,25 @@ public class PrehistoricNatureMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.ITEMS.register(modEventBus);
-        ModBlocks.register(modEventBus);
-        ModBlocksTreeLepidodendron.register(modEventBus);
+        ItemHandler.register(modEventBus);
+        BlockHandler.register(modEventBus);
 
         PNTrunkPlacerType.TRUNK_PLACER_TYPES.register(modEventBus);
         PNFoliagePlacerType.FOLIAGE_PLACER_TYPES.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
+        modEventBus.addListener(this::addCreative);
         MinecraftForge.EVENT_BUS.register(this);
 
     }
 
+    public void addCreative(CreativeModeTabEvent.BuildContents event){
+        if(event.getTab() == CreativeTabs.LEPIDODENDRON_BUILDING){
+            event.accept(FossilBlocks.CARBONIFEROUS_FOSSIL);
+            event.accept(PrehistoricNatureItems.GEOLOGIC_PICK);
+        }
+    }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 

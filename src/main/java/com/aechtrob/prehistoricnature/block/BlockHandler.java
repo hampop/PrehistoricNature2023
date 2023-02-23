@@ -1,6 +1,7 @@
 package com.aechtrob.prehistoricnature.block;
 
 import com.aechtrob.prehistoricnature.*;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.tags.*;
@@ -17,8 +18,8 @@ public class BlockHandler {
 
     public static void register(IEventBus eventBus){
         FossilBlocks.register();
+        ModBlocksTreeLepidodendron.register();
         BLOCKS.register(eventBus);
-
     }
 
     public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags, List<TagKey<Item>> itemTags, String translation){

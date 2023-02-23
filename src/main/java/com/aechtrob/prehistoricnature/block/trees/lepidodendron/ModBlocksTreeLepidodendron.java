@@ -82,5 +82,6 @@ public class ModBlocksTreeLepidodendron {
             () -> new LepidodendronStrobilus(BlockBehaviour.Properties.copy(Blocks.GRASS)));
 
 
-
+    public static void register() {
+    }
 }

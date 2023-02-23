@@ -1,4 +1,4 @@
-package com.aechtrob.prehistoricnature.blocks.blocks;
+package com.aechtrob.prehistoricnature.block.blocks;
 
 /*
 public class PNWoodenBenchBlock extends Block implements SimpleWaterloggedBlock, ITileEntityProvider {

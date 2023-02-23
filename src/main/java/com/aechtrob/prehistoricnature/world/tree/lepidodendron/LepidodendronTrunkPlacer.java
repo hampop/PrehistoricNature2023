@@ -1,7 +1,7 @@
 package com.aechtrob.prehistoricnature.world.tree.lepidodendron;
 
-import com.aechtrob.prehistoricnature.blocks.blocks.PNRotatedPillarFlammableBlock;
-import com.aechtrob.prehistoricnature.blocks.trees.lepidodendron.ModBlocksTreeLepidodendron;
+import com.aechtrob.prehistoricnature.block.blocks.PNRotatedPillarFlammableBlock;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.ModBlocksTreeLepidodendron;
 import com.aechtrob.prehistoricnature.world.tree.PNTreeFeature;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.google.common.collect.Lists;

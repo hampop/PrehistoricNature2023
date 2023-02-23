@@ -1,14 +1,14 @@
-package com.aechtrob.prehistoricnature.blocks.blocks;
+package com.aechtrob.prehistoricnature.block.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class PNSlabFlammableBlock extends SlabBlock {
+public class PNFenceFlammableBlock extends FenceBlock {
 
-    public PNSlabFlammableBlock(Properties properties) {
+    public PNFenceFlammableBlock(Properties properties) {
         super(properties);
     }
 

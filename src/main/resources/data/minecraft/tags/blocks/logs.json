@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "prehistoricnature:diaphorodendron_log",
-    "prehistoricnature:diaphorodendron_log_stripped",
-    "prehistoricnature:diaphorodendron_wood",
-    "prehistoricnature:diaphorodendron_wood_stripped",
     "prehistoricnature:lepidodendron_log",
     "prehistoricnature:lepidodendron_log_stripped",
     "prehistoricnature:lepidodendron_wood",

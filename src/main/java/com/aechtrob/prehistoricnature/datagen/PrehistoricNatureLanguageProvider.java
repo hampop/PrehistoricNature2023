@@ -1,16 +1,15 @@
 package com.aechtrob.prehistoricnature.datagen;
 
 import com.aechtrob.prehistoricnature.*;
-import com.aechtrob.prehistoricnature.block.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.data.*;
 import net.minecraftforge.common.data.*;
 
-public class LepidodendronLanguageProvider extends LanguageProvider {
+public class PrehistoricNatureLanguageProvider extends LanguageProvider {
 
 
-    public LepidodendronLanguageProvider(PackOutput output, String locale) {
+    public PrehistoricNatureLanguageProvider(PackOutput output, String locale) {
         super(output, PrehistoricNatureMod.MOD_ID, locale);
     }
 

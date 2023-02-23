@@ -21,16 +21,16 @@ public class DataGenerators {
 
         generator.addProvider(
                 event.includeClient(),
-                (DataProvider.Factory<LepidodendronBlockStateProvider>) output-> new LepidodendronBlockStateProvider(output, existingFileHelper));
+                (DataProvider.Factory<PrehistoricNatureBlockStateProvider>) output-> new PrehistoricNatureBlockStateProvider(output, existingFileHelper));
         generator.addProvider(
                 event.includeClient(),
-                (DataProvider.Factory<LepidodendronItemModelProvider>) output -> new LepidodendronItemModelProvider(output, existingFileHelper));
+                (DataProvider.Factory<PrehistoricNatureItemModelProvider>) output -> new PrehistoricNatureItemModelProvider(output, existingFileHelper));
         generator.addProvider(
                 event.includeClient(),
-                (DataProvider.Factory<LepidodendronLanguageProvider>) output -> new LepidodendronLanguageProvider(output, "en_us"));
+                (DataProvider.Factory<PrehistoricNatureLanguageProvider>) output -> new PrehistoricNatureLanguageProvider(output, "en_us"));
         generator.addProvider(
                 event.includeServer(),
-                (DataProvider.Factory<LepidodendronLootTableProvider>) output -> new LepidodendronLootTableProvider(output,
+                (DataProvider.Factory<PrehistoricNatureLootTableProvider>) output -> new PrehistoricNatureLootTableProvider(output,
                         Collections.emptySet(),
                         List.of(
                                 new LootTableProvider.SubProviderEntry(
@@ -45,7 +45,7 @@ public class DataGenerators {
                 // Tell generator to run only when server data are generating
                 event.includeServer(),
                 // Extends net.minecraftforge.common.data.BlockTagsProvider
-                (DataProvider.Factory<LepidodendronBlockTagProvider>) output -> new LepidodendronBlockTagProvider(
+                (DataProvider.Factory<PrehistoricNatureBlockTagProvider>) output -> new PrehistoricNatureBlockTagProvider(
                         output,
                         event.getLookupProvider(),
                         event.getExistingFileHelper()

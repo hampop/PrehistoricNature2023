@@ -25,6 +25,7 @@ public class ModBlocksTreeLepidodendron {
             List.of(ItemTags.LOGS,ItemTags.LOGS_THAT_BURN), block ->{
                 ThrowingBiConsumer<BlockStateProvider, RotatedPillarBlock> blockStateProviderBlockThrowingBiConsumer = BlockStateProvider::logBlock;}
             ,"Lepidodendron Log");
+
     public static final RegistryObject<Block> LEPIDODENDRON_LOG_STRIPPED = BlockHandler.registerBlock("lepidodendron_log_stripped",
             () -> new PNRotatedPillarFlammableBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
                 .requiresCorrectToolForDrops()));
@@ -42,6 +43,8 @@ public class ModBlocksTreeLepidodendron {
     public static final RegistryObject<Block> LEPIDODENDRON_LEAVES = BlockHandler.registerBlock("lepidodendron_leaves",
             () -> new PNLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
                     .requiresCorrectToolForDrops()));
+
+
     public static final RegistryObject<Block> LEPIDODENDRON_SAPLING = BlockHandler.registerBlock("lepidodendron_sapling",
             () -> new SaplingBlock(new LepidodendronTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
                     .requiresCorrectToolForDrops()));
@@ -82,5 +85,6 @@ public class ModBlocksTreeLepidodendron {
             () -> new LepidodendronStrobilus(BlockBehaviour.Properties.copy(Blocks.GRASS)));
 
 
-
+    public static void register() {
+    }
 }

@@ -7,10 +7,10 @@ import net.minecraft.resources.*;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.*;
 
-public class LepidodendronItemModelProvider extends ItemModelProvider {
+public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
 
 
-    public LepidodendronItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+    public PrehistoricNatureItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, PrehistoricNatureMod.MOD_ID, existingFileHelper);
     }
 

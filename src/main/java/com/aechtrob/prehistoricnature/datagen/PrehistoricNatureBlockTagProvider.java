@@ -9,9 +9,9 @@ import org.jetbrains.annotations.*;
 
 import java.util.concurrent.*;
 
-public class LepidodendronBlockTagProvider extends BlockTagsProvider {
+public class PrehistoricNatureBlockTagProvider extends BlockTagsProvider {
 
-    public LepidodendronBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+    public PrehistoricNatureBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, PrehistoricNatureMod.MOD_ID, existingFileHelper);
     }
 

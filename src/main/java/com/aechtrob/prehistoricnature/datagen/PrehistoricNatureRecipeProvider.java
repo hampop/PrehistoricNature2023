@@ -2,13 +2,12 @@ package com.aechtrob.prehistoricnature.datagen;
 
 import net.minecraft.data.*;
 import net.minecraft.data.recipes.*;
-import net.minecraftforge.common.data.*;
 
 import java.util.function.*;
 
-public class LepidodendronRecipeProvider extends RecipeProvider {
+public class PrehistoricNatureRecipeProvider extends RecipeProvider {
 
-    public LepidodendronRecipeProvider(PackOutput packout) {
+    public PrehistoricNatureRecipeProvider(PackOutput packout) {
         super(packout);
     }
 

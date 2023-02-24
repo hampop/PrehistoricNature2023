@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "": [
-      {"model": "prehistoricnature:block/sphenopteris"},
-      {"model": "prehistoricnature:block/sphenopteris_rot"}
-    ]
-  }
-}

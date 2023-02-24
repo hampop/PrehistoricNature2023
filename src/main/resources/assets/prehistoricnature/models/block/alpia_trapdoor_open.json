@@ -1,8 +1,0 @@
-{
-  "parent": "prehistoricnature:block/trapdoor_open",
-  "textures": {
-    "texture": "prehistoricnature:block/alpia_trapdoor",
-    "planktexture": "prehistoricnature:block/alpia_planks",
-    "particle": "prehistoricnature:block/alpia_trapdoor"
-  }
-}

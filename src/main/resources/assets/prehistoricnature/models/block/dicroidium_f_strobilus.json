@@ -1,8 +1,0 @@
-{
-    "parent": "prehistoricnature:block/side_plant_bushy",
-    "textures": {
-        "1": "prehistoricnature:block/dicroidium_f_strobilus",
-        "2": "prehistoricnature:block/dicroidium_f_strobilus",
-        "3": "prehistoricnature:block/dicroidium_f_strobilus"
-    }
-}

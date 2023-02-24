@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:items/caytoniales_inventory_var",
-    "particle": "prehistoricnature:items/caytoniales_inventory_var"
-  }
-}

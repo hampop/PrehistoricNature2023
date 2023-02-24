@@ -1,7 +1,0 @@
-{
-    "parent": "block/wall_gate_open",
-    "textures": {
-        "texture": "prehistoricnature:block/komlopteris_planks",
-    "particle": "prehistoricnature:block/komlopteris_planks"
-    }
-}

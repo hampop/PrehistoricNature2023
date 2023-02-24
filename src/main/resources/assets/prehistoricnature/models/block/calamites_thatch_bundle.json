@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "prehistoricnature:block/calamites_thatch_bundle_end",
-        "side": "prehistoricnature:block/calamites_thatch_bundle"
-    }
-}

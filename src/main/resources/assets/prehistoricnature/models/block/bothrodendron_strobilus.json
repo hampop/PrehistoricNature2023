@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/bothrodendron_sporangia",
-    "particle": "prehistoricnature:block/bothrodendron_sporangia"
-  }
-}

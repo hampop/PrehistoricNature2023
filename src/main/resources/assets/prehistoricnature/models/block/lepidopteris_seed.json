@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/lepidopteris_seed",
-    "particle": "prehistoricnature:block/lepidopteris_seed"
-  }
-}

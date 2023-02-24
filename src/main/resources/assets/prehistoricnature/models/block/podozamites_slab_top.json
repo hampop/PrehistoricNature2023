@@ -1,8 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/podozamites_planks",
-    "top": "prehistoricnature:block/podozamites_planks",
-    "side": "prehistoricnature:block/podozamites_planks"
-  }
-}

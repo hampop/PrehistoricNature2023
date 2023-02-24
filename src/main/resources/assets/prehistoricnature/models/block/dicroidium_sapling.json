@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/dicroidium_sapling",
-    "particle": "prehistoricnature:block/dicroidium_sapling"
-  }
-}

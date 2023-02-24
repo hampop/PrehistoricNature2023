@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/sigillaria_wood",
-    "top": "prehistoricnature:block/sigillaria_wood",
-    "side": "prehistoricnature:block/sigillaria_wood"
-  }
-}

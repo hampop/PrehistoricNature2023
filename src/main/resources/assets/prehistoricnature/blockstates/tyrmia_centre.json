@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "": [
-		{"model": "prehistoricnature:block/tyrmia_centre" },
-		{"model": "prehistoricnature:block/tyrmia_centre_seeds" }
-    ]
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/arthropitys_planks",
-    "top": "prehistoricnature:block/arthropitys_planks",
-    "side": "prehistoricnature:block/arthropitys_planks"
-  }
-}

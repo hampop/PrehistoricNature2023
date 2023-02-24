@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/dominican_amber",
-    "top": "prehistoricnature:block/dominican_amber",
-    "side": "prehistoricnature:block/dominican_amber"
-  }
-}

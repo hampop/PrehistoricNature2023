@@ -1,6 +1,7 @@
 package com.aechtrob.prehistoricnature.datagen.loottable;
 
 import com.aechtrob.prehistoricnature.block.*;
+import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.data.loot.*;
@@ -22,6 +23,7 @@ import java.util.stream.*;
 
 public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubProvider {
     private static float MAX_FOSSILS = 3F;
+    private static final float[] NORMAL_LEAVES_SAPLING_CHANCES = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
     private static final LootItemCondition.Builder HAS_GEOLOGIC_PICK = MatchTool.toolMatches(ItemPredicate.Builder.item().of(PrehistoricNatureItems.GEOLOGIC_PICK.get()));
     //private static final LootItemCondition.Builder HAS_PICKAXE = MatchTool.toolMatches(ItemPredicate.Builder.item().of(ItemTags.CLUSTER_MAX_HARVESTABLES));
     public BlockLootSubProvider(){
@@ -30,16 +32,28 @@ public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubPr
 
     @Override
     protected void generate() {
-        this.add(FossilBlocks.CARBONIFEROUS_FOSSIL.get(), (block) -> createFossilTable(block, PrehistoricNatureItems.CARBONIFEROUS_RAW_FOSSIL.get()));
+        LootTableHelper.getLootTables().forEach((block,consumer)->{consumer.accept(this,block);});
     }
 
-    private LootTable.Builder createFossilTable(Block fossil, Item coveredFossil){
-        return LootTable.lootTable().withPool(LootPool.lootPool()
-                .add(LootItem.lootTableItem(coveredFossil).apply(SetItemCountFunction.setCount(UniformGenerator.between(1,MAX_FOSSILS)))
-                        .when(HAS_GEOLOGIC_PICK).otherwise(LootItem.lootTableItem(fossil))));
-//         LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(2.0F))
-//                .add(LootItem.lootTableItem(coveredFossil).apply(SetItemCountFunction.setCount(UniformGenerator.between(1,MAX_FOSSILS)))
-//                .when(HAS_GEOLOGIC_PICK).otherwise(LootItem.lootTableItem(fossil))));
+    public void add(RegistryObject<Block> block, LootTable.Builder p_249817_) {
+        super.add(block.get(), p_249817_);
+    }
+
+    public void createShearsOnlyDrop(RegistryObject<Block> block){
+        super.add(block.get(),(shearableBlock)->createShearsOnlyDrop(shearableBlock));
+    }
+    public void dropSelf(RegistryObject<Block> block) {
+        super.dropSelf(block.get());
+    }
+
+    public void createFossilTable(RegistryObject<Block> fossil, RegistryObject<Item> coveredFossil){
+        this.add(fossil.get(),LootTable.lootTable().withPool(LootPool.lootPool()
+                .add(LootItem.lootTableItem(coveredFossil.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1,MAX_FOSSILS)))
+                        .when(HAS_GEOLOGIC_PICK).otherwise(LootItem.lootTableItem(fossil.get())))));
+    }
+
+    public void createLeavesDrops(RegistryObject<Block> block, RegistryObject<Block> leavesBlock) {
+        this.add(block.get(),(lambdaBlock) -> createLeavesDrops(block.get(), leavesBlock.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     @Override

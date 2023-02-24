@@ -1,8 +1,0 @@
-{
-    "parent": "prehistoricnature:block/side_plant_bushy",
-    "textures": {
-        "1": "prehistoricnature:block/liknopetalon_2",
-        "2": "prehistoricnature:block/liknopetalon_3",
-        "3": "prehistoricnature:block/liknopetalon_1"
-    }
-}

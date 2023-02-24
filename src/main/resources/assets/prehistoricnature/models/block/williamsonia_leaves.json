@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/williamsonia_shoot_small",
-    "particle": "prehistoricnature:block/williamsonia_shoot_small"
-  }
-}

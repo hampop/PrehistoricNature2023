@@ -1,7 +1,0 @@
-{
-    "parent": "block/wall_gate_open",
-    "textures": {
-       "texture": "prehistoricnature:block/sciadopitys_wood",
-    "particle": "prehistoricnature:block/sciadopitys_wood"
-    }
-}

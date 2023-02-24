@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "prehistoricnature:block/lepidodendron_wood_end",
+    "side": "prehistoricnature:block/lepidodendron_wood_side"
+  }
+}

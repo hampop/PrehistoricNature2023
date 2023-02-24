@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/lycopia1_b",
-    "particle": "prehistoricnature:block/lycopia1_b"
-  }
-}

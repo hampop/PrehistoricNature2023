@@ -1,8 +1,0 @@
-{
-  "parent": "block/half_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/calamites_fibre",
-    "top": "prehistoricnature:block/calamites_fibre",
-    "side": "prehistoricnature:block/calamites_fibre"
-  }
-}

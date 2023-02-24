@@ -1,6 +1,0 @@
-{
-    "parent": "prehistoricnature:block/pallisade_side",
-    "textures": {
-        "pallisade": "prehistoricnature:block/cycas_log"
-    }
-}

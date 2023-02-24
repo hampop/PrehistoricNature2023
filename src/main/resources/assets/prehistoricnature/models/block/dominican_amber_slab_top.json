@@ -1,8 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/dominican_amber",
-    "top": "prehistoricnature:block/dominican_amber",
-    "side": "prehistoricnature:blocksdominican_amber"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/cordaites_planks",
-    "top": "prehistoricnature:block/cordaites_planks",
-    "side": "prehistoricnature:block/cordaites_planks"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "prehistoricnature:block/cordaites_planks",
-    "particle": "prehistoricnature:block/cordaites_planks"
-  }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "prehistoricnature:block/pallisade_post_small",
-    "textures": {
-        "texture": "prehistoricnature:block/sigillaria_log"
-    }
-}

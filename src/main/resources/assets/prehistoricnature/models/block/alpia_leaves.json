@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/alpia_leaves",
-    "particle": "prehistoricnature:block/alpia_leaves"
-  }
-}

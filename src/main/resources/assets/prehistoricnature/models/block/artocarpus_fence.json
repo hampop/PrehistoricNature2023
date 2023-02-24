@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_side",
-  "textures": {
-    "texture": "prehistoricnature:block/artocarpus_planks",
-    "particle": "prehistoricnature:block/artocarpus_planks"
-  }
-}

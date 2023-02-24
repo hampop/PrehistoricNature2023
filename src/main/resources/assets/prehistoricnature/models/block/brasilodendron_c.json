@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/brasilodendron_c",
-    "particle": "prehistoricnature:block/brasilodendron_c"
-  }
-}

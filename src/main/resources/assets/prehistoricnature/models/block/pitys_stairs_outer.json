@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/pitys_planks",
-    "top": "prehistoricnature:block/pitys_planks",
-    "side": "prehistoricnature:block/pitys_planks"
-  }
-}

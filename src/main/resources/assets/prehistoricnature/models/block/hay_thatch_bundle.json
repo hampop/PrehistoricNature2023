@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "prehistoricnature:block/hay_thatch_bundle_end",
-        "side": "prehistoricnature:block/hay_thatch_bundle"
-    }
-}

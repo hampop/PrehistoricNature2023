@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/bristlecone_sapling",
-    "particle": "prehistoricnature:block/bristlecone_sapling"
-  }
-}

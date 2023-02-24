@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "prehistoricnature:block/lepidodendron_log_stripped_end",
+    "side": "prehistoricnature:block/lepidodendron_log_stripped_side"
+  }
+}

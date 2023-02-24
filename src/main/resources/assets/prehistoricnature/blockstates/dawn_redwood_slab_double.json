@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "variant=default": [
-      {"model": "prehistoricnature:block/dawn_redwood_slab_double", "weight": 10},
-      {"model": "prehistoricnature:block/dawn_redwood_slab_double_knot"}
-    ]
-  }
-}

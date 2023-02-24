@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "prehistoricnature:block/lepidodendron_slab"
+    },
+    "type=double": {
+      "model": "prehistoricnature:block/lepidodendron_slab"
+    },
+    "type=top": {
+      "model": "prehistoricnature:block/lepidodendron_slab"
+    }
+  }
+}

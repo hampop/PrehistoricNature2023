@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/red_leafy_algae_small",
-    "particle": "prehistoricnature:block/red_leafy_algae_small"
-  }
-}

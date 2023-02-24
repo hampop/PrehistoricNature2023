@@ -1,8 +1,0 @@
-{
-  "parent": "prehistoricnature:block/trapdoor_top",
-  "textures": {
-    "texture": "prehistoricnature:block/ginkgo_trapdoor",
-    "planktexture": "prehistoricnature:block/ginkgo_planks",
-    "particle": "prehistoricnature:block/ginkgo_trapdoor"
-  }
-}

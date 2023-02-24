@@ -1,7 +1,0 @@
-{
-    "parent": "prehistoricnature:block/fence_gate_open_thin",
-    "textures": {
-        "texture": "prehistoricnature:block/dicroidium_stem",
-    "particle": "prehistoricnature:block/dicroidium_stem"
-    }
-}

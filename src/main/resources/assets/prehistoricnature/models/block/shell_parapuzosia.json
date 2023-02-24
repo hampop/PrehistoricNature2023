@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:items/shell_parapuzosia"
-  }
-}

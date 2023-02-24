@@ -1,9 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "bottom": "prehistoricnature:block/mossy_prehistoric_ground",
-        "top": "prehistoricnature:block/mossy_prehistoric_ground_top",
-        "side": "prehistoricnature:block/mossy_prehistoric_ground_side",
-        "particle": "prehistoricnature:block/mossy_prehistoric_ground"
-    }
-}

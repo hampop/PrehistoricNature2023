@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/leclercqia",
-    "particle": "prehistoricnature:block/leclercqia"
-  }
-}

@@ -1,7 +1,0 @@
-{
-	"parent": "block/cross",
-	"textures": {
-		"cross": "prehistoricnature:block/phyllotheca_shoot",
-		"particle": "prehistoricnature:items/phyllotheca_inventory"
-	}
-}

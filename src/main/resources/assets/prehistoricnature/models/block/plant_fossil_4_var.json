@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/plant_fossil_4_var",
-    "particle": "prehistoricnature:block/plant_fossil_4"
-  }
-}

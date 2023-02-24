@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/phoenicopsis_leaves",
-    "particle": "prehistoricnature:block/phoenicopsis_leaves"
-  }
-}

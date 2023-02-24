@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:items/ischnophyton_inventory",
-    "particle": "prehistoricnature:items/ischnophyton_inventory"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "prehistoricnature:block/carboniferous_fossil"
+  }
+}

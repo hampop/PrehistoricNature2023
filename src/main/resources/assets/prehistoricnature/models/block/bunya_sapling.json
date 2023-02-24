@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/bunya_sapling",
-    "particle": "prehistoricnature:block/bunya_sapling"
-  }
-}

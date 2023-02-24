@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/araucarioxylon_wood",
-    "top": "prehistoricnature:block/araucarioxylon_wood",
-    "side": "prehistoricnature:block/araucarioxylon_wood"
-  }
-}

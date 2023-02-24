@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/liriodendronwood",
-    "top": "prehistoricnature:block/liriodendronwood",
-    "side": "prehistoricnature:block/liriodendronwood"
-  }
-}

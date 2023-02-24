@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "bottom": "prehistoricnature:block/lepidodendron_planks",
+    "down": "prehistoricnature:block/lepidodendron_planks",
+    "east": "prehistoricnature:block/lepidodendron_planks",
+    "north": "prehistoricnature:block/lepidodendron_planks",
+    "side": "prehistoricnature:block/lepidodendron_planks",
+    "south": "prehistoricnature:block/lepidodendron_planks",
+    "top": "prehistoricnature:block/lepidodendron_planks",
+    "up": "prehistoricnature:block/lepidodendron_planks",
+    "west": "prehistoricnature:block/lepidodendron_planks"
+  }
+}

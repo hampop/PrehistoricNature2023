@@ -1,8 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/ginkgo_planks",
-    "top": "prehistoricnature:block/ginkgo_planks",
-    "side": "prehistoricnature:block/ginkgo_planks"
-  }
-}

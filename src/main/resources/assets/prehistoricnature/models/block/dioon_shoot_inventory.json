@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:items/dioon_shoot_inventory",
-    "particle": "prehistoricnature:items/dioon_shoot_inventory"
-  }
-}

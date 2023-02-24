@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "prehistoricnature:block/mud_brick_top",
-    "top": "prehistoricnature:block/mud_brick_top",
-    "side": "prehistoricnature:block/mud_brick"
-  }
-}

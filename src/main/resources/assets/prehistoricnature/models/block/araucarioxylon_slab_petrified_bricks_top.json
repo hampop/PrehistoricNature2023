@@ -1,8 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/bricks1",
-    "top": "prehistoricnature:block/bricks3",
-    "side": "prehistoricnature:block/bricks2"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/cinnamon_fern",
-    "particle": "prehistoricnature:block/cinnamon_fern"
-  }
-}

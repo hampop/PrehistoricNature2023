@@ -1,8 +1,0 @@
-{
-  "parent": "block/half_slab",
-  "textures": {
-    "bottom": "prehistoricnature:block/bristlecone_planks",
-    "top": "prehistoricnature:block/bristlecone_planks",
-    "side": "prehistoricnature:block/bristlecone_planks"
-  }
-}

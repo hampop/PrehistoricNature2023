@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "": [
-      {"model": "prehistoricnature:block/swamp_horsetail_land"},
-      {"model": "prehistoricnature:block/swamp_horsetail_land_var"}
-    ]
-  }
-}

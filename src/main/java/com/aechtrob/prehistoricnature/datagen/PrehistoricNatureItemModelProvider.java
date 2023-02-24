@@ -1,11 +1,14 @@
 package com.aechtrob.prehistoricnature.datagen;
 
 import com.aechtrob.prehistoricnature.*;
+import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.data.*;
 import net.minecraft.resources.*;
+import net.minecraft.world.item.*;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.*;
+import net.minecraftforge.registries.*;
 
 public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
 
@@ -16,10 +19,11 @@ public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
-        withExistingParent("carboniferous_fossil", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/carboniferous_fossil"));
-
+        ModelHelper.getItemModels().forEach((item,consumer)->{consumer.accept(this,item);});
         this.basicItem(PrehistoricNatureItems.GEOLOGIC_PICK.get());
-        this.basicItem(PrehistoricNatureItems.CARBONIFEROUS_RAW_FOSSIL.get());
+    }
+
+    public ItemModelBuilder basicItem(RegistryObject<Item> item) {
+        return super.basicItem(item.get());
     }
 }

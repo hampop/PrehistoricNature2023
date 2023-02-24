@@ -45,6 +45,7 @@ public class LepidodendronTrunkPlacer extends TrunkPlacer {
     public List<FoliagePlacer.FoliageAttachment> placeTrunk(LevelSimulatedReader levelSimulatedReader, BiConsumer<BlockPos, BlockState> biConsumer, RandomSource random, int p_161871_, BlockPos pos, TreeConfiguration treeConfiguration) {
 
         List<FoliagePlacer.FoliageAttachment> list = Lists.newArrayList();
+
         int height = 0;
         int counter = 0;
         BlockState logState = ModBlocksTreeLepidodendron.LEPIDODENDRON_LOG.get().defaultBlockState();

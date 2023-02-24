@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:items/xihuphyllum_inventory",
-    "particle": "prehistoricnature:items/xihuphyllum_inventory"
-  }
-}

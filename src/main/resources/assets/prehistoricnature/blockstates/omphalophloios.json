@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "inventory": {
-      "model": "prehistoricnature:block/omphalophloios_inventory"
-    },
-    "": {"model": "prehistoricnature:block/omphalophloios"}
-  }
-}

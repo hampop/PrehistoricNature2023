@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "": [
-      {"model": "prehistoricnature:block/osmunda"},
-      {"model": "prehistoricnature:block/osmunda_rot"}
-    ]
-  }
-}

@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_bottom",
-    "textures": {
-        "bottom": "prehistoricnature:block/lepidodendron_door_bottom",
-        "top": "prehistoricnature:block/lepidodendron_door_top"
-    }
-}

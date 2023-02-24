@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/araucarioxylon_leaves",
-    "particle": "prehistoricnature:block/araucarioxylon_leaves"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/red_tufted_algae_1",
-    "particle": "prehistoricnature:block/red_tufted_algae_1"
-  }
-}

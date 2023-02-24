@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/coarse_sandy_dirt_red",
-    "particle": "prehistoricnature:block/coarse_sandy_dirt_red"
-  }
-}

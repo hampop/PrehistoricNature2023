@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/ginkgoites_leaves",
-    "particle": "prehistoricnature:block/ginkgoites_leaves"
-  }
-}

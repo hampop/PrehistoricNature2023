@@ -1,0 +1,17 @@
+{
+  "block.prehistoricnature.carboniferous_fossil": "Carboniferous Fossil",
+  "block.prehistoricnature.lepidodendron_fence": "Lepidodendron Stairs",
+  "block.prehistoricnature.lepidodendron_leaves": "Lepidodendron Leaves",
+  "block.prehistoricnature.lepidodendron_log": "Lepidodendron Log",
+  "block.prehistoricnature.lepidodendron_log_stripped": "Lepidodendron Stripped Log",
+  "block.prehistoricnature.lepidodendron_planks": "Lepidodendron Planks",
+  "block.prehistoricnature.lepidodendron_sapling": "Lepidodendron Sapling",
+  "block.prehistoricnature.lepidodendron_slab": "Lepidodendron Slab",
+  "block.prehistoricnature.lepidodendron_stairs": "Lepidodendron Stairs",
+  "block.prehistoricnature.lepidodendron_strobilus": "Lepidodendron Strobilus",
+  "block.prehistoricnature.lepidodendron_wood": "Lepidodendron Wood",
+  "block.prehistoricnature.lepidodendron_wood_stripped": "Lepidodendron Stripped Wood",
+  "item.prehistoricnature.carboniferous_raw_fossil": "Carboniferous Raw Fossil",
+  "item.prehistoricnature.geologic_pick": "Geologic Pick",
+  "object.lepidodendron.building_tab": "Prehistoric Nature Building Blocks"
+}

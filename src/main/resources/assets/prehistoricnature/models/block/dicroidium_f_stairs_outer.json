@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/dicroidium_f_planks",
-    "top": "prehistoricnature:block/dicroidium_f_planks",
-    "side": "prehistoricnature:block/dicroidium_f_planks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "prehistoricnature:block/trapdoor_open",
-  "textures": {
-    "texture": "prehistoricnature:block/telemachus_trapdoor",
-    "planktexture": "prehistoricnature:block/telemachus_planks",
-    "particle": "prehistoricnature:block/telemachus_trapdoor"
-  }
-}

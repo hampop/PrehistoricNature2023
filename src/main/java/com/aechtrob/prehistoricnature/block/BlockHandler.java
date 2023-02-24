@@ -2,7 +2,9 @@ package com.aechtrob.prehistoricnature.block;
 
 import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
+import com.aechtrob.prehistoricnature.datagen.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
+import com.aechtrob.prehistoricnature.datagen.loottable.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
@@ -43,54 +45,87 @@ public class BlockHandler {
                         A list of ItemTags that should be applied to the generated block item. It passes it to the TagHelper
                         class, which generates the json files for the tags when the runData task is executed. This means you
                         do not need to add the tags to the datagenerator manually when using this method.
-    Consumer<RegistryObject<Block>> consumer:
+    Consumer<RegistryObject<Block>> blockConsumer:
                         A consumer that passes the appropriate BlockStateProvider method in consumer form for the block that
-                        is being generated.
+                        is being generated.  **BE CAREFUL** The texture files should be placed in the correct folder with the correct names.
+                        See the lepidodendron blocks for examples, or wait for the data gen to shout at you about the resource it can't find.
+    Consumer<RegistryObject<Item>> itemConsumer:
+                        A consumer that passes the appropriate ItemModelProvider method in consumer form for the blockitem that
+                        is being generated.  **BE CAREFUL** The texture files should be placed in the correct folder with the correct names.
+                        See the lepidodendron items for examples, or wait for the data gen to shout at you about the resource it can't find.
     String translation:
-                        The translation thats passed to the LanguageHelper and added to the en_us.json.
+                        The translation that is passed to the LanguageHelper and added to the en_us.json.
 
      */
     public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags,
-                                                                        List<TagKey<Item>> itemTags, Consumer<RegistryObject<Block>> consumer,
+                                                                        List<TagKey<Item>> itemTags, BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> blockConsumer,
+                                                                        BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
-        ModelHelper.addBlockModel(returnBlock, consumer);
+        ModelHelper.addBlockModel(returnBlock, blockConsumer);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
-        registerBlockItem(name, returnBlock, itemTags);
+        RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock, itemTags);
+        ModelHelper.addItemModel(registerItem,itemConsumer);
         return returnBlock;
     }
 
     public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags,
-                                                                        Consumer<RegistryObject<Block>> consumer,
+                                                                        BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
+                                                                        BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
         ModelHelper.addBlockModel(returnBlock, consumer);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
-        registerBlockItem(name, returnBlock);
+        RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock);
+        ModelHelper.addItemModel(registerItem,itemConsumer);
+        return returnBlock;
+    }
+
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block,
+                                                                        BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
+                                                                        BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                        String translation){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        ModelHelper.addBlockModel(returnBlock, consumer);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
+        LanguageHelper.addBlockTranslation(returnBlock,translation);
+        RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock);
+        ModelHelper.addItemModel(registerItem,itemConsumer);
         return returnBlock;
     }
 
     public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags,
-                                                                        List<TagKey<Item>> itemTags, String translation){
+                                                                        List<TagKey<Item>> itemTags,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                        String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
         registerBlockItem(name, returnBlock, itemTags);
         return returnBlock;
     }
 
     public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block,List<TagKey<Item>> itemTags,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
         registerBlockItem(name, returnBlock, itemTags);
         return returnBlock;
     }
 
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, String translation){
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
         registerBlockItem(name, returnBlock);
         return returnBlock;

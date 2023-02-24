@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "prehistoricnature:block/brownstone_smooth",
-    "top": "prehistoricnature:block/brownstone_smooth_top",
-    "side": "prehistoricnature:block/brownstone_smooth"
-  }
-}

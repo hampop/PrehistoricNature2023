@@ -1,6 +1,0 @@
-{
-    "parent": "prehistoricnature:block/pallisade_side",
-    "textures": {
-        "pallisade": "prehistoricnature:block/ladinia_log"
-    }
-}

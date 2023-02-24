@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prehistoricnature:block/taxodium_planks",
-    "particle": "prehistoricnature:block/taxodium_planks"
-  }
-}

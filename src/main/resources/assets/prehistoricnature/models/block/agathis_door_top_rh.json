@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_top_rh",
-    "textures": {
-        "bottom": "prehistoricnature:block/agathis_door_bottom",
-        "top": "prehistoricnature:block/agathis_door_top"
-    }
-}

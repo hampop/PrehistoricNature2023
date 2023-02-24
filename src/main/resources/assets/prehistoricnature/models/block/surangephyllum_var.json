@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/surangephyllum_b_var",
-    "particle": "prehistoricnature:block/surangephyllum_b_var"
-  }
-}

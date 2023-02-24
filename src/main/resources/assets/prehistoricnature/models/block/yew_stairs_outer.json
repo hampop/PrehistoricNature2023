@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "prehistoricnature:block/yew_planks",
-    "top": "prehistoricnature:block/yew_planks",
-    "side": "prehistoricnature:block/yew_planks"
-  }
-}

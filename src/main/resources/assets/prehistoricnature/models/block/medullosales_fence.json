@@ -1,7 +1,0 @@
-{
-  "parent": "prehistoricnature:block/fence_side_thin",
-  "textures": {
-    "texture": "prehistoricnature:block/medullosales_log",
-    "particle": "prehistoricnature:block/medullosales_log"
-  }
-}

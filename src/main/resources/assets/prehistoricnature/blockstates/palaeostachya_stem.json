@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "": [
-    	{"model": "prehistoricnature:block/palaeostachya_stem"},
-    	{"model": "prehistoricnature:block/palaeostachya_stem_leaves"}
-    	]
-    }
-}

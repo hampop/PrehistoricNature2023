@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "prehistoricnature:block/lepidodendron_sporangia",
-    "particle": "prehistoricnature:block/lepidodendron_sporangia"
-  },
-  "render_type": "cutout"
-}

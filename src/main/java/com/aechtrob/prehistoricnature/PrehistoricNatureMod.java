@@ -47,14 +47,15 @@ public class PrehistoricNatureMod
     }
 
     public void addCreative(CreativeModeTabEvent.BuildContents event){
+        CreativeTabs.register();
+        CreativeTabHelper.substituteTabs();
         CreativeTabHelper.getCreativeItems().get(event.getTab())
                 .stream()
                 .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Integer> pair) -> pair.second).thenComparing(pair -> pair.first.getId()))
                 .forEach((pair) -> {
                     event.accept(pair.first);
                 });
-        CreativeTabs.register();
-        CreativeTabHelper.substituteTabs();
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

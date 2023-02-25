@@ -34,7 +34,7 @@ public class FossilBlocks {
                 (provider, block) -> {provider.simpleBlock(block);},
                 (provider, item) -> {provider.withExistingParent(name, new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+name));},
                 (provider, block) -> {provider.createFossilTable(block,fossilItem);},
-                List.of(Pair.of("prehistoricnature_fossils_tabs",1)),
+                List.of(Pair.of("prehistoricnature_fossils_tab",Pair.of(1,1))),
                 translation);
     }
 

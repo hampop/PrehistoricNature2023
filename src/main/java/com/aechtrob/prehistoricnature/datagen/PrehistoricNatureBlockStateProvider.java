@@ -77,6 +77,10 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
         super.buttonBlock((ButtonBlock) button.get(), blockTexture(block.get()));
     }
 
+    public void pressurePlateBlock(RegistryObject<Block> plate,RegistryObject<Block> block){
+        super.pressurePlateBlock((PressurePlateBlock) plate.get(),blockTexture(block.get()));
+    }
+
     //    public void strobilusBlock(RegistryObject<Block> strobilus){
 //        getVariantBuilder((LepidodendronStrobilus)strobilus.get()).forAllStatesExcept(state -> {
 //            Direction facing = state.getValue(LepidodendronStrobilus.FACING);

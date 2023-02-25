@@ -60,11 +60,14 @@ public class BlockHandler {
                         The translation that is passed to the LanguageHelper and added to the en_us.json.
 
      */
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags,
-                                                                        List<TagKey<Item>> itemTags, BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> blockConsumer,
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
+                                                                        List<TagKey<Block>> blockTags,
+                                                                        List<TagKey<Item>> itemTags,
+                                                                        BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> blockConsumer,
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
@@ -73,6 +76,8 @@ public class BlockHandler {
         LanguageHelper.addBlockTranslation(returnBlock,translation);
         RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock, itemTags);
         ModelHelper.addItemModel(registerItem,itemConsumer);
+        creativeModeTabs.forEach((pair)->{
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
@@ -82,7 +87,7 @@ public class BlockHandler {
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Block>> reciperConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
@@ -92,6 +97,8 @@ public class BlockHandler {
         RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock, itemTags);
         ModelHelper.addItemModel(registerItem,itemConsumer);
         RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
+        creativeModeTabs.forEach((pair)->{
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
@@ -100,7 +107,7 @@ public class BlockHandler {
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Block>> reciperConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
@@ -111,7 +118,7 @@ public class BlockHandler {
         ModelHelper.addItemModel(registerItem,itemConsumer);
         RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
@@ -119,7 +126,7 @@ public class BlockHandler {
                                                                         BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
@@ -129,7 +136,7 @@ public class BlockHandler {
         RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock);
         ModelHelper.addItemModel(registerItem,itemConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
@@ -138,7 +145,7 @@ public class BlockHandler {
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Block>> reciperConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         ModelHelper.addBlockModel(returnBlock, consumer);
@@ -148,7 +155,7 @@ public class BlockHandler {
         ModelHelper.addItemModel(registerItem,itemConsumer);
         RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
 
         return returnBlock;
     }
@@ -158,7 +165,7 @@ public class BlockHandler {
                                                                         List<TagKey<Item>> itemTags,
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation,int check){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
@@ -167,15 +174,16 @@ public class BlockHandler {
         RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock, itemTags);
         ModelHelper.addItemModel(registerItem,itemConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block,
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
                                                                         BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         ModelHelper.addBlockModel(returnBlock, consumer);
@@ -184,52 +192,53 @@ public class BlockHandler {
         RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock);
         ModelHelper.addItemModel(registerItem,itemConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block,
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
                                                                         List<TagKey<Block>> blockTags,
                                                                         List<TagKey<Item>> itemTags,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
                                                                         BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Block>> reciperConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
+        RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
         LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
         registerBlockItem(name, returnBlock, itemTags);
-        RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block,List<TagKey<Item>> itemTags,
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
+                                                                        List<TagKey<Item>> itemTags,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
         RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
         LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
-        registerBlockItem(name, returnBlock, itemTags);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 
     public static <T extends Block> RegistryObject<Block> registerBlock(String name,
                                                                         Supplier<T> block,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                        List<Pair<String,Integer>> creativeModeTabs,
+                                                                        List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                         String translation){
-        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        RegistryObject<Block> returnBlock = BlockHandler.registerBlock(name, block);
         LootTableHelper.addLootTable(returnBlock,lootConsumer);
         LanguageHelper.addBlockTranslation(returnBlock,translation);
-        registerBlockItem(name, returnBlock);
         creativeModeTabs.forEach((pair)->{
-            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second);});
+            CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
         return returnBlock;
     }
 

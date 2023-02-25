@@ -8,7 +8,6 @@ import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.ibm.icu.impl.*;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.*;
 import net.minecraft.world.level.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,28 +32,32 @@ public class PrehistoricNatureMod
 
     public PrehistoricNatureMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::addCreative);
+
         ItemHandler.register(modEventBus);
         BlockHandler.register(modEventBus);
 
         PNTrunkPlacerType.TRUNK_PLACER_TYPES.register(modEventBus);
         PNFoliagePlacerType.FOLIAGE_PLACER_TYPES.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
-
+        modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     public void addCreative(CreativeModeTabEvent.BuildContents event){
-        CreativeTabs.register();
-        CreativeTabHelper.substituteTabs();
-        CreativeTabHelper.getCreativeItems().get(event.getTab())
-                .stream()
-                .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Integer> pair) -> pair.second).thenComparing(pair -> pair.first.getId()))
-                .forEach((pair) -> {
-                    event.accept(pair.first);
-                });
+//        CreativeTabHelper.substituteTabs();
+//            CreativeTabHelper.getCreativeItems();
+//            CreativeTabHelper.addCreativeItem(event.getTab(),PrehistoricNatureItems.GEOLOGIC_PICK);
+//
+//            CreativeTabHelper.getCreativeItems().
+//
+//            CreativeTabHelper.getCreativeItems().get(event.getTab())
+//                    .stream()
+//                    .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Integer> pair) -> pair.second).thenComparing(pair -> pair.first.getId()))
+//                    .forEach((pair) -> {
+//                        event.accept(pair.first);
+//                    });
 
     }
 

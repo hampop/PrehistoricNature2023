@@ -8,23 +8,25 @@ import net.minecraft.world.level.block.*;
 import net.minecraftforge.registries.*;
 
 public class CreativeTabHelper {
-    private static LinkedHashMultimap<String, Pair<RegistryObject<ItemLike>, Integer>> creativeTempTabs = LinkedHashMultimap.create();
 
-    private static LinkedHashMultimap<CreativeModeTab, Pair<RegistryObject<ItemLike>, Integer>> creativeItems = LinkedHashMultimap.create();
+    public static int logTier = 8;
+    public static int leafTier = 9;
+    public static int saplingTier = 10;
+    private static LinkedHashMultimap<String, Pair<RegistryObject<ItemLike>, Pair<Integer,Integer>>> creativeItems = LinkedHashMultimap.create();
 
     public static <T extends ItemLike> void addCreativeItem(String creativeModeTab, RegistryObject<T> block){
-        creativeTempTabs.put(creativeModeTab, Pair.of((RegistryObject<ItemLike>) block, 0));
+        creativeItems.put(creativeModeTab, Pair.of((RegistryObject<ItemLike>) block ,Pair.of(0,0)));
     }
 
     public static <T extends ItemLike> void addCreativeItem(String creativeModeTab, RegistryObject<T> creativeItem, int tier){
-        creativeTempTabs.put(creativeModeTab, Pair.of((RegistryObject<ItemLike>) creativeItem, tier));
+        creativeItems.put(creativeModeTab, Pair.of((RegistryObject<ItemLike>) creativeItem, Pair.of(tier,0)));
     }
 
-    public static LinkedHashMultimap<CreativeModeTab, Pair<RegistryObject<ItemLike>, Integer>> getCreativeItems(){
+    public static <T extends ItemLike> void addCreativeItem(String creativeModeTab, RegistryObject<T> creativeItem, int tier, int priority){
+        creativeItems.put(creativeModeTab, Pair.of((RegistryObject<ItemLike>) creativeItem, Pair.of(tier,priority)));
+    }
+
+    public static LinkedHashMultimap<String, Pair<RegistryObject<ItemLike>, Pair<Integer, Integer>>> getCreativeItems(){
         return creativeItems;
-    }
-
-    public static void substituteTabs() {
-        creativeTempTabs.forEach((id, pair)->{creativeItems.put(CreativeTabs.getTab(id),pair);});
     }
 }

@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-25T10:09:06.352198	Item Models: prehistoricnature
+// 1.19.3	2023-02-25T21:39:24.4717166	Item Models: prehistoricnature
 8466b2c3afbe6c042102bd5a04c980473abd310f assets/prehistoricnature/models/item/carboniferous_fossil.json
 5493e64860f77b16275b82a5bfd1d13457a36fcb assets/prehistoricnature/models/item/carboniferous_raw_fossil.json
 c07d84f50432bec67a1ba9ed15f756d543482cb7 assets/prehistoricnature/models/item/geologic_pick.json
@@ -10,6 +10,7 @@ d667a361fae25a79efb5f20a63c9c6b25eeeeb79 assets/prehistoricnature/models/item/le
 99f965e19f0a2f36ad4c6045af3c6017858ddf08 assets/prehistoricnature/models/item/lepidodendron_log.json
 8aa3e2d3cbbfa3577cd15be474bf0dcae4c15a08 assets/prehistoricnature/models/item/lepidodendron_log_stripped.json
 397ab235549710b9201eedd5a7125365afa4cd63 assets/prehistoricnature/models/item/lepidodendron_planks.json
+6c323891e4728241a0553eb44d8e3c59006a5d4d assets/prehistoricnature/models/item/lepidodendron_pressure_plate.json
 bafffd6ad13502378e4e5e887c4e13c3fadfe30f assets/prehistoricnature/models/item/lepidodendron_sapling.json
 d00fb83aca4f522b7fc1c572c728d5f96d436ab5 assets/prehistoricnature/models/item/lepidodendron_slab.json
 a08ed0db4ce15406cbb871c737e5b460f1af418d assets/prehistoricnature/models/item/lepidodendron_stairs.json

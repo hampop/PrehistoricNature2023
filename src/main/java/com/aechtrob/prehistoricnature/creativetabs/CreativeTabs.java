@@ -4,6 +4,7 @@ import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.item.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
+import com.google.common.collect.*;
 import com.ibm.icu.impl.*;
 import net.minecraft.network.chat.*;
 import net.minecraft.resources.*;
@@ -18,23 +19,6 @@ import java.util.*;
 
 @Mod.EventBusSubscriber(modid = PrehistoricNatureMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeTabs {
-
-    public static void register(){
-        tabs.put("minecraft_ingredients_tab",CreativeModeTabs.INGREDIENTS);
-        tabs.put("minecraft_building_blocks_tab",CreativeModeTabs.BUILDING_BLOCKS);
-        tabs.put("minecraft_combat_tab",CreativeModeTabs.COMBAT);
-        tabs.put("minecraft_colored_blocks_tab",CreativeModeTabs.COLORED_BLOCKS);
-        tabs.put("minecraft_food_drinks_tab",CreativeModeTabs.FOOD_AND_DRINKS);
-        tabs.put("minecraft_functional_blocks_tab",CreativeModeTabs.FUNCTIONAL_BLOCKS);
-        tabs.put("minecraft_natural_blocks_tab",CreativeModeTabs.NATURAL_BLOCKS);
-        tabs.put("minecraft_op_blocks_tab",CreativeModeTabs.OP_BLOCKS);
-        tabs.put("minecraft_redstone_blocks_tab",CreativeModeTabs.REDSTONE_BLOCKS);
-        tabs.put("minecraft_tools_and_utilities_tab",CreativeModeTabs.TOOLS_AND_UTILITIES);
-        tabs.put("minecraft_swawn_eggs_tab",CreativeModeTabs.SPAWN_EGGS);
-        tabs.put("prehistoricnature_fossils_tab", PREHISTORIC_NATURE_FOSSILS);
-        tabs.put("prehistoricnature_building_tab", PREHISTORIC_NATURE_BUILDING);
-        tabs.put("prehistoricnature_natural_tab", PREHISTORIC_NATURE_NATURAL);
-    }
     public static CreativeModeTab PREHISTORIC_NATURE_BUILDING;
 
     public static CreativeModeTab PREHISTORIC_NATURE_NATURAL;
@@ -44,8 +28,6 @@ public class CreativeTabs {
     public static CreativeModeTab PREHISTORIC_NATURE_MOBILE;
     public static CreativeModeTab PREHISTORIC_NATURE_PLANTS;
     public static CreativeModeTab PREHISTORIC_NATURE_STATIC;
-
-    public static HashMap<String, CreativeModeTab> tabs;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
@@ -61,17 +43,21 @@ public class CreativeTabs {
     }
 
     private static <T extends ItemLike> CreativeModeTab addTab(String name, RegistryObject<T> icon, String translation, CreativeModeTabEvent.Register event){
+
         CreativeModeTab tab = event.registerCreativeModeTab(
                 new ResourceLocation(PrehistoricNatureMod.MOD_ID, name),
                 builder -> builder.icon(()-> new ItemStack(icon.get()))
-                        .title(Component.translatable("prehistoricnature."+name))
+                        .displayItems((enabledFlags, populator, hasPermissions)->{
+                            CreativeTabHelper.getCreativeItems().get(name).stream()
+                                    .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Pair<Integer, Integer>> pair) -> pair.second.first)
+                                            .thenComparingInt(pair -> pair.second.second)
+                                            .thenComparing(pair -> pair.first.getId()))
+                                    .forEach((pair->populator.accept(pair.first.get())));
+                        })
+                        .title(Component.translatable("prehistoricnature."+name)).withSearchBar()
         );
         LanguageHelper.addTranslatableTranslation("prehistoricnature."+name, translation);
         return tab;
-    }
-
-    public static CreativeModeTab getTab(String id){
-        return tabs.get(id);
     }
 
 

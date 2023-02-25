@@ -29,12 +29,12 @@ public class ItemHandler {
     public static <T extends Item> RegistryObject<Item> addItem(String name, Item.Properties properties,
                                                                 BiConsumer<PrehistoricNatureItemModelProvider,
                                                                         RegistryObject<Item>> itemConsumer,
-                                                                List<Pair<String,Integer>> creativeModeTabs,
+                                                                List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                 String translation){
         RegistryObject<Item> returnItem = ITEMS.register(name, () -> {return new Item(properties);});
         ModelHelper.addItemModel(returnItem,itemConsumer);
         LanguageHelper.addItemTranslation(returnItem, translation);
-        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second);});
+        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
         return returnItem;
     }
 
@@ -42,13 +42,13 @@ public class ItemHandler {
                                                                 Supplier<T> item,
                                                                 BiConsumer<PrehistoricNatureItemModelProvider,
                                                                         RegistryObject<Item>> itemConsumer,
-                                                                List<Pair<String,Integer>> creativeModeTabs,
+                                                                List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                 String translation
     ){
         RegistryObject<Item> returnItem = ITEMS.register(name, item);
         ModelHelper.addItemModel(returnItem,itemConsumer);
         LanguageHelper.addItemTranslation(returnItem, translation);
-        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second);});
+        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
         return returnItem;
     }
 

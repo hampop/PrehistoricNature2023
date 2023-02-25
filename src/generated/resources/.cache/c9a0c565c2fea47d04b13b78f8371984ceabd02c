@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-25T10:03:25.9963349	Tags for minecraft:item mod id prehistoricnature
+// 1.19.3	2023-02-25T21:39:24.467727	Tags for minecraft:item mod id prehistoricnature
 b831222fd6be8497de068c560154053b1df4bd1e data/minecraft/tags/items/fence_gates.json
 cab586bc6776116b9297ba3774ad6fe7a641026f data/minecraft/tags/items/flowers.json
 d7dbc62c32e23da546f2a0227bdaeea07f6e8d79 data/minecraft/tags/items/leaves.json
@@ -9,6 +9,7 @@ c38ade0a728492d419d511304e7c0b6791989946 data/minecraft/tags/items/planks.json
 699574f655132f90729dbe3d67c4bd07a3029086 data/minecraft/tags/items/wooden_buttons.json
 d05c2a34de233cbf4e6109ecd100d050a21e49a6 data/minecraft/tags/items/wooden_doors.json
 871a2b6664b2cc21494be5dfe0137ee25dbbbe92 data/minecraft/tags/items/wooden_fences.json
+08af82d61c4018ea009ce1da50a8e1e6965ae28b data/minecraft/tags/items/wooden_pressure_plates.json
 3f548470dd5811bf9aacdb5100e23d3e3543115c data/minecraft/tags/items/wooden_slabs.json
 a042bf806c7517fe8b9620cecdbc6a76e12408f4 data/minecraft/tags/items/wooden_stairs.json
 3babcaa095a79e07241f15af104297d8c6fe5276 data/minecraft/tags/items/wooden_trapdoors.json

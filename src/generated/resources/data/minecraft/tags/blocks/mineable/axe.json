@@ -7,6 +7,10 @@
     "prehistoricnature:lepidodendron_planks",
     "prehistoricnature:lepidodendron_slab",
     "prehistoricnature:lepidodendron_stairs",
-    "prehistoricnature:lepidodendron_fence"
+    "prehistoricnature:lepidodendron_fence",
+    "prehistoricnature:lepidodendron_fence_gate",
+    "prehistoricnature:lepidodendron_door",
+    "prehistoricnature:lepidodendron_trapdoor",
+    "prehistoricnature:lepidodendron_button"
   ]
 }

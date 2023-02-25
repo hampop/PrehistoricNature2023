@@ -59,7 +59,25 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
         super.fenceBlock((FenceBlock) fence.get(), blockTexture(block.get()));
     }
 
-//    public void strobilusBlock(RegistryObject<Block> strobilus){
+    public void fenceGateBlock(RegistryObject<Block> fenceGate, RegistryObject<Block> block) {
+        super.fenceGateBlock((FenceGateBlock) fenceGate.get(), blockTexture(block.get()));
+    }
+
+    public void doorBlock(RegistryObject<Block> door) {
+        super.doorBlock((DoorBlock) door.get(),
+                new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+ForgeRegistries.BLOCKS.getKey(door.get()).getPath()+"_bottom"),
+                new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+ForgeRegistries.BLOCKS.getKey(door.get()).getPath()+"_top"));
+    }
+
+    public void trapdoorBlock(RegistryObject<Block> block) {
+        super.trapdoorBlock((TrapDoorBlock) block.get(), blockTexture(block.get()), true);
+    }
+
+    public void buttonBlock(RegistryObject<Block> button, RegistryObject<Block> block) {
+        super.buttonBlock((ButtonBlock) button.get(), blockTexture(block.get()));
+    }
+
+    //    public void strobilusBlock(RegistryObject<Block> strobilus){
 //        getVariantBuilder((LepidodendronStrobilus)strobilus.get()).forAllStatesExcept(state -> {
 //            Direction facing = state.getValue(LepidodendronStrobilus.FACING);
 //            int yRot =0;

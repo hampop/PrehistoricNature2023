@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "prehistoricnature:lepidodendron_log"
+    }
+  },
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "result": {
+    "count": 3,
+    "item": "prehistoricnature:lepidodendron_wood"
+  }
+}

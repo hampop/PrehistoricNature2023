@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "prehistoricnature:block/lepidodendron_strobilus",
+    "particle": "prehistoricnature:block/lepidodendron_strobilus"
+  },
+  "render_type": "cutout"
+}

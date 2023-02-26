@@ -237,6 +237,7 @@ public class TreeBlockRegistration {
     public static RegistryObject<Block> wallSignBlock(WoodType woodType,  List<TagKey<Block>> blockTags, String treeName){
         return BlockHandler.registerBlockWithoutItem(treeName+"_wall_sign",
                 () -> new PNWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN),woodType),
+                (provider, block) -> {provider.builtinEntity(block, PrehistoricNatureMod.MOD_ID+":block/"+treeName+"_planks");},
                 blockTags);
     }
 
@@ -254,7 +255,7 @@ public class TreeBlockRegistration {
                                                 List<TagKey<Item>> itemTags, String treeName,int treeId){
         return ItemHandler.addSignItem(treeName+"_sign",
                 () -> new SignItem(new Item.Properties().stacksTo(16),standingSign.get(),wallSign.get()),
-                (provider, block) -> {provider.sign(treeName+"_sign", new ResourceLocation(PrehistoricNatureMod.MOD_ID,"item/"+treeName+"_sign"));},
+                (provider, item) -> {provider.basicItem(item);},
                     (provider,item) ->{
             provider.dropOther(wallSign,item);
             provider.dropOther(standingSign, item);},

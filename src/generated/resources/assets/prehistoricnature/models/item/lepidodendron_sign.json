@@ -1,5 +1,6 @@
 {
+  "parent": "minecraft:item/generated",
   "textures": {
-    "particle": "prehistoricnature:item/lepidodendron_sign"
+    "layer0": "prehistoricnature:item/lepidodendron_sign"
   }
 }

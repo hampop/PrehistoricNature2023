@@ -50,18 +50,6 @@ public class PrehistoricNatureMod
     }
 
     public void addCreative(CreativeModeTabEvent.BuildContents event){
-//        CreativeTabHelper.substituteTabs();
-//            CreativeTabHelper.getCreativeItems();
-//            CreativeTabHelper.addCreativeItem(event.getTab(),PrehistoricNatureItems.GEOLOGIC_PICK);
-//
-//            CreativeTabHelper.getCreativeItems().
-//
-//            CreativeTabHelper.getCreativeItems().get(event.getTab())
-//                    .stream()
-//                    .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Integer> pair) -> pair.second).thenComparing(pair -> pair.first.getId()))
-//                    .forEach((pair) -> {
-//                        event.accept(pair.first);
-//                    });
 
     }
 

@@ -19,4 +19,9 @@ public class PNStandingSignBlock extends StandingSignBlock {
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state){
         return new PNSignBlockEntity(pos, state);
     }
+
+    @Override
+    public RenderShape getRenderShape(BlockState p_49232_) {
+        return super.getRenderShape(p_49232_);
+    }
 }

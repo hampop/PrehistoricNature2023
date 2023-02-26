@@ -11,13 +11,9 @@ public class EntitiesTreeLepidodendron {
     public static void register(){
 
     }
-
     public static final RegistryObject<BlockEntityType<PNSignBlockEntity>> LEPIDODENDRON_SIGN_BLOCK_ENTITIES =
-            BLOCK_ENTITY_REGISTER.register("lepidodendron_sigg_block_entity", ()->
+            BLOCK_ENTITY_REGISTER.register("lepidodendron_sign_block_entity", ()->
                     BlockEntityType.Builder.of(PNSignBlockEntity::new,BlocksTreeLepidodendron.LEPIDODENDRON_WALL_SIGN.get(),
                             BlocksTreeLepidodendron.LEPIDODENDRON_SIGN.get()).build(null));
-
-
-
 
 }

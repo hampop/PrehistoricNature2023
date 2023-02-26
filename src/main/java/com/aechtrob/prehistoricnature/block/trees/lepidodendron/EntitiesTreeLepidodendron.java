@@ -1,6 +1,8 @@
 package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
 import com.aechtrob.prehistoricnature.entity.block.*;
+import com.aechtrob.prehistoricnature.entity.entities.*;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.level.block.entity.*;
 import net.minecraftforge.registries.*;
 
@@ -15,5 +17,6 @@ public class EntitiesTreeLepidodendron {
             BLOCK_ENTITY_REGISTER.register("lepidodendron_sign_block_entity", ()->
                     BlockEntityType.Builder.of(PNSignBlockEntity::new,BlocksTreeLepidodendron.LEPIDODENDRON_WALL_SIGN.get(),
                             BlocksTreeLepidodendron.LEPIDODENDRON_SIGN.get()).build(null));
+    public static final RegistryObject<EntityType<PNBoat>> LEPIDODENDRON_BOAT_ENTITY =
 
 }

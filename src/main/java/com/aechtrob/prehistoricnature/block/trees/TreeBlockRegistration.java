@@ -41,7 +41,7 @@ public class TreeBlockRegistration {
                 PrehistoricNatureBlockStateProvider::logBlock,
                 (provider, item) -> {provider.withExistingParent(treeName+"_log", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_log"));},
                 BlockLootSubProvider::dropSelf,
-                java.util.List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(treeId,1)),Pair.of("prehistoricnature_building_tab",Pair.of(naturalTabLogTier,treeId))),
+                java.util.List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(naturalTabLogTier,treeId)),Pair.of("prehistoricnature_building_tab",Pair.of(treeId,1))),
                 capitalizeWord(treeName)+" Log");
     }
 
@@ -96,7 +96,7 @@ public class TreeBlockRegistration {
                 ),blockTags,
                 itemTags,
                 PrehistoricNatureBlockStateProvider::saplingBlock,
-                (provider, item) -> {provider.paneNoSide(treeName+"_sapling",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+treeName+"_sapling"));},
+                (provider, item) -> {provider.generated(treeName+"_sapling",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+treeName+"_sapling"));},
                 BlockLootSubProvider::dropSelf,
                 List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.naturalTabSaplingTier,treeId))),
                 capitalizeWord(treeName)+" Sapling");

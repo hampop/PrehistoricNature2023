@@ -1,6 +1,6 @@
 package com.aechtrob.prehistoricnature.item;
 
-import com.aechtrob.prehistoricnature.creativetabs.*;
+import com.aechtrob.prehistoricnature.item.items.*;
 import com.ibm.icu.impl.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.*;

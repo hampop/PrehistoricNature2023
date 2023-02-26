@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/template_glass_pane_noside",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "pane": "prehistoricnature:block/lepidodendron_sapling"
+    "layer0": "prehistoricnature:block/lepidodendron_sapling"
   }
 }

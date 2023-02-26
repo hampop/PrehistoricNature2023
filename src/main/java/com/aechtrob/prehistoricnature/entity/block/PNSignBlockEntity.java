@@ -12,6 +12,6 @@ public class PNSignBlockEntity extends SignBlockEntity {
 
     @Override
     public BlockEntityType<?> getType(){
-        return EntitiesTreeLepidodendron.LEPIDODENDRON_SIGN_BLOCK_ENTITIES.get();
+        return PNBlockEntities.PN_SIGN.get();
     }
 }

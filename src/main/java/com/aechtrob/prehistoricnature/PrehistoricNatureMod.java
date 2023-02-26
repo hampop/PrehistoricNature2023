@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.*;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.*;
 import net.minecraftforge.registries.*;
 import org.slf4j.Logger;
 
@@ -45,7 +47,6 @@ public class PrehistoricNatureMod
         ModConfiguredFeatures.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -64,8 +65,13 @@ public class PrehistoricNatureMod
         {
             WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> Sheets.addWoodType(woodType)));
             WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> WoodType.register(woodType)));
-            PNBlockEntities.registerTileEntityRenders();
         }
+
+       @SubscribeEvent
+       public static void onClientSetup(EntityRenderersEvent.RegisterRenderers event)
+       {
+           PNBlockEntities.registerTileEntityRenders(event);
+       }
     }
 
 }

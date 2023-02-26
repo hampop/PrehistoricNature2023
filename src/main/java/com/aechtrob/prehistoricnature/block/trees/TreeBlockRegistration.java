@@ -235,10 +235,12 @@ public class TreeBlockRegistration {
     }
 
     public static RegistryObject<Block> wallSignBlock(WoodType woodType,  List<TagKey<Block>> blockTags, String treeName){
-        return BlockHandler.registerBlockWithoutItem(treeName+"_wall_sign",
+        RegistryObject<Block> sign = BlockHandler.registerBlockWithoutItem(treeName+"_wall_sign",
                 () -> new PNWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN),woodType),
                 (provider, block) -> {provider.builtinEntity(block, PrehistoricNatureMod.MOD_ID+":block/"+treeName+"_planks");},
                 blockTags);
+        prehistoricNatureSigns.add(sign);
+        return sign;
     }
 
     public static RegistryObject<Block> standingSignBlock(RegistryObject<Block> wallSign, WoodType woodType,  List<TagKey<Block>> blockTags, String treeName){

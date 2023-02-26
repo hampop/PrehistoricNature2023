@@ -8,8 +8,10 @@ import net.minecraft.core.registries.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.*;
 import net.minecraftforge.api.distmarker.*;
+import net.minecraftforge.client.event.*;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.registries.*;
+import org.antlr.runtime.tree.*;
 
 import java.util.*;
 
@@ -24,17 +26,12 @@ public class PNBlockEntities {
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, PrehistoricNatureMod.MOD_ID);
     public static final DeferredRegister<BlockEntityType<?>> ENTITY_TYPE_REGISTER =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PrehistoricNatureMod.MOD_ID);
-
-    private static Block[] signs;
     public static final RegistryObject<BlockEntityType<PNSignBlockEntity>> PN_SIGN = ENTITY_TYPE_REGISTER.register("pn_sign",
-            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, signs = registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
+            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
                     .build(null));
-
-    // () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, signs = registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
-    //                    .build(null)
     @OnlyIn(Dist.CLIENT)
-    public static void registerTileEntityRenders(){
-        BlockEntityRenderers.register(PN_SIGN.get(),SignRenderer::new);
+    public static void registerTileEntityRenders(EntityRenderersEvent.RegisterRenderers event){
+        event.registerBlockEntityRenderer(PN_SIGN.get(),SignRenderer::new);
     }
 
     private static Block[] registryToArray(ArrayList<RegistryObject<Block>> registryObjects){

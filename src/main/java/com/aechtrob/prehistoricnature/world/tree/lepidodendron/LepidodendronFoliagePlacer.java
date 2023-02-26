@@ -1,7 +1,7 @@
 package com.aechtrob.prehistoricnature.world.tree.lepidodendron;
 
 import com.aechtrob.prehistoricnature.block.blocks.PNDecayableDirectional;
-import com.aechtrob.prehistoricnature.block.trees.lepidodendron.ModBlocksTreeLepidodendron;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.BlocksTreeLepidodendron;
 import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTreeFeature;
 import com.mojang.serialization.Codec;
@@ -30,8 +30,8 @@ public class LepidodendronFoliagePlacer extends BlobFoliagePlacer {
         return PNFoliagePlacerType.LEPIDODENDRON_FOLIAGE_PLACER.get();
     }
 
-    BlockState leafState = ModBlocksTreeLepidodendron.LEPIDODENDRON_LEAVES.get().defaultBlockState();
-    BlockState strobilusState = ModBlocksTreeLepidodendron.LEPIDODENDRON_STROBILUS.get().defaultBlockState().setValue(PNDecayableDirectional.PERSISTENT, false);
+    BlockState leafState = BlocksTreeLepidodendron.LEPIDODENDRON_LEAVES.get().defaultBlockState();
+    BlockState strobilusState = BlocksTreeLepidodendron.LEPIDODENDRON_STROBILUS.get().defaultBlockState().setValue(PNDecayableDirectional.PERSISTENT, false);
 
     @Override
     protected void createFoliage(LevelSimulatedReader levelSimulatedReader, BiConsumer<BlockPos, BlockState> biConsumer, RandomSource random, TreeConfiguration treeConfiguration, int ii, FoliageAttachment foliageAttachment, int p_161366_, int p_161367_, int p_161368_) {

@@ -1,7 +1,7 @@
 package com.aechtrob.prehistoricnature.world.tree.lepidodendron;
 
 import com.aechtrob.prehistoricnature.block.blocks.PNRotatedPillarFlammableBlock;
-import com.aechtrob.prehistoricnature.block.trees.lepidodendron.ModBlocksTreeLepidodendron;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.BlocksTreeLepidodendron;
 import com.aechtrob.prehistoricnature.world.tree.PNTreeFeature;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.google.common.collect.Lists;
@@ -48,8 +48,8 @@ public class LepidodendronTrunkPlacer extends TrunkPlacer {
 
         int height = 0;
         int counter = 0;
-        BlockState logState = ModBlocksTreeLepidodendron.LEPIDODENDRON_LOG.get().defaultBlockState();
-        BlockState woodState = ModBlocksTreeLepidodendron.LEPIDODENDRON_WOOD.get().defaultBlockState();
+        BlockState logState = BlocksTreeLepidodendron.LEPIDODENDRON_LOG.get().defaultBlockState();
+        BlockState woodState = BlocksTreeLepidodendron.LEPIDODENDRON_WOOD.get().defaultBlockState();
 
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos)) {
             biConsumer.accept(pos, logState);

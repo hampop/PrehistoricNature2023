@@ -1,14 +1,18 @@
 package com.aechtrob.prehistoricnature;
 
 import com.aechtrob.prehistoricnature.block.*;
+import com.aechtrob.prehistoricnature.block.trees.*;
 import com.aechtrob.prehistoricnature.creativetabs.*;
+import com.aechtrob.prehistoricnature.entity.block.*;
 import com.aechtrob.prehistoricnature.item.*;
 import com.aechtrob.prehistoricnature.world.ModConfiguredFeatures;
 import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.ibm.icu.impl.*;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.*;
 import net.minecraft.world.level.*;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.*;
@@ -32,9 +36,9 @@ public class PrehistoricNatureMod
 
     public PrehistoricNatureMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ItemHandler.register(modEventBus);
+        PNBlockEntities.register(modEventBus);
         BlockHandler.register(modEventBus);
+        ItemHandler.register(modEventBus);
 
         PNTrunkPlacerType.TRUNK_PLACER_TYPES.register(modEventBus);
         PNFoliagePlacerType.FOLIAGE_PLACER_TYPES.register(modEventBus);
@@ -62,7 +66,7 @@ public class PrehistoricNatureMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> Sheets.addWoodType(woodType)));
     }
 
    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -70,7 +74,8 @@ public class PrehistoricNatureMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> WoodType.register(woodType)));
+            PNBlockEntities.registerTileEntityRenders();
         }
     }
 

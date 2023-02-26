@@ -4,11 +4,9 @@ import com.aechtrob.prehistoricnature.block.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.advancements.critereon.*;
-import net.minecraft.data.loot.*;
-import net.minecraft.resources.*;
-import net.minecraft.tags.*;
 import net.minecraft.world.flag.*;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.storage.loot.*;
 import net.minecraft.world.level.storage.loot.entries.*;
@@ -18,7 +16,6 @@ import net.minecraft.world.level.storage.loot.providers.number.*;
 import net.minecraftforge.registries.*;
 
 import java.util.*;
-import java.util.function.*;
 import java.util.stream.*;
 
 public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubProvider {
@@ -63,8 +60,11 @@ public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubPr
                 .collect(Collectors.toList());
     }
 
+    public <T extends ItemLike> void dropOther(RegistryObject<Block> block,RegistryObject<T> item) {
+        super.dropOther(block.get(), item.get());
+    }
 
-    public void createDoorTable(RegistryObject<Block> door) {
+    public void createDoorDrops(RegistryObject<Block> door) {
         this.add(door.get(),(lambdaBlock)->createDoorTable(lambdaBlock));
     }
 }

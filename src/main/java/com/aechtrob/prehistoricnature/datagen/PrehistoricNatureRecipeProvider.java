@@ -158,7 +158,7 @@ public class PrehistoricNatureRecipeProvider extends RecipeProvider implements I
                 .save(consumer);
     }
 
-    public void signRecipe(RecipeCategory recipeCategory, RegistryObject<Block> in, RegistryObject<ItemLike> out){
+    public void signRecipe(RecipeCategory recipeCategory, RegistryObject<Block> in, RegistryObject<Item> out){
         ShapedRecipeBuilder.shaped(recipeCategory, out.get(),3).define('I',in.get()).define('S',Items.STICK)
                 .pattern("III")
                 .pattern("III")

@@ -7,7 +7,7 @@ import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.creativetabs.*;
 import com.aechtrob.prehistoricnature.datagen.*;
 import com.aechtrob.prehistoricnature.datagen.loottable.*;
-import com.aechtrob.prehistoricnature.world.tree.lepidodendron.*;
+import com.aechtrob.prehistoricnature.item.*;
 import com.ibm.icu.impl.*;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.*;
@@ -17,13 +17,17 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.*;
 import net.minecraft.world.level.block.state.*;
+import net.minecraft.world.level.block.state.properties.*;
+import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.registries.*;
 
 import java.util.*;
 
-import static com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper.logTier;
+import static com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper.naturalTabLogTier;
 
 public class TreeBlockRegistration {
+
+    public static ArrayList<RegistryObject<Block>> prehistoricNatureSigns =new ArrayList<>();
 
     public static RegistryObject<Block> logBlock(RegistryObject<Block> strippedLog, List<TagKey<Block>> blockTags,
                                                  List<TagKey<Item>> itemTags, String treeName,int treeId){
@@ -37,7 +41,7 @@ public class TreeBlockRegistration {
                 PrehistoricNatureBlockStateProvider::logBlock,
                 (provider, item) -> {provider.withExistingParent(treeName+"_log", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_log"));},
                 BlockLootSubProvider::dropSelf,
-                java.util.List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(treeId,0)),Pair.of("prehistoricnature_building_tab",Pair.of(logTier,treeId))),
+                java.util.List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(treeId,1)),Pair.of("prehistoricnature_building_tab",Pair.of(naturalTabLogTier,treeId))),
                 capitalizeWord(treeName)+" Log");
     }
 
@@ -68,7 +72,7 @@ public class TreeBlockRegistration {
                 (provider, item) -> {provider.withExistingParent(treeName+"_wood", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_wood"));},
                 BlockLootSubProvider::dropSelf,
                 (provider,block) -> {provider.twoByTwoRecipeBlocktoBlock(RecipeCategory.BUILDING_BLOCKS,log,block,3);},
-                List.of(Pair.of("prehistoricnature_building_tab",Pair.of(treeId,1)),Pair.of("prehistoricnature_natural_tab",Pair.of(logTier,treeId))),
+                List.of(Pair.of("prehistoricnature_building_tab",Pair.of(treeId,1)),Pair.of("prehistoricnature_natural_tab",Pair.of(naturalTabLogTier,treeId))),
                 capitalizeWord(treeName)+" Wood");
     }
 
@@ -94,7 +98,7 @@ public class TreeBlockRegistration {
                 PrehistoricNatureBlockStateProvider::saplingBlock,
                 (provider, item) -> {provider.paneNoSide(treeName+"_sapling",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+treeName+"_sapling"));},
                 BlockLootSubProvider::dropSelf,
-                List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.saplingTier,treeId))),
+                List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.naturalTabSaplingTier,treeId))),
                 capitalizeWord(treeName)+" Sapling");
     }
     //TODO make 2d item model instead of 3d
@@ -104,10 +108,10 @@ public class TreeBlockRegistration {
                 () -> new PNLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
                 ),
                 blockTags, itemTags,
-                PrehistoricNatureBlockStateProvider::simpleBlock,
+                (prehistoricNatureBlockStateProvider, block) -> prehistoricNatureBlockStateProvider.simpleBlock(block),
                 (provider, item) -> {provider.withExistingParent(treeName+"_leaves", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_leaves"));}
                 ,(provider,block) -> {provider.createLeavesDrops(block,sapling);},
-                List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.leafTier,treeId))),
+                List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.naturalTabLeafTier,treeId))),
                 capitalizeWord(treeName)+" Leaves");
     }
 
@@ -116,7 +120,7 @@ public class TreeBlockRegistration {
         return BlockHandler.registerBlock(treeName+"_planks",
                 () -> new PNPlanksFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                 ), blockTags,itemTags,
-                PrehistoricNatureBlockStateProvider::simpleBlock,
+                (prehistoricNatureBlockStateProvider, block) -> prehistoricNatureBlockStateProvider.simpleBlock(block),
                 (provider, item) -> {provider.withExistingParent(treeName+"_planks", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_planks"));},
                 BlockLootSubProvider::dropSelf,
                 (provider,block) -> {provider.shapelessConversionRecipe(RecipeCategory.BUILDING_BLOCKS, logs,block,4);},
@@ -140,7 +144,7 @@ public class TreeBlockRegistration {
     public static RegistryObject<Block> stairsBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
                                                     List<TagKey<Item>> itemTags, String treeName,int treeId){
         return BlockHandler.registerBlock(treeName+"_stairs",
-                () -> new PNStairFlammableBlock(() -> ModBlocksTreeLepidodendron.LEPIDODENDRON_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)
+                () -> new PNStairFlammableBlock(() -> BlocksTreeLepidodendron.LEPIDODENDRON_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)
                 ), blockTags, itemTags,
                 (provider, block) -> {provider.stairsBlock(block, plank);},
                 (provider, item) -> {provider.withExistingParent(treeName+"_stairs", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_stairs"));},
@@ -185,7 +189,7 @@ public class TreeBlockRegistration {
                 blockTags,itemTags,
                 PrehistoricNatureBlockStateProvider::doorBlock,
                 PrehistoricNatureItemModelProvider::basicItem,
-                BlockLootSubProvider::createDoorTable,
+                BlockLootSubProvider::createDoorDrops,
                 (provider,block) -> {provider.doorRecipe(RecipeCategory.BUILDING_BLOCKS, plank,block);},
                 List.of(Pair.of("prehistoricnature_building_tab",Pair.of(treeId,10))),
                 capitalizeWord(treeName)+" Door");
@@ -229,6 +233,36 @@ public class TreeBlockRegistration {
                 List.of(Pair.of("prehistoricnature_building_tab",Pair.of(treeId,13))),
                 capitalizeWord(treeName)+" Button");
     }
+
+    public static RegistryObject<Block> wallSignBlock(WoodType woodType,  List<TagKey<Block>> blockTags, String treeName){
+        return BlockHandler.registerBlockWithoutItem(treeName+"_wall_sign",
+                () -> new PNWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN),woodType),
+                blockTags);
+    }
+
+    public static RegistryObject<Block> standingSignBlock(RegistryObject<Block> wallSign, WoodType woodType,  List<TagKey<Block>> blockTags, String treeName){
+        RegistryObject<Block> sign = BlockHandler.registerBlockWithoutItem(treeName+"_sign",
+                () -> new PNStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN),woodType),
+                (provider, block) -> {//provider.signBlock(block,wallSign,new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_planks"));
+                                        provider.builtinEntity(block, PrehistoricNatureMod.MOD_ID+":block/"+treeName+"_planks");},
+                blockTags);
+        prehistoricNatureSigns.add(sign);
+        return sign;
+    }
+
+    public static RegistryObject<Item> signItem(RegistryObject<Block> plank, RegistryObject<Block> wallSign, RegistryObject<Block> standingSign,
+                                                List<TagKey<Item>> itemTags, String treeName,int treeId){
+        return ItemHandler.addSignItem(treeName+"_sign",
+                () -> new SignItem(new Item.Properties().stacksTo(16),standingSign.get(),wallSign.get()),
+                (provider, block) -> {provider.sign(treeName+"_sign", new ResourceLocation(PrehistoricNatureMod.MOD_ID,"item/"+treeName+"_sign"));},
+                    (provider,item) ->{
+            provider.dropOther(wallSign,item);
+            provider.dropOther(standingSign, item);},
+                (provider,item) -> {provider.signRecipe(RecipeCategory.BUILDING_BLOCKS, plank,item);},
+                List.of(Pair.of("prehistoricnature_functional_tab",Pair.of(treeId,CreativeTabHelper.functionalTabSignTier))),
+                capitalizeWord(treeName)+" Sign");
+    }
+
 
     public static String capitalizeWord(String str){
         String words[]=str.split("\\s");

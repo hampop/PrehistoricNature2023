@@ -10,7 +10,6 @@ import com.aechtrob.prehistoricnature.item.*;
 import com.ibm.icu.impl.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.registries.*;
@@ -25,7 +24,7 @@ public class BlockHandler {
 
     public static void register(IEventBus eventBus){
         FossilBlocks.register();
-        ModBlocksTreeLepidodendron.register();
+        BlocksTreeLepidodendron.register();
         BLOCKS.register(eventBus);
     }
 /*
@@ -102,7 +101,9 @@ public class BlockHandler {
         return returnBlock;
     }
 
-    public static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block, List<TagKey<Block>> blockTags,
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
+                                                                        List<TagKey<Block>> blockTags,
                                                                         BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
                                                                         BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                         BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
@@ -262,5 +263,23 @@ public class BlockHandler {
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ItemHandler.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
+    }
+
+    public static <T extends Block> RegistryObject<Block> registerBlockWithoutItem(String name,
+                                                                        Supplier<T> block,
+                                                                        List<TagKey<Block>> blockTags){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
+        return returnBlock;
+    }
+
+    public static <T extends Block> RegistryObject<Block> registerBlockWithoutItem(String name,
+                                                                                   Supplier<T> block,
+                                                                                   BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> consumer,
+                                                                                   List<TagKey<Block>> blockTags){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        ModelHelper.addBlockModel(returnBlock, consumer);
+        blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
+        return returnBlock;
     }
 }

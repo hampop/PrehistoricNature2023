@@ -10,6 +10,7 @@
   "block.prehistoricnature.lepidodendron_planks": "Lepidodendron Planks",
   "block.prehistoricnature.lepidodendron_pressure_plate": "Lepidodendron Pressure Plate",
   "block.prehistoricnature.lepidodendron_sapling": "Lepidodendron Sapling",
+  "block.prehistoricnature.lepidodendron_sign": "Lepidodendron Sign",
   "block.prehistoricnature.lepidodendron_slab": "Lepidodendron Slab",
   "block.prehistoricnature.lepidodendron_stairs": "Lepidodendron Stairs",
   "block.prehistoricnature.lepidodendron_strobilus": "Lepidodendron Strobilus",
@@ -20,5 +21,6 @@
   "item.prehistoricnature.geologic_pick": "Geologic Pick",
   "prehistoricnature.prehistoricnature_building_tab": "Prehistoric Nature Building Blocks",
   "prehistoricnature.prehistoricnature_fossils_tab": "Prehistoric Nature Fossils",
+  "prehistoricnature.prehistoricnature_functional_tab": "Prehistoric Nature Functional Blocks",
   "prehistoricnature.prehistoricnature_natural_tab": "Prehistoric Nature Natural Blocks"
 }

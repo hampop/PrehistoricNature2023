@@ -52,8 +52,8 @@ public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubPr
                         .when(HAS_GEOLOGIC_PICK).otherwise(LootItem.lootTableItem(fossil.get())))));
     }
 
-    public void createLeavesDrops(RegistryObject<Block> block, RegistryObject<Block> leavesBlock) {
-        this.add(block.get(),(lambdaBlock) -> createLeavesDrops(block.get(), leavesBlock.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+    public void createLeavesDrops(RegistryObject<Block> block, RegistryObject<Block> sapling) {
+        this.add(block.get(),(lambdaBlock) -> createLeavesDrops(lambdaBlock, sapling.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     @Override
@@ -61,5 +61,10 @@ public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubPr
         return BlockHandler.BLOCKS.getEntries().stream()
                 .map(RegistryObject::get)
                 .collect(Collectors.toList());
+    }
+
+
+    public void createDoorTable(RegistryObject<Block> door) {
+        this.add(door.get(),(lambdaBlock)->createDoorTable(lambdaBlock));
     }
 }

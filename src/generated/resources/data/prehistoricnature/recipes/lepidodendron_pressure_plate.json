@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "prehistoricnature:lepidodendron_planks"
+    }
+  },
+  "pattern": [
+    "II"
+  ],
+  "result": {
+    "item": "prehistoricnature:lepidodendron_pressure_plate"
+  }
+}

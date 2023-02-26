@@ -1,46 +1,62 @@
 package com.aechtrob.prehistoricnature.creativetabs;
 
 import com.aechtrob.prehistoricnature.*;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.item.*;
-import com.aechtrob.prehistoricnature.*;
-import com.aechtrob.prehistoricnature.block.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
+import com.google.common.collect.*;
+import com.ibm.icu.impl.*;
 import net.minecraft.network.chat.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.*;
 import net.minecraftforge.event.*;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.fml.common.*;
+import net.minecraftforge.registries.*;
+
+import java.util.*;
 
 @Mod.EventBusSubscriber(modid = PrehistoricNatureMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeTabs {
-    public static CreativeModeTab LEPIDODENDRON_BUILDING;
-    public static CreativeModeTab LEPIDODENDRON_MISC;
-    public static CreativeModeTab LEPIDODENDRON_MOBILE;
-    public static CreativeModeTab LEPIDODENDRON_PLANTS;
-    public static CreativeModeTab LEPIDODENDRON_STATIC;
+    public static CreativeModeTab PREHISTORIC_NATURE_BUILDING;
 
+    public static CreativeModeTab PREHISTORIC_NATURE_NATURAL;
 
-
-//    @SubscribeEvent
-//    public void registerTabs(CreativeModeTabEvent.Register event){
-//        LEPIDODENDRON_BUILDING = addTab("lepidodendron_building_tab",ItemHandler.TEST.get(),"lepidodendron.building_tab", event);
-//    }
+    public static CreativeModeTab PREHISTORIC_NATURE_FOSSILS;
+    public static CreativeModeTab PREHISTORIC_NATURE_MISC;
+    public static CreativeModeTab PREHISTORIC_NATURE_MOBILE;
+    public static CreativeModeTab PREHISTORIC_NATURE_PLANTS;
+    public static CreativeModeTab PREHISTORIC_NATURE_STATIC;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        LEPIDODENDRON_BUILDING = event.registerCreativeModeTab(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "lepidodendron_building_tab"),
-                builder -> builder.icon(() -> new ItemStack(PrehistoricNatureItems.GEOLOGIC_PICK.get()))
-                        .title(Component.translatable("lepidodendron.building_tab")));
-        LanguageHelper.addTranslatableTranslation("object.lepidodendron.building_tab", "Prehistoric Nature Building Blocks");
+
+        PREHISTORIC_NATURE_FOSSILS = addTab("prehistoricnature_fossils_tab",PrehistoricNatureItems.GEOLOGIC_PICK,
+                "Prehistoric Nature Fossils",event);
+
+        PREHISTORIC_NATURE_BUILDING = addTab("prehistoricnature_building_tab", ModBlocksTreeLepidodendron.LEPIDODENDRON_PLANKS,
+                "Prehistoric Nature Building Blocks", event);
+
+        PREHISTORIC_NATURE_NATURAL = addTab("prehistoricnature_natural_tab", ModBlocksTreeLepidodendron.LEPIDODENDRON_SAPLING,
+                "Prehistoric Nature Natural Blocks", event);
     }
 
-    private CreativeModeTab addTab(String name, Item icon, String translationId, CreativeModeTabEvent.Register event){
+    private static <T extends ItemLike> CreativeModeTab addTab(String name, RegistryObject<T> icon, String translation, CreativeModeTabEvent.Register event){
+
         CreativeModeTab tab = event.registerCreativeModeTab(
                 new ResourceLocation(PrehistoricNatureMod.MOD_ID, name),
-                builder -> builder.icon(()-> new ItemStack(icon))
-                        .title(Component.translatable(translationId))
+                builder -> builder.icon(()-> new ItemStack(icon.get()))
+                        .displayItems((enabledFlags, populator, hasPermissions)->{
+                            CreativeTabHelper.getCreativeItems().get(name).stream()
+                                    .sorted(Comparator.comparingInt((Pair<RegistryObject<ItemLike>, Pair<Integer, Integer>> pair) -> pair.second.first)
+                                            .thenComparingInt(pair -> pair.second.second)
+                                            .thenComparing(pair -> pair.first.getId()))
+                                    .forEach((pair->populator.accept(pair.first.get())));
+                        })
+                        .title(Component.translatable("prehistoricnature."+name)).withSearchBar()
         );
+        LanguageHelper.addTranslatableTranslation("prehistoricnature."+name, translation);
         return tab;
     }
 

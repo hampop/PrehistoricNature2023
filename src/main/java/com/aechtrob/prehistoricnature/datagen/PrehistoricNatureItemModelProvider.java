@@ -26,4 +26,8 @@ public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
     public ItemModelBuilder basicItem(RegistryObject<Item> item) {
         return super.basicItem(item.get());
     }
+
+    public ItemModelBuilder slab(String name, ResourceLocation material) {
+        return super.slab(name, material, material, material);
+    }
 }

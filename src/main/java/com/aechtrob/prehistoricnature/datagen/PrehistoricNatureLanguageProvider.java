@@ -18,6 +18,5 @@ public class PrehistoricNatureLanguageProvider extends LanguageProvider {
         LanguageHelper.getBlockLanguage().forEach((block,translation)->{this.addBlock(block,translation);});
         LanguageHelper.getItemLanguage().forEach((item,translation)->{this.addItem(item, translation);});
         LanguageHelper.getTranslatableLanguage().forEach((object,translation)->{this.add(object,translation);});
-        this.addItem(PrehistoricNatureItems.GEOLOGIC_PICK, "Geologic Pick");
     }
 }

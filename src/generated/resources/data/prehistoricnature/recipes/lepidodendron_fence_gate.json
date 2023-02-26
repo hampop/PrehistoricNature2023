@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "prehistoricnature:lepidodendron_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "SIS"
+  ],
+  "result": {
+    "item": "prehistoricnature:lepidodendron_fence_gate"
+  }
+}

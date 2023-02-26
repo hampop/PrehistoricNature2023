@@ -1,3 +1,8 @@
 {
-  "parent": "prehistoricnature:block/lepidodendron_planks"
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "prehistoricnature:block/lepidodendron_planks",
+    "side": "prehistoricnature:block/lepidodendron_planks",
+    "top": "prehistoricnature:block/lepidodendron_planks"
+  }
 }

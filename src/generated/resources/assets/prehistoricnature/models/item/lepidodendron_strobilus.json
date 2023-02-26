@@ -1,3 +1,6 @@
 {
-  "parent": "prehistoricnature:block/lepidodendron_strobilus"
+  "parent": "minecraft:block/template_glass_pane_noside",
+  "textures": {
+    "pane": "prehistoricnature:block/lepidodendron_strobilus"
+  }
 }

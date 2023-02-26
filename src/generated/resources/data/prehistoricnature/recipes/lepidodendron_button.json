@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "prehistoricnature:lepidodendron_planks"
+    }
+  ],
+  "result": {
+    "item": "prehistoricnature:lepidodendron_button"
+  }
+}

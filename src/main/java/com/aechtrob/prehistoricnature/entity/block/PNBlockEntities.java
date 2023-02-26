@@ -1,6 +1,7 @@
 package com.aechtrob.prehistoricnature.entity.block;
 
 import com.aechtrob.prehistoricnature.*;
+import com.aechtrob.prehistoricnature.block.trees.*;
 import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import net.minecraft.client.renderer.blockentity.*;
 import net.minecraft.core.registries.*;
@@ -26,8 +27,8 @@ public class PNBlockEntities {
 
     private static Block[] signs;
     public static final RegistryObject<BlockEntityType<PNSignBlockEntity>> PN_SIGN = ENTITY_TYPE_REGISTER.register("pn_sign",
-            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new,
-           BlocksTreeLepidodendron.LEPIDODENDRON_SIGN.get()).build(null));
+            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, signs = registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
+                    .build(null));
 
     // () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, signs = registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
     //                    .build(null)

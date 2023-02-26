@@ -54,7 +54,7 @@ public class PrehistoricNatureMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> Sheets.addWoodType(woodType)));
+
     }
 
    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -62,6 +62,7 @@ public class PrehistoricNatureMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> Sheets.addWoodType(woodType)));
             WoodTypeHelper.getWoodTypes().stream().forEach((woodType -> WoodType.register(woodType)));
             PNBlockEntities.registerTileEntityRenders();
         }

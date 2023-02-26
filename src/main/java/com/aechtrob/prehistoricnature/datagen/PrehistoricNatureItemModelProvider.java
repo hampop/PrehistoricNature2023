@@ -13,14 +13,15 @@ import net.minecraftforge.registries.*;
 
 public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
 
-
     public PrehistoricNatureItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, PrehistoricNatureMod.MOD_ID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
-        ModelHelper.getItemModels().forEach((item,consumer)->{consumer.accept(this,item);});
+        ModelHelper.getItemModels().forEach((item, consumer) -> {
+            consumer.accept(this, item);
+        });
         this.basicItem(PrehistoricNatureItems.GEOLOGIC_PICK.get());
     }
 
@@ -41,7 +42,9 @@ public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
         for (int i = 0; i < layers.length; i++) {
             builder = builder.texture("layer" + i, layers[i]);
         }
-        if (emissivity > 0) builder = builder.customLoader(ItemLayersModelBuilder::begin).emissive(emissivity, emissivity, 0).renderType("forge_entity_unsorted_translucent", 0).end();
+        if (emissivity > 0)
+            builder = builder.customLoader(ItemLayersModelBuilder::begin).emissive(emissivity, emissivity, 0)
+                    .renderType("forge_entity_unsorted_translucent", 0).end();
         return builder;
     }
 }

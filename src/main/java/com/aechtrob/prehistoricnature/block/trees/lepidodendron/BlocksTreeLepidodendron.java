@@ -1,21 +1,25 @@
 package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
-import com.aechtrob.prehistoricnature.*;
-import com.aechtrob.prehistoricnature.block.*;
-import com.aechtrob.prehistoricnature.block.trees.*;
-import com.aechtrob.prehistoricnature.creativetabs.*;
-import com.aechtrob.prehistoricnature.datagen.loottable.*;
+import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
+import com.aechtrob.prehistoricnature.block.BlockHandler;
+import com.aechtrob.prehistoricnature.block.trees.TreeBlockRegistration;
+import com.aechtrob.prehistoricnature.block.trees.WoodTypeHelper;
+import com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper;
+import com.aechtrob.prehistoricnature.datagen.loottable.BlockLootSubProvider;
 import com.aechtrob.prehistoricnature.world.tree.lepidodendron.LepidodendronTreeGrower;
-import com.ibm.icu.impl.*;
-import net.minecraft.resources.*;
-import net.minecraft.tags.*;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.*;
+import com.ibm.icu.impl.Pair;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.*;
+import java.util.List;
 
 public class BlocksTreeLepidodendron {
     public static class LepidodendronBlockTags {

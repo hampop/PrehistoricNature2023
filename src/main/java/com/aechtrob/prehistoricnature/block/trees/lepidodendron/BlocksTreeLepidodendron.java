@@ -2,34 +2,31 @@ package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
 import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.block.*;
-import com.aechtrob.prehistoricnature.block.blocks.*;
 import com.aechtrob.prehistoricnature.block.trees.*;
 import com.aechtrob.prehistoricnature.creativetabs.*;
-import com.aechtrob.prehistoricnature.datagen.*;
 import com.aechtrob.prehistoricnature.datagen.loottable.*;
 import com.aechtrob.prehistoricnature.world.tree.lepidodendron.LepidodendronTreeGrower;
 import com.ibm.icu.impl.*;
-import net.minecraft.data.recipes.*;
 import net.minecraft.resources.*;
-import net.minecraft.sounds.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.*;
 
-public class ModBlocksTreeLepidodendron {
+public class BlocksTreeLepidodendron {
     public static class LepidodendronBlockTags {
         public static TagKey<Block> LEPIDODENDRON_LOGS = BlockTags.create(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "lepidodendron_logs"));
     }
     public static class LepidodendronItemTags {
         public static TagKey<Item> LEPIDODENDRON_LOGS = ItemTags.create(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "lepidodendron_logs"));
     }
-
-    private static int treeId = 1;
-    private static String treeName = "lepidodendron";
+    public static String treeName = "lepidodendron";
+    public static int treeId = 1;
+    public static final WoodType LEPIDODENDRON = WoodTypeHelper.putWoodType(WoodType.create(treeName));
 
     public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_LOG = TreeBlockRegistration.strippedLogBlock(
                                                                             List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS,BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
@@ -65,6 +62,9 @@ public class ModBlocksTreeLepidodendron {
                                                                             List.of(ItemTags.WOODEN_PRESSURE_PLATES), treeName, treeId);
     public static final RegistryObject<Block> LEPIDODENDRON_BUTTON = TreeBlockRegistration.buttonBlock(LEPIDODENDRON_PLANKS ,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_BUTTONS),
                                                                             List.of(ItemTags.WOODEN_BUTTONS), treeName, treeId);
+    public static final RegistryObject<Block> LEPIDODENDRON_WALL_SIGN = TreeBlockRegistration.wallSignBlock(LEPIDODENDRON,List.of(BlockTags.WALL_SIGNS),treeName);
+    public static final RegistryObject<Block> LEPIDODENDRON_SIGN =TreeBlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
+
 
 //    public static final RegistryObject<Block> LEPIDODENDRON_BENCH = BlockHandler.registerBlock("lepidodendron_bench",
 //            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
@@ -81,7 +81,7 @@ public class ModBlocksTreeLepidodendron {
             List.of(ItemTags.FLOWERS),
             (provider, item) -> {provider.paneNoSide("lepidodendron_strobilus",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/lepidodendron_strobilus"));},
             BlockLootSubProvider::dropSelf,
-            List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.saplingTier,treeId))),
+            List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.naturalTabSaplingTier,treeId))),
             "Lepidodendron Strobilus", 0);
 
     public static void register() {

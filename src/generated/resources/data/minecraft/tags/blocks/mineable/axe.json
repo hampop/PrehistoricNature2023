@@ -1,9 +1,9 @@
 {
   "values": [
-    "prehistoricnature:lepidodendron_log",
     "prehistoricnature:lepidodendron_log_stripped",
-    "prehistoricnature:lepidodendron_wood",
+    "prehistoricnature:lepidodendron_log",
     "prehistoricnature:lepidodendron_wood_stripped",
+    "prehistoricnature:lepidodendron_wood",
     "prehistoricnature:lepidodendron_planks",
     "prehistoricnature:lepidodendron_slab",
     "prehistoricnature:lepidodendron_stairs",
@@ -11,7 +11,7 @@
     "prehistoricnature:lepidodendron_fence_gate",
     "prehistoricnature:lepidodendron_door",
     "prehistoricnature:lepidodendron_trapdoor",
-    "prehistoricnature:lepidodendron_button",
-    "prehistoricnature:lepidodendron_pressure_plate"
+    "prehistoricnature:lepidodendron_pressure_plate",
+    "prehistoricnature:lepidodendron_button"
   ]
 }

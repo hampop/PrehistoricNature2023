@@ -1,11 +1,14 @@
 package com.aechtrob.prehistoricnature.item;
 
 import com.aechtrob.prehistoricnature.*;
+import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.creativetabs.*;
 import com.aechtrob.prehistoricnature.datagen.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
+import com.aechtrob.prehistoricnature.datagen.loottable.*;
 import com.ibm.icu.impl.*;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.registries.*;
 
@@ -21,11 +24,27 @@ public class ItemHandler {
 
     public static void register(IEventBus eventBus){
         PrehistoricNatureItems.register();
+        ItemsTreeLepidodendron.register();
         ITEMS.register(eventBus);
     }
 
    //The  main method that you should be using to add items. Takes care of the lang file as well, but is incomplete for now.
     //TODO add item model generation, add tag generation
+   public static <T extends Item> RegistryObject<Item> addSignItem(String name,  Supplier<Item> item,
+                                                               BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                               BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                   BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Item>> reciperConsumer,
+                                                               List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
+                                                               String translation){
+       RegistryObject<Item> returnItem = ITEMS.register(name, item);
+       LootTableHelper.addLootTable(returnItem,lootConsumer);
+       ModelHelper.addItemModel(returnItem,itemConsumer);
+       LanguageHelper.addItemTranslation(returnItem, translation);
+       RecipeHelper.addItemRecipe(returnItem,reciperConsumer);
+       creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
+       return returnItem;
+   }
+
     public static <T extends Item> RegistryObject<Item> addItem(String name, Item.Properties properties,
                                                                 BiConsumer<PrehistoricNatureItemModelProvider,
                                                                         RegistryObject<Item>> itemConsumer,

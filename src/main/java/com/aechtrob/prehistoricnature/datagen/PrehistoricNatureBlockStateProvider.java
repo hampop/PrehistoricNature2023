@@ -1,14 +1,9 @@
 package com.aechtrob.prehistoricnature.datagen;
 
 import com.aechtrob.prehistoricnature.*;
-import com.aechtrob.prehistoricnature.block.*;
-import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
-import com.ibm.icu.impl.*;
-import net.minecraft.core.*;
 import net.minecraft.data.*;
 import net.minecraft.resources.*;
-import net.minecraft.server.packs.repository.*;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.*;
@@ -22,7 +17,6 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         ModelHelper.getBlockModels().forEach((block, consumer)->{consumer.accept(this,block);});
-        //simpleBlock(FossilBlocks.CARBONIFEROUS_FOSSIL.get());
     }
 
     public void saplingBlock(RegistryObject<Block> blockRegistryObject) {
@@ -69,16 +63,21 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/"+ForgeRegistries.BLOCKS.getKey(door.get()).getPath()+"_top"));
     }
 
-    public void trapdoorBlock(RegistryObject<Block> block) {
-        super.trapdoorBlock((TrapDoorBlock) block.get(), blockTexture(block.get()), true);
-    }
-
     public void buttonBlock(RegistryObject<Block> button, RegistryObject<Block> block) {
         super.buttonBlock((ButtonBlock) button.get(), blockTexture(block.get()));
     }
 
     public void pressurePlateBlock(RegistryObject<Block> plate,RegistryObject<Block> block){
         super.pressurePlateBlock((PressurePlateBlock) plate.get(),blockTexture(block.get()));
+    }
+
+    public void signBlock(RegistryObject<Block> signBlock, RegistryObject<Block> wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(ForgeRegistries.BLOCKS.getKey(signBlock.get()).getPath(),texture);
+        signBlock((StandingSignBlock) signBlock.get(), (WallSignBlock) wallSignBlock.get(), sign);
+    }
+
+    public void builtinEntity(RegistryObject<Block> b, String particle) {
+        super.simpleBlock(b.get(), models().getBuilder(name(b.get())).parent(new ModelFile.UncheckedModelFile("builtin/entity")).texture("particle",particle));
     }
 
     //    public void strobilusBlock(RegistryObject<Block> strobilus){
@@ -106,4 +105,10 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
 //                    .build();
 //        }).partialState().setModels( new ConfiguredModel(models().cross(ForgeRegistries.BLOCKS.getKey(strobilus.get()).getPath(), blockTexture(strobilus.get())).renderType("cutout")));
 //    }
+    protected ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
+    }
+    protected String name(Block block) {
+        return key(block).getPath();
+    }
 }

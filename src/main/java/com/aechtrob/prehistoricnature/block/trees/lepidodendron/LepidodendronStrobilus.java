@@ -35,7 +35,7 @@ public class LepidodendronStrobilus extends PNDecayableDirectional {
     public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource rand) {
         if (!state.getValue(PERSISTENT)) {
             if (world.getBlockState(pos.relative(state.getValue(FACING).getOpposite())).getBlock()
-                != ModBlocksTreeLepidodendron.LEPIDODENDRON_LEAVES.get()) {
+                != BlocksTreeLepidodendron.LEPIDODENDRON_LEAVES.get()) {
                 world.removeBlock(pos, false);
             }
         }

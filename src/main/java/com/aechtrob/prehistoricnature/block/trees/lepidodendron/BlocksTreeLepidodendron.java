@@ -67,7 +67,10 @@ public class BlocksTreeLepidodendron {
     public static final RegistryObject<Block> LEPIDODENDRON_BUTTON = TreeBlockRegistration.buttonBlock(LEPIDODENDRON_PLANKS ,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_BUTTONS),
                                                                             List.of(ItemTags.WOODEN_BUTTONS), treeName, treeId);
     public static final RegistryObject<Block> LEPIDODENDRON_WALL_SIGN = TreeBlockRegistration.wallSignBlock(LEPIDODENDRON,List.of(BlockTags.WALL_SIGNS),treeName);
-    public static final RegistryObject<Block> LEPIDODENDRON_SIGN =TreeBlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
+    public static final RegistryObject<Block> LEPIDODENDRON_SIGN = TreeBlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
+    //TODO needs manual modelfile and blockstates file
+    public static final RegistryObject<Block> LEPIDODENDRON_LADDER = TreeBlockRegistration.ladderBlock(
+            LEPIDODENDRON_PLANKS, List.of(BlockTags.MINEABLE_WITH_AXE, BlockTags.CLIMBABLE),List.of(),treeName,treeId);
 
 
 //    public static final RegistryObject<Block> LEPIDODENDRON_BENCH = BlockHandler.registerBlock("lepidodendron_bench",

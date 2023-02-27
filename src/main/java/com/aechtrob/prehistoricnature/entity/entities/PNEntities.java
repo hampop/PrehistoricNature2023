@@ -13,17 +13,11 @@ import static com.aechtrob.prehistoricnature.PrehistoricNatureMod.MOD_ID;
 public class PNEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MOD_ID);
 
-    public static final RegistryObject<EntityType<PNBoat>> BOAT = buildNoEgg(new ResourceLocation(MOD_ID,"boat"), makeCastedBuilder(PNBoat.class, PNBoat::new, 1.375F, 0.5625F, 10, 3), false);
-
-    public static final RegistryObject<EntityType<PNChestBoat>> CHEST_BOAT = buildNoEgg(new ResourceLocation(MOD_ID,"boat"), makeCastedBuilder(PNChestBoat.class, PNChestBoat::new, 1.375F, 0.5625F, 10, 3), false);
-
-
-
 
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event){
-        event.registerBlockEntityRenderer(PNEntities.BOAT.get(), m -> new Pn);
+
     }
 
 

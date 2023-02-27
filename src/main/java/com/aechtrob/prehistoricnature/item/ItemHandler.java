@@ -30,24 +30,10 @@ public class ItemHandler {
 
    //The  main method that you should be using to add items. Takes care of the lang file as well, but is incomplete for now.
     //TODO add item model generation, add tag generation
-   public static <T extends Item> RegistryObject<Item> addSignItem(String name,  Supplier<Item> item,
-                                                               BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
-                                                               BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
-                                                                   BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Item>> reciperConsumer,
-                                                               List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
-                                                               String translation){
-       RegistryObject<Item> returnItem = ITEMS.register(name, item);
-       LootTableHelper.addLootTable(returnItem,lootConsumer);
-       ModelHelper.addItemModel(returnItem,itemConsumer);
-       LanguageHelper.addItemTranslation(returnItem, translation);
-       RecipeHelper.addItemRecipe(returnItem,reciperConsumer);
-       creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
-       return returnItem;
-   }
 
-    public static <T extends Item> RegistryObject<Item> addItem(String name, Item.Properties properties,
-                                                                BiConsumer<PrehistoricNatureItemModelProvider,
-                                                                        RegistryObject<Item>> itemConsumer,
+    public static <T extends Item> RegistryObject<Item> addItem(String name,
+                                                                Item.Properties properties,
+                                                                BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                 List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
                                                                 String translation){
         RegistryObject<Item> returnItem = ITEMS.register(name, () -> {return new Item(properties);});
@@ -59,11 +45,9 @@ public class ItemHandler {
 
     public static <T extends Item> RegistryObject<Item> addItem(String name,
                                                                 Supplier<T> item,
-                                                                BiConsumer<PrehistoricNatureItemModelProvider,
-                                                                        RegistryObject<Item>> itemConsumer,
+                                                                BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                 List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
-                                                                String translation
-    ){
+                                                                String translation){
         RegistryObject<Item> returnItem = ITEMS.register(name, item);
         ModelHelper.addItemModel(returnItem,itemConsumer);
         LanguageHelper.addItemTranslation(returnItem, translation);
@@ -71,9 +55,9 @@ public class ItemHandler {
         return returnItem;
     }
 
-    public static <T extends Item> RegistryObject<Item> addItem(String name, Item.Properties properties,
-                                                                BiConsumer<PrehistoricNatureItemModelProvider,
-                                                                        RegistryObject<Item>> itemConsumer,
+    public static <T extends Item> RegistryObject<Item> addItem(String name,
+                                                                Item.Properties properties,
+                                                                BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                 String translation){
         RegistryObject<Item> returnItem = ITEMS.register(name, () -> {return new Item(properties);});
         ModelHelper.addItemModel(returnItem,itemConsumer);
@@ -83,13 +67,26 @@ public class ItemHandler {
 
     public static <T extends Item> RegistryObject<Item> addItem(String name,
                                                                 Supplier<T> item,
-                                                                BiConsumer<PrehistoricNatureItemModelProvider,
-                                                                        RegistryObject<Item>> itemConsumer,
-                                                                String translation
-                                                                ){
+                                                                BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                String translation){
         RegistryObject<Item> returnItem = ITEMS.register(name, item);
         ModelHelper.addItemModel(returnItem,itemConsumer);
         LanguageHelper.addItemTranslation(returnItem, translation);
+        return returnItem;
+    }
+
+    public static <T extends Item> RegistryObject<Item> addSignItem(String name,  Supplier<Item> item,
+                                                                    BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                    BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                    BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Item>> reciperConsumer,
+                                                                    List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
+                                                                    String translation){
+        RegistryObject<Item> returnItem = ITEMS.register(name, item);
+        LootTableHelper.addLootTable(returnItem,lootConsumer);
+        ModelHelper.addItemModel(returnItem,itemConsumer);
+        LanguageHelper.addItemTranslation(returnItem, translation);
+        RecipeHelper.addItemRecipe(returnItem,reciperConsumer);
+        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
         return returnItem;
     }
 }

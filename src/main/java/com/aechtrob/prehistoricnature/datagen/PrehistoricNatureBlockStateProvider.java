@@ -2,11 +2,13 @@ package com.aechtrob.prehistoricnature.datagen;
 
 import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
+import net.minecraft.core.*;
 import net.minecraft.data.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.*;
+import net.minecraftforge.event.level.*;
 import net.minecraftforge.registries.*;
 
 public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {

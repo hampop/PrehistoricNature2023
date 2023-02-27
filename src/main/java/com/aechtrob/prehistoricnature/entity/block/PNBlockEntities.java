@@ -3,6 +3,7 @@ package com.aechtrob.prehistoricnature.entity.block;
 import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.block.trees.*;
 import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
+import net.minecraft.client.renderer.block.*;
 import net.minecraft.client.renderer.blockentity.*;
 import net.minecraft.core.registries.*;
 import net.minecraft.world.level.block.*;

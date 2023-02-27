@@ -6,7 +6,7 @@ import net.minecraft.world.level.*;
 import net.minecraftforge.registries.*;
 
 public class CreativeTabHelper {
-
+    public static int functionalTabLadderTier = 9;
     public static int functionalTabSignTier = 10;
     public static int naturalTabLogTier = 8;
     public static int naturalTabLeafTier = 9;

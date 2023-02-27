@@ -12,6 +12,15 @@
     "prehistoricnature:lepidodendron_door",
     "prehistoricnature:lepidodendron_trapdoor",
     "prehistoricnature:lepidodendron_pressure_plate",
-    "prehistoricnature:lepidodendron_button"
+    "prehistoricnature:lepidodendron_button",
+    "prehistoricnature:lepidodendron_ladder",
+    "prehistoricnature:spruce_ladder",
+    "prehistoricnature:birch_ladder",
+    "prehistoricnature:jungle_ladder",
+    "prehistoricnature:acacia_ladder",
+    "prehistoricnature:dark_oak_ladder",
+    "prehistoricnature:mangrove_ladder",
+    "prehistoricnature:warped_ladder",
+    "prehistoricnature:crimson_ladder"
   ]
 }

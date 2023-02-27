@@ -1,4 +1,4 @@
-package com.aechtrob.prehistoricnature.item;
+package com.aechtrob.prehistoricnature.item.items;
 
 import com.aechtrob.prehistoricnature.block.blocks.*;
 

@@ -83,7 +83,7 @@ public class BlocksTreeLepidodendron {
             () -> new LepidodendronStrobilus(BlockBehaviour.Properties.copy(Blocks.GRASS)),
             List.of(BlockTags.FLOWERS),
             List.of(ItemTags.FLOWERS),
-            (provider, item) -> {provider.paneNoSide("lepidodendron_strobilus",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/lepidodendron_strobilus"));},
+            (provider, item) -> {provider.generated("lepidodendron_strobilus",new ResourceLocation(PrehistoricNatureMod.MOD_ID,"block/lepidodendron_strobilus"));},
             BlockLootSubProvider::dropSelf,
             List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(CreativeTabHelper.naturalTabSaplingTier,treeId))),
             "Lepidodendron Strobilus", 0);

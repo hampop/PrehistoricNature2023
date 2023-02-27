@@ -58,7 +58,7 @@ public class CreativeTabs {
                                             .thenComparing(pair -> pair.first.getId()))
                                     .forEach((pair->populator.accept(pair.first.get())));
                         })
-                        .title(Component.translatable("prehistoricnature."+name)).withSearchBar()
+                        .title(Component.translatable("prehistoricnature."+name))
         );
         LanguageHelper.addTranslatableTranslation("prehistoricnature."+name, translation);
         return tab;

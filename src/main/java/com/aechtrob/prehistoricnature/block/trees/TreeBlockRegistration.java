@@ -265,6 +265,31 @@ public class TreeBlockRegistration {
                 capitalizeWord(treeName)+" Sign");
     }
 
+    public static RegistryObject<Block> ladderBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
+                                                    List<TagKey<Item>> itemTags, String treeName,int treeId){
+        return BlockHandler.registerBlock(treeName+"_ladder",
+                () -> new LadderBlock(BlockBehaviour.Properties.copy(Blocks.LADDER).noOcclusion()),
+                blockTags,itemTags,
+                (provider, block) -> {},
+                (provider, item) -> {provider.generated(treeName+"_ladder", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_ladder"));},
+                BlockLootSubProvider::dropSelf,
+                (provider,block) -> {provider.pnLadderRecipe(RecipeCategory.BUILDING_BLOCKS, plank,block);},
+                List.of(Pair.of("prehistoricnature_functional_tab",Pair.of(treeId,CreativeTabHelper.functionalTabLadderTier))),
+                capitalizeWord(treeName)+" Button");
+    }
+    public static RegistryObject<Block> ladderBlock(Block plank, List<TagKey<Block>> blockTags,
+                                                    List<TagKey<Item>> itemTags, String treeName){
+        return BlockHandler.registerBlock(treeName+"_ladder",
+                () -> new LadderBlock(BlockBehaviour.Properties.copy(Blocks.LADDER).noOcclusion()),
+                blockTags,
+                itemTags,
+                (provider, block) -> {},
+                (provider, item) -> {provider.generated(treeName+"_ladder", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_ladder"));},
+                BlockLootSubProvider::dropSelf,
+                (provider,block) -> {provider.pnLadderRecipe(RecipeCategory.BUILDING_BLOCKS, plank,block);},
+                capitalizeWord(treeName)+" Button");
+    }
+
 
     public static String capitalizeWord(String str){
         String words[]=str.split("\\s");

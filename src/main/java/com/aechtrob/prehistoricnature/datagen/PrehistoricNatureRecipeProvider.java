@@ -151,6 +151,15 @@ public class PrehistoricNatureRecipeProvider extends RecipeProvider implements I
                 .save(consumer);
     }
 
+    public void pnLadderRecipe(RecipeCategory recipeCategory, Block in, RegistryObject<Block> out){
+        ShapedRecipeBuilder.shaped(recipeCategory, out.get()).define('I',in).define('S',Items.STICK)
+                .pattern("S S")
+                .pattern("SIS")
+                .pattern("S S")
+                .unlockedBy("has_"+in.getDescriptionId(),inventoryTrigger(ItemPredicate.Builder.item().of(in).build()))
+                .save(consumer);
+    }
+
     public void pressurePlateRecipe(RecipeCategory recipeCategory, RegistryObject<Block> in, RegistryObject<Block> out){
         ShapedRecipeBuilder.shaped(recipeCategory, out.get()).define('I',in.get())
                 .pattern("II")

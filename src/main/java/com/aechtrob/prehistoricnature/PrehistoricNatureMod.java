@@ -9,6 +9,11 @@ import com.aechtrob.prehistoricnature.world.ModConfiguredFeatures;
 import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.*;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -46,7 +51,16 @@ public class PrehistoricNatureMod
     }
 
     public void addCreative(CreativeModeTabEvent.BuildContents event){
-
+        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
+            event.getEntries().putAfter(new ItemStack(Blocks.LADDER),new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()),new ItemStack(VanillaAdditions.BIRCH_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.BIRCH_LADDER.get()),new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()),new ItemStack(VanillaAdditions.ACACIA_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.ACACIA_LADDER.get()),new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()),new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()),new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()),new ItemStack(VanillaAdditions.WARPED_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

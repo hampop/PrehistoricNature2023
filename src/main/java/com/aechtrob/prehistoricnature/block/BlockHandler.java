@@ -25,6 +25,7 @@ public class BlockHandler {
     public static void register(IEventBus eventBus){
         FossilBlocks.register();
         BlocksTreeLepidodendron.register();
+        VanillaAdditions.register();
         BLOCKS.register(eventBus);
     }
 /*
@@ -77,6 +78,26 @@ public class BlockHandler {
         ModelHelper.addItemModel(registerItem,itemConsumer);
         creativeModeTabs.forEach((pair)->{
             CreativeTabHelper.addCreativeItem(pair.first,returnBlock,pair.second.first,pair.second.second);});
+        return returnBlock;
+    }
+
+    public static <T extends Block> RegistryObject<Block> registerBlock(String name,
+                                                                        Supplier<T> block,
+                                                                        List<TagKey<Block>> blockTags,
+                                                                        List<TagKey<Item>> itemTags,
+                                                                        BiConsumer<PrehistoricNatureBlockStateProvider,RegistryObject<Block>> blockConsumer,
+                                                                        BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                        BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                        BiConsumer<PrehistoricNatureRecipeProvider, RegistryObject<Block>> reciperConsumer,
+                                                                        String translation){
+        RegistryObject<Block> returnBlock = BlockHandler.BLOCKS.register(name, block);
+        blockTags.stream().forEach((tagKey) -> {TagHelper.addBlockTag(returnBlock,tagKey);});
+        ModelHelper.addBlockModel(returnBlock, blockConsumer);
+        LootTableHelper.addLootTable(returnBlock,lootConsumer);
+        LanguageHelper.addBlockTranslation(returnBlock,translation);
+        RecipeHelper.addBlockRecipe(returnBlock,reciperConsumer);
+        RegistryObject<Item> registerItem = registerBlockItem(name, returnBlock, itemTags);
+        ModelHelper.addItemModel(registerItem,itemConsumer);
         return returnBlock;
     }
 

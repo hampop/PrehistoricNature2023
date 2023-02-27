@@ -9,6 +9,7 @@ public class CreativeTabHelper {
     public static int functionalTabLadderTier = 9;
     public static int functionalTabSignTier = 10;
     public static int naturalTabLogTier = 8;
+    public static int transportTabBoatTier = 2;
     public static int naturalTabLeafTier = 9;
     public static int naturalTabSaplingTier = 10;
     private static LinkedHashMultimap<String, Pair<RegistryObject<ItemLike>, Pair<Integer,Integer>>> creativeItems = LinkedHashMultimap.create();

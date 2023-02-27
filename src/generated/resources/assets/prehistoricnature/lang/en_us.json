@@ -28,8 +28,11 @@
   "block.prehistoricnature.warped_ladder": "Warped Button",
   "item.prehistoricnature.carboniferous_raw_fossil": "Carboniferous Raw Fossil",
   "item.prehistoricnature.geologic_pick": "Geologic Pick",
+  "item.prehistoricnature.lepidodendron_boat": "Lepidodendron Boat",
+  "item.prehistoricnature.lepidodendron_chest_boat": "Lepidodendron Chest Boat",
   "prehistoricnature.prehistoricnature_building_tab": "Prehistoric Nature Building Blocks",
   "prehistoricnature.prehistoricnature_fossils_tab": "Prehistoric Nature Fossils",
   "prehistoricnature.prehistoricnature_functional_tab": "Prehistoric Nature Functional Blocks",
-  "prehistoricnature.prehistoricnature_natural_tab": "Prehistoric Nature Natural Blocks"
+  "prehistoricnature.prehistoricnature_natural_tab": "Prehistoric Nature Natural Blocks",
+  "prehistoricnature.prehistoricnature_transport_tab": "Prehistoric Nature Transportation"
 }

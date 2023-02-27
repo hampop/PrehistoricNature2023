@@ -27,13 +27,13 @@ public class PNBoat extends Boat {
         this.zo = z;
     }
 
-    public PNBoat.Type getTwilightBoatType() {
+    public PNBoat.Type getPNBoatType() {
         return PNBoat.Type.byId(this.getEntityData().get(BOAT_TYPE));
     }
 
     @Override
     public Item getDropItem() {
-        return switch (this.getTwilightBoatType()) {
+        return switch (this.getPNBoatType()) {
             case LEPIDODENDRON -> ItemsTreeLepidodendron.LEPIDODENDRON_BOAT_ITEM.get();
         };
     }
@@ -50,7 +50,7 @@ public class PNBoat extends Boat {
 
     @Override
     protected void addAdditionalSaveData(CompoundTag tag) {
-        tag.putString("Type", this.getTwilightBoatType().getName());
+        tag.putString("Type", this.getPNBoatType().getName());
     }
 
     @Override

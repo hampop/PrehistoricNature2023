@@ -22,6 +22,7 @@ public class CreativeTabs {
     public static CreativeModeTab PREHISTORIC_NATURE_NATURAL;
     public static CreativeModeTab PREHISTORIC_NATURE_FOSSILS;
     public static CreativeModeTab PREHISTORIC_NATURE_FUNCTIONAL;
+    public static CreativeModeTab PREHISTORIC_NATURE_TRANSPORT;
     public static CreativeModeTab PREHISTORIC_NATURE_MOBILE;
     public static CreativeModeTab PREHISTORIC_NATURE_PLANTS;
     public static CreativeModeTab PREHISTORIC_NATURE_STATIC;
@@ -40,6 +41,9 @@ public class CreativeTabs {
 
         PREHISTORIC_NATURE_FUNCTIONAL = addTab("prehistoricnature_functional_tab", ItemsTreeLepidodendron.LEPIDODENDRON_SIGN_ITEM,
                 "Prehistoric Nature Functional Blocks", event);
+
+        PREHISTORIC_NATURE_TRANSPORT = addTab("prehistoricnature_transport_tab", ItemsTreeLepidodendron.LEPIDODENDRON_BOAT_ITEM,
+                "Prehistoric Nature Transportation", event);
     }
 
     private static <T extends ItemLike> CreativeModeTab addTab(String name, RegistryObject<T> icon, String translation, CreativeModeTabEvent.Register event){

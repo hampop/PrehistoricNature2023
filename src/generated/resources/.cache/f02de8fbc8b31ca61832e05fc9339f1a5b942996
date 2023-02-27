@@ -1,8 +1,10 @@
-// 1.19.3	2023-02-26T17:36:41.6769512	Item Models: prehistoricnature
+// 1.19.3	2023-02-27T16:57:27.1628273	Item Models: prehistoricnature
 8466b2c3afbe6c042102bd5a04c980473abd310f assets/prehistoricnature/models/item/carboniferous_fossil.json
 5493e64860f77b16275b82a5bfd1d13457a36fcb assets/prehistoricnature/models/item/carboniferous_raw_fossil.json
 c07d84f50432bec67a1ba9ed15f756d543482cb7 assets/prehistoricnature/models/item/geologic_pick.json
+054bf0fa77406673b3b143713363eb565cbc6da7 assets/prehistoricnature/models/item/lepidodendron_boat.json
 cb96df898e5b09e5fc2c315fb01529e189b5d08f assets/prehistoricnature/models/item/lepidodendron_button.json
+9866e80363193f423b85b59145d77feea9acc96b assets/prehistoricnature/models/item/lepidodendron_chest_boat.json
 35e0aea97c160cff19578af6be845f1c1e33bc03 assets/prehistoricnature/models/item/lepidodendron_door.json
 d667a361fae25a79efb5f20a63c9c6b25eeeeb79 assets/prehistoricnature/models/item/lepidodendron_fence.json
 98d621cec79bfe4819dc17a0a8424c0dfd9b2387 assets/prehistoricnature/models/item/lepidodendron_fence_gate.json

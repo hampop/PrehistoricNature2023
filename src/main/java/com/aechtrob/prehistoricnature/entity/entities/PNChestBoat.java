@@ -1,20 +1,26 @@
 package com.aechtrob.prehistoricnature.entity.entities;
 
-import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
-import net.minecraft.core.*;
-import net.minecraft.nbt.*;
-import net.minecraft.resources.*;
-import net.minecraft.world.*;
-import net.minecraft.world.damagesource.*;
-import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.monster.piglin.*;
-import net.minecraft.world.entity.player.*;
-import net.minecraft.world.entity.vehicle.*;
-import net.minecraft.world.inventory.*;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.*;
-import net.minecraft.world.level.gameevent.*;
-import org.jetbrains.annotations.*;
+import net.minecraft.core.NonNullList;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.Containers;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.HasCustomInventoryScreen;
+import net.minecraft.world.entity.SlotAccess;
+import net.minecraft.world.entity.monster.piglin.PiglinAi;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.vehicle.ContainerEntity;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
+import org.jetbrains.annotations.Nullable;
 
 public class PNChestBoat extends PNBoat implements HasCustomInventoryScreen, ContainerEntity {
     private NonNullList<ItemStack> itemStacks = NonNullList.withSize(27, ItemStack.EMPTY);
@@ -86,12 +92,12 @@ public class PNChestBoat extends PNBoat implements HasCustomInventoryScreen, Con
 
     }
     //TODO add every woodtype thats added to the mod here
-    @Override
-    public Item getDropItem() {
-        return switch (this.getTwilightBoatType()) {
-            case LEPIDODENDRON -> ItemsTreeLepidodendron.LEPIDODENDRON_CHEST_BOAT_ITEM.get();
-        };
-    }
+//    @Override
+//    public Item getDropItem() {
+//        return switch (this.getPNBoatType()) {
+//            case LEPIDODENDRON -> ItemsTreeLepidodendron.LEPIDODENDRON_CHEST_BOAT_ITEM.get();
+//        };
+//    }
 
     @Override
     public void clearContent() {

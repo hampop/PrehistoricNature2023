@@ -1,6 +1,7 @@
 package com.aechtrob.prehistoricnature;
 
 import com.aechtrob.prehistoricnature.block.BlockHandler;
+import com.aechtrob.prehistoricnature.block.VanillaAdditions;
 import com.aechtrob.prehistoricnature.block.trees.WoodTypeHelper;
 import com.aechtrob.prehistoricnature.entity.block.PNBlockEntities;
 import com.aechtrob.prehistoricnature.entity.entities.PNEntities;
@@ -9,12 +10,11 @@ import com.aechtrob.prehistoricnature.world.ModConfiguredFeatures;
 import com.aechtrob.prehistoricnature.world.tree.PNFoliagePlacerType;
 import com.aechtrob.prehistoricnature.world.tree.PNTrunkPlacerType;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.*;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.*;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -82,6 +82,13 @@ public class PrehistoricNatureMod
            PNBlockEntities.registerTileEntityRenders(event);
            PNEntities.registerEntityRenders(event);
        }
+
+       @SubscribeEvent
+       public static void onClientSetup(EntityRenderersEvent.RegisterLayerDefinitions event)
+       {
+           PNEntities.registerEntityLayers(event);
+       }
+
     }
 
 }

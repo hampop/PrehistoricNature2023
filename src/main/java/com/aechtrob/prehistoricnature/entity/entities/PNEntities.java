@@ -2,6 +2,8 @@ package com.aechtrob.prehistoricnature.entity.entities;
 
 import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
 import com.aechtrob.prehistoricnature.entity.renderers.PNBoatRenderer;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -40,6 +42,12 @@ public class PNEntities {
     public static void registerEntityRenders(EntityRenderersEvent.RegisterRenderers event){
         event.registerEntityRenderer(PNEntities.BOAT.get(), m -> new PNBoatRenderer(m, false));
         event.registerEntityRenderer(PNEntities.CHEST_BOAT.get(), m -> new PNBoatRenderer(m, true));
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public static void registerEntityLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(PNBoatRenderer.BOAT_LOCATION, () -> BoatModel.createBodyModel());
+        event.registerLayerDefinition(PNBoatRenderer.CHEST_BOAT_LOCATION, () -> ChestBoatModel.createBodyModel());
     }
 
     private static <E extends Entity> RegistryObject<EntityType<E>> buildNoEgg(ResourceLocation id, EntityType.Builder<E> builder, boolean fireproof) {

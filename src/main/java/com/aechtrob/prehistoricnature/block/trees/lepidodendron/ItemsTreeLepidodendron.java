@@ -26,7 +26,7 @@ public class ItemsTreeLepidodendron {
             "Lepidodendron Boat");
 
     public static final RegistryObject<Item> LEPIDODENDRON_CHEST_BOAT_ITEM = ItemHandler.addItem("lepidodendron_chest_boat",
-            () -> new PNBoatItem(false, PNBoat.Type.LEPIDODENDRON, new Item.Properties().stacksTo(1)),
+            () -> new PNBoatItem(true, PNBoat.Type.LEPIDODENDRON, new Item.Properties().stacksTo(1)),
             (provider, item) -> {provider.basicItem(item);},
             java.util.List.of(Pair.of("prehistoricnature_transport_tab",Pair.of(transportTabBoatTier,BlocksTreeLepidodendron.treeId))),
             "Lepidodendron Chest Boat");

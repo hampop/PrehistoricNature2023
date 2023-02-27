@@ -1,5 +1,6 @@
 package com.aechtrob.prehistoricnature.entity.renderers;
 
+import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
 import com.aechtrob.prehistoricnature.entity.entities.PNBoat;
 import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -27,6 +28,8 @@ import java.util.stream.Stream;
 
 public class PNBoatRenderer extends EntityRenderer<PNBoat> {
     private final Map<PNBoat.Type, Pair<ResourceLocation, ListModel<Boat>>> PNBoatResources;
+    public static final ModelLayerLocation BOAT_LOCATION = new ModelLayerLocation(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "boat"), "main");
+    public static final ModelLayerLocation CHEST_BOAT_LOCATION = new ModelLayerLocation(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "chest_boat"), "main");
 
     public PNBoatRenderer(EntityRendererProvider.Context pContext, boolean pChestPNBoat) {
         super(pContext);
@@ -39,14 +42,14 @@ public class PNBoatRenderer extends EntityRenderer<PNBoat> {
     }
 
     private ListModel<Boat> createPNBoatModel(EntityRendererProvider.Context pContext, PNBoat.Type pType, boolean pChestPNBoat) {
-        ModelLayerLocation modellayerlocation = pChestPNBoat ? createChestBoatModelName(pType) : createBoatModelName(pType);
+        ModelLayerLocation modellayerlocation = pChestPNBoat ? CHEST_BOAT_LOCATION : BOAT_LOCATION;
         ModelPart modelpart = pContext.bakeLayer(modellayerlocation);
         return (ListModel<Boat>) (pChestPNBoat ? new ChestBoatModel(modelpart) : new BoatModel(modelpart));
 
     }
 
     private static ModelLayerLocation createLocation(String pPath, String pModel) {
-        return new ModelLayerLocation(new ResourceLocation("minecraft", pPath), pModel);
+        return new ModelLayerLocation(new ResourceLocation("prehistoricnature", pPath), pModel);
     }
 
     public static ModelLayerLocation createBoatModelName(PNBoat.Type pType) {
@@ -110,6 +113,9 @@ public class PNBoatRenderer extends EntityRenderer<PNBoat> {
     }
 
     public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(PNBoat PNBoat) {
-        return this.PNBoatResources.get(PNBoat.getVariant());
+        return this.PNBoatResources.get(PNBoat.getPNBoatType());
     }
+
+
+
 }

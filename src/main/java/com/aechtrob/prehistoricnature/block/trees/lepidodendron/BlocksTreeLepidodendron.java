@@ -2,8 +2,8 @@ package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
 import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
 import com.aechtrob.prehistoricnature.block.BlockHandler;
-import com.aechtrob.prehistoricnature.block.trees.TreeBlockRegistration;
-import com.aechtrob.prehistoricnature.block.trees.WoodTypeHelper;
+import com.aechtrob.prehistoricnature.block.trees.*;
+import com.aechtrob.prehistoricnature.block.BlockRegistration;
 import com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper;
 import com.aechtrob.prehistoricnature.datagen.loottable.BlockLootSubProvider;
 import com.aechtrob.prehistoricnature.world.tree.lepidodendron.LepidodendronTreeGrower;
@@ -32,44 +32,44 @@ public class BlocksTreeLepidodendron {
     public static int treeId = 1;
     public static final WoodType LEPIDODENDRON = WoodTypeHelper.putWoodType(WoodType.create(treeName));
 
-    public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_LOG = TreeBlockRegistration.strippedLogBlock(
+    public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_LOG = BlockRegistration.strippedLogBlock(
                                                                             List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS,BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
                                                                             List.of(LepidodendronItemTags.LEPIDODENDRON_LOGS, ItemTags.LOGS,ItemTags.LOGS_THAT_BURN),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_LOG = TreeBlockRegistration.logBlock(LEPIDODENDRON_STRIPPED_LOG,
+    public static final RegistryObject<Block> LEPIDODENDRON_LOG = BlockRegistration.logBlock(LEPIDODENDRON_STRIPPED_LOG,
                                                                             List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS,BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
                                                                             List.of(LepidodendronItemTags.LEPIDODENDRON_LOGS, ItemTags.LOGS,ItemTags.LOGS_THAT_BURN),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_WOOD = TreeBlockRegistration.strippedWoodBlock(LEPIDODENDRON_STRIPPED_LOG,
+    public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_WOOD = BlockRegistration.strippedWoodBlock(LEPIDODENDRON_STRIPPED_LOG,
                                                                             List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS, BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
                                                                             List.of(LepidodendronItemTags.LEPIDODENDRON_LOGS, ItemTags.LOGS,ItemTags.LOGS_THAT_BURN), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_WOOD = TreeBlockRegistration.woodBlock(LEPIDODENDRON_LOG,LEPIDODENDRON_STRIPPED_WOOD, List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS, BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
+    public static final RegistryObject<Block> LEPIDODENDRON_WOOD = BlockRegistration.woodBlock(LEPIDODENDRON_LOG,LEPIDODENDRON_STRIPPED_WOOD, List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS, BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),
                                                                             List.of(LepidodendronItemTags.LEPIDODENDRON_LOGS, ItemTags.LOGS,ItemTags.LOGS_THAT_BURN), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_SAPLING = TreeBlockRegistration.saplingBlock(new LepidodendronTreeGrower(),List.of(BlockTags.SAPLINGS),
+    public static final RegistryObject<Block> LEPIDODENDRON_SAPLING = BlockRegistration.saplingBlock(new LepidodendronTreeGrower(),List.of(BlockTags.SAPLINGS),
                                                                             List.of(ItemTags.SAPLINGS), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_LEAVES = TreeBlockRegistration.leafBlock(LEPIDODENDRON_SAPLING,
+    public static final RegistryObject<Block> LEPIDODENDRON_LEAVES = BlockRegistration.leafBlock(LEPIDODENDRON_SAPLING,
                                                                             List.of(BlockTags.MINEABLE_WITH_HOE, BlockTags.LEAVES),List.of(ItemTags.LEAVES), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_PLANKS = TreeBlockRegistration.plankBlock(LepidodendronItemTags.LEPIDODENDRON_LOGS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.PLANKS),
+    public static final RegistryObject<Block> LEPIDODENDRON_PLANKS = BlockRegistration.plankBlock(LepidodendronItemTags.LEPIDODENDRON_LOGS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.PLANKS),
                                                                             List.of(ItemTags.PLANKS),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_SLAB = TreeBlockRegistration.slabBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_SLABS),
+    public static final RegistryObject<Block> LEPIDODENDRON_SLAB = BlockRegistration.slabBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_SLABS),
                                                                             List.of(ItemTags.WOODEN_SLABS),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_STAIRS = TreeBlockRegistration.stairsBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_STAIRS),
+    public static final RegistryObject<Block> LEPIDODENDRON_STAIRS = BlockRegistration.stairsBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_STAIRS),
                                                                             List.of(ItemTags.WOODEN_STAIRS),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_FENCE = TreeBlockRegistration.fenceBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_FENCES),
+    public static final RegistryObject<Block> LEPIDODENDRON_FENCE = BlockRegistration.fenceBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_FENCES),
                                                                             List.of(ItemTags.WOODEN_FENCES),treeName,treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_FENCE_GATE = TreeBlockRegistration.fenceGateBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.FENCE_GATES),
+    public static final RegistryObject<Block> LEPIDODENDRON_FENCE_GATE = BlockRegistration.fenceGateBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.FENCE_GATES),
                                                                             List.of(ItemTags.FENCE_GATES), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_DOOR = TreeBlockRegistration.doorBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_DOORS),
+    public static final RegistryObject<Block> LEPIDODENDRON_DOOR = BlockRegistration.doorBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_DOORS),
                                                                             List.of(ItemTags.WOODEN_DOORS), treeName, treeId);
     //Needs manual json file.
-    public static final RegistryObject<Block> LEPIDODENDRON_TRAPDOOR = TreeBlockRegistration.trapdoorBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_TRAPDOORS),
+    public static final RegistryObject<Block> LEPIDODENDRON_TRAPDOOR = BlockRegistration.trapdoorBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_TRAPDOORS),
                                                                             List.of(ItemTags.WOODEN_TRAPDOORS), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_PRESSURE_PLATE = TreeBlockRegistration.pressurePlateBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_PRESSURE_PLATES),
+    public static final RegistryObject<Block> LEPIDODENDRON_PRESSURE_PLATE = BlockRegistration.pressurePlateBlock(LEPIDODENDRON_PLANKS,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_PRESSURE_PLATES),
                                                                             List.of(ItemTags.WOODEN_PRESSURE_PLATES), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_BUTTON = TreeBlockRegistration.buttonBlock(LEPIDODENDRON_PLANKS ,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_BUTTONS),
+    public static final RegistryObject<Block> LEPIDODENDRON_BUTTON = BlockRegistration.buttonBlock(LEPIDODENDRON_PLANKS ,List.of(BlockTags.MINEABLE_WITH_AXE,BlockTags.WOODEN_BUTTONS),
                                                                             List.of(ItemTags.WOODEN_BUTTONS), treeName, treeId);
-    public static final RegistryObject<Block> LEPIDODENDRON_WALL_SIGN = TreeBlockRegistration.wallSignBlock(LEPIDODENDRON,List.of(BlockTags.WALL_SIGNS),treeName);
-    public static final RegistryObject<Block> LEPIDODENDRON_SIGN = TreeBlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
+    public static final RegistryObject<Block> LEPIDODENDRON_WALL_SIGN = BlockRegistration.wallSignBlock(LEPIDODENDRON,List.of(BlockTags.WALL_SIGNS),treeName);
+    public static final RegistryObject<Block> LEPIDODENDRON_SIGN = BlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
 
-    public static final RegistryObject<Block> LEPIDODENDRON_LADDER = TreeBlockRegistration.ladderBlock(
+    public static final RegistryObject<Block> LEPIDODENDRON_LADDER = BlockRegistration.ladderBlock(
             LEPIDODENDRON_PLANKS, List.of(BlockTags.MINEABLE_WITH_AXE, BlockTags.CLIMBABLE),List.of(),treeName,treeId);
 
 

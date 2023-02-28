@@ -6,6 +6,7 @@ import net.minecraft.core.*;
 import net.minecraft.data.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.*;
 import net.minecraftforge.event.level.*;
@@ -26,6 +27,42 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
         horizontalBlock(ladder.get(),models().getBuilder(name(ladder.get()))
                 .parent(new ModelFile.UncheckedModelFile("block/ladder")).texture("texture","block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath()).renderType("cutout"));
         // models().withExistingParent("block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath(),"minecraft:block/ladder")
+    }
+
+    public void pnTrapdoorBlock(RegistryObject<Block> block, String treeName) {
+        ModelFile open = models().getBuilder(name(block.get())+"_open").parent(new ModelFile.UncheckedModelFile(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/trapdoor_open")))
+                .texture("texture","block/"+treeName+"_trapdoor").texture("planktexture","block/"+treeName+"_planks").texture("particle", "block/"+treeName+"_trapdoor");
+        ModelFile top = models().getBuilder(name(block.get())+"_top").parent(new ModelFile.UncheckedModelFile(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/trapdoor_top")))
+                .texture("texture","block/"+treeName+"_trapdoor").texture("planktexture","block/"+treeName+"_planks").texture("particle", "block/"+treeName+"_trapdoor");
+        ModelFile bottom = models().getBuilder(name(block.get())+"_bottom").parent(new ModelFile.UncheckedModelFile(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/trapdoor_bottom")))
+                .texture("texture","block/"+treeName+"_trapdoor").texture("planktexture","block/"+treeName+"_planks").texture("particle", "block/"+treeName+"_trapdoor");
+
+//
+//        getVariantBuilder(block.get()).forAllStates(state ->
+//                Direction)
+
+        MultiPartBlockStateBuilder trapdoor = getMultipartBuilder(block.get());
+        for (Direction d : Direction.Plane.HORIZONTAL) {
+            int rotY = switch (d) {
+                default -> 0;
+                case EAST -> 90;
+                case SOUTH -> 180;
+                case WEST -> 270;
+            };
+
+            trapdoor.part().modelFile(bottom).rotationY(rotY).addModel()
+                    .condition(TrapDoorBlock.FACING, d).condition(TrapDoorBlock.OPEN, false)
+                    .condition(TrapDoorBlock.HALF, Half.BOTTOM);
+            trapdoor.part().modelFile(top).rotationY(rotY).addModel()
+                    .condition(TrapDoorBlock.FACING, d).condition(TrapDoorBlock.OPEN, false)
+                    .condition(TrapDoorBlock.HALF, Half.TOP);
+            trapdoor.part().modelFile(open).rotationY(rotY).addModel()
+                    .condition(TrapDoorBlock.FACING, d).condition(TrapDoorBlock.OPEN, true)
+                    .condition(TrapDoorBlock.HALF, Half.BOTTOM);
+            trapdoor.part().modelFile(open).rotationY(rotY).addModel()
+                    .condition(TrapDoorBlock.FACING, d).condition(TrapDoorBlock.OPEN, true)
+                    .condition(TrapDoorBlock.HALF, Half.TOP).end();
+        }
     }
 
     public void saplingBlock(RegistryObject<Block> blockRegistryObject) {

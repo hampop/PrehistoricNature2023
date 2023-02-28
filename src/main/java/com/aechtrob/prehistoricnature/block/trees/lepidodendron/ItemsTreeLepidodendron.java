@@ -1,6 +1,6 @@
 package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
-import com.aechtrob.prehistoricnature.block.trees.TreeBlockRegistration;
+import com.aechtrob.prehistoricnature.block.BlockRegistration;
 import com.aechtrob.prehistoricnature.entity.entities.PNBoat;
 import com.aechtrob.prehistoricnature.item.ItemHandler;
 import com.aechtrob.prehistoricnature.item.items.PNBoatItem;
@@ -15,7 +15,7 @@ import static com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper.tran
 
 public class ItemsTreeLepidodendron {
     public static void register(){}
-    public static final RegistryObject<Item> LEPIDODENDRON_SIGN_ITEM = TreeBlockRegistration.signItem(BlocksTreeLepidodendron.LEPIDODENDRON_PLANKS,BlocksTreeLepidodendron.LEPIDODENDRON_WALL_SIGN,BlocksTreeLepidodendron.LEPIDODENDRON_SIGN,
+    public static final RegistryObject<Item> LEPIDODENDRON_SIGN_ITEM = BlockRegistration.signItem(BlocksTreeLepidodendron.LEPIDODENDRON_PLANKS,BlocksTreeLepidodendron.LEPIDODENDRON_WALL_SIGN,BlocksTreeLepidodendron.LEPIDODENDRON_SIGN,
             List.of(ItemTags.SIGNS),BlocksTreeLepidodendron.treeName,BlocksTreeLepidodendron.treeId);
 
 

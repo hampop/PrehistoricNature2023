@@ -42,7 +42,7 @@ public class PNBoatRenderer extends EntityRenderer<PNBoat> {
     }
 
     private ListModel<Boat> createPNBoatModel(EntityRendererProvider.Context pContext, PNBoat.Type pType, boolean pChestPNBoat) {
-        ModelLayerLocation modellayerlocation = pChestPNBoat ? CHEST_BOAT_LOCATION : BOAT_LOCATION;
+        ModelLayerLocation modellayerlocation = pChestPNBoat ? createChestBoatModelName(pType) : createBoatModelName(pType);
         ModelPart modelpart = pContext.bakeLayer(modellayerlocation);
         return (ListModel<Boat>) (pChestPNBoat ? new ChestBoatModel(modelpart) : new BoatModel(modelpart));
 

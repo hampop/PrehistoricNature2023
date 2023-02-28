@@ -1,6 +1,6 @@
 package com.aechtrob.prehistoricnature.block.blocks;
 
-import com.aechtrob.prehistoricnature.entity.block.*;
+import com.aechtrob.prehistoricnature.entity.block.blocks.*;
 import net.minecraft.core.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.*;

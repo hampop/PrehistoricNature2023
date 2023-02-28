@@ -1,6 +1,6 @@
 package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
-import com.aechtrob.prehistoricnature.entity.block.PNSignBlockEntity;
+import com.aechtrob.prehistoricnature.entity.block.blocks.PNSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.RegistryObject;
 

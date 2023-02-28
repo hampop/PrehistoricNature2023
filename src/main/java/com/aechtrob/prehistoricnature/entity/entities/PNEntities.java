@@ -46,8 +46,10 @@ public class PNEntities {
 
     @OnlyIn(Dist.CLIENT)
     public static void registerEntityLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(PNBoatRenderer.BOAT_LOCATION, () -> BoatModel.createBodyModel());
-        event.registerLayerDefinition(PNBoatRenderer.CHEST_BOAT_LOCATION, () -> ChestBoatModel.createBodyModel());
+        for (PNBoat.Type boatType : PNBoat.Type.values()) {
+            event.registerLayerDefinition(PNBoatRenderer.createBoatModelName(boatType), BoatModel::createBodyModel);
+            event.registerLayerDefinition(PNBoatRenderer.createChestBoatModelName(boatType), ChestBoatModel::createBodyModel);
+        }
     }
 
     private static <E extends Entity> RegistryObject<EntityType<E>> buildNoEgg(ResourceLocation id, EntityType.Builder<E> builder, boolean fireproof) {

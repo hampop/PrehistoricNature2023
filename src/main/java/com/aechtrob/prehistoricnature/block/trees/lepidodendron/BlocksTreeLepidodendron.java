@@ -68,7 +68,7 @@ public class BlocksTreeLepidodendron {
                                                                             List.of(ItemTags.WOODEN_BUTTONS), treeName, treeId);
     public static final RegistryObject<Block> LEPIDODENDRON_WALL_SIGN = TreeBlockRegistration.wallSignBlock(LEPIDODENDRON,List.of(BlockTags.WALL_SIGNS),treeName);
     public static final RegistryObject<Block> LEPIDODENDRON_SIGN = TreeBlockRegistration.standingSignBlock(LEPIDODENDRON_WALL_SIGN,LEPIDODENDRON,List.of(BlockTags.STANDING_SIGNS),treeName);
-    //TODO needs manual modelfile and blockstates file
+
     public static final RegistryObject<Block> LEPIDODENDRON_LADDER = TreeBlockRegistration.ladderBlock(
             LEPIDODENDRON_PLANKS, List.of(BlockTags.MINEABLE_WITH_AXE, BlockTags.CLIMBABLE),List.of(),treeName,treeId);
 
@@ -77,11 +77,7 @@ public class BlocksTreeLepidodendron {
 //            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
 //                    , 30, true, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON));
 
-    //How do signs work? There are a few different blocks for each one!
-
     //Other tree-specific stuff:
-    //
-    //TODO make 2d item model instead of 3d
     public static final RegistryObject<Block> LEPIDODENDRON_STROBILUS = BlockHandler.registerBlock("lepidodendron_strobilus",
             () -> new LepidodendronStrobilus(BlockBehaviour.Properties.copy(Blocks.GRASS)),
             List.of(BlockTags.FLOWERS),

@@ -19,6 +19,13 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         ModelHelper.getBlockModels().forEach((block, consumer)->{consumer.accept(this,block);});
+
+    }
+
+    public void ladderBlock(RegistryObject<Block> ladder){
+        horizontalBlock(ladder.get(),models().getBuilder(name(ladder.get()))
+                .parent(new ModelFile.UncheckedModelFile("block/ladder")).texture("texture","block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath()).renderType("cutout"));
+        // models().withExistingParent("block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath(),"minecraft:block/ladder")
     }
 
     public void saplingBlock(RegistryObject<Block> blockRegistryObject) {

@@ -1,22 +1,9 @@
 package com.aechtrob.prehistoricnature.entity.block;
 
-import com.aechtrob.prehistoricnature.*;
-import com.aechtrob.prehistoricnature.block.trees.*;
-import com.aechtrob.prehistoricnature.block.trees.lepidodendron.*;
-import net.minecraft.client.renderer.block.*;
-import net.minecraft.client.renderer.blockentity.*;
-import net.minecraft.core.registries.*;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.*;
-import net.minecraftforge.api.distmarker.*;
-import net.minecraftforge.client.event.*;
-import net.minecraftforge.eventbus.api.*;
-import net.minecraftforge.registries.*;
-import org.antlr.runtime.tree.*;
+import com.aechtrob.prehistoricnature.entity.block.blocks.*;
 
-import java.util.*;
 import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
-import com.aechtrob.prehistoricnature.block.trees.TreeBlockRegistration;
+import com.aechtrob.prehistoricnature.block.BlockRegistration;
 import com.aechtrob.prehistoricnature.block.trees.lepidodendron.EntitiesTreeLepidodendron;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.core.registries.Registries;
@@ -46,7 +33,7 @@ public class PNBlockEntities {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PrehistoricNatureMod.MOD_ID);
 
     public static final RegistryObject<BlockEntityType<PNSignBlockEntity>> PN_SIGN = ENTITY_TYPE_REGISTER.register("pn_sign",
-            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, registryToArray(TreeBlockRegistration.prehistoricNatureSigns))
+            () -> BlockEntityType.Builder.of(PNSignBlockEntity::new, registryToArray(BlockRegistration.prehistoricNatureSigns))
                     .build(null));
 
     @OnlyIn(Dist.CLIENT)

@@ -1,4 +1,4 @@
-package com.aechtrob.prehistoricnature.block.trees;
+package com.aechtrob.prehistoricnature.block;
 
 import com.aechtrob.prehistoricnature.*;
 import com.aechtrob.prehistoricnature.block.*;
@@ -18,14 +18,13 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.*;
 import net.minecraft.world.level.block.state.*;
 import net.minecraft.world.level.block.state.properties.*;
-import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.registries.*;
 
 import java.util.*;
 
 import static com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper.naturalTabLogTier;
 
-public class TreeBlockRegistration {
+public class BlockRegistration {
 
     public static ArrayList<RegistryObject<Block>> prehistoricNatureSigns =new ArrayList<>();
 
@@ -201,6 +200,8 @@ public class TreeBlockRegistration {
                 () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)
                         , SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_OPEN),
                 blockTags,itemTags,
+                (provider, block) -> {provider.pnTrapdoorBlock(block, treeName);},
+                (provider, item) -> {provider.withExistingParent(treeName+"_trapdoor", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_trapdoor_bottom"));},
                 BlockLootSubProvider::dropSelf,
                 (provider,block) -> {provider.trapdoorRecipe(RecipeCategory.BUILDING_BLOCKS, plank,block);},
                 List.of(Pair.of("prehistoricnature_building_tab",Pair.of(treeId,11))),

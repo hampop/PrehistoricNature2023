@@ -9,6 +9,7 @@
 //import net.minecraft.world.level.block.entity.*;
 //import net.minecraft.world.level.block.state.*;
 //import net.minecraft.world.level.block.state.properties.*;
+//import net.minecraft.world.level.levelgen.structure.*;
 //import net.minecraft.world.level.material.*;
 //import net.minecraft.world.phys.*;
 //
@@ -50,7 +51,7 @@
 //        if (state.getValue(FACING) == Direction.WEST) {
 //            //Seat:
 //            //From 5-6 px tall
-//            addCollisionBoxToList(pos, entityBox, collidingBoxes, new AxisAlignedBB(0.4, 0.3125,  0 , 0.875, 0.375, 1));
+//            addCollisionBoxToList(pos, entityBox, collidingBoxes, new BoundingBox(0, 0,  0 , 0, 0, 1));
 //            //Back-rest:
 //            addCollisionBoxToList(pos, entityBox, collidingBoxes, new AxisAlignedBB(0.875, 0.375, 0, 0.9375, 1, 1));
 //        }
@@ -201,6 +202,7 @@
 //        //13. Anthracite
 //        //14. Salt
 //        //15. Sulphur
+//        //
 //        int variant = new Object() {
 //            public int getValue(BlockPos pos1, String tag) {
 //                TileEntity tileEntity = worldIn.getTileEntity(pos1);

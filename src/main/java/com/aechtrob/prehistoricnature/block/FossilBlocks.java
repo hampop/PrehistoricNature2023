@@ -22,7 +22,6 @@ public class FossilBlocks {
     }
     public static final RegistryObject<Block> CARBONIFEROUS_FOSSIL = addFossilBlock("carboniferous_fossil", "Carboniferous Fossil", PrehistoricNatureItems.CARBONIFEROUS_RAW_FOSSIL);
 
-
     public static RegistryObject<Block> addFossilBlock(String name, String translation, RegistryObject<Item> fossilItem){
         return BlockHandler.registerBlock(name,
                 () -> {return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1.5F).requiresCorrectToolForDrops());},

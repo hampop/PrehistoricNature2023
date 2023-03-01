@@ -2,6 +2,7 @@ package com.aechtrob.prehistoricnature.block.trees.lepidodendron;
 
 import com.aechtrob.prehistoricnature.PrehistoricNatureMod;
 import com.aechtrob.prehistoricnature.block.BlockHandler;
+import com.aechtrob.prehistoricnature.block.blocks.*;
 import com.aechtrob.prehistoricnature.block.trees.*;
 import com.aechtrob.prehistoricnature.block.BlockRegistration;
 import com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper;
@@ -9,12 +10,12 @@ import com.aechtrob.prehistoricnature.datagen.loottable.BlockLootSubProvider;
 import com.aechtrob.prehistoricnature.world.tree.lepidodendron.LepidodendronTreeGrower;
 import com.ibm.icu.impl.Pair;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.*;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.registries.RegistryObject;
@@ -74,7 +75,7 @@ public class BlocksTreeLepidodendron {
 
 
 //    public static final RegistryObject<Block> LEPIDODENDRON_BENCH = BlockHandler.registerBlock("lepidodendron_bench",
-//            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
+//            () -> new PNBenchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
 //                    , 30, true, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON));
 
     //Other tree-specific stuff:

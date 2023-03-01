@@ -20,13 +20,11 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         ModelHelper.getBlockModels().forEach((block, consumer)->{consumer.accept(this,block);});
-
     }
 
     public void ladderBlock(RegistryObject<Block> ladder){
         horizontalBlock(ladder.get(),models().getBuilder(name(ladder.get()))
                 .parent(new ModelFile.UncheckedModelFile("block/ladder")).texture("texture","block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath()).renderType("cutout"));
-        // models().withExistingParent("block/"+ForgeRegistries.BLOCKS.getKey(ladder.get()).getPath(),"minecraft:block/ladder")
     }
 
     public void pnTrapdoorBlock(RegistryObject<Block> block, String treeName) {
@@ -36,10 +34,6 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
                 .texture("texture","block/"+treeName+"_trapdoor").texture("planktexture","block/"+treeName+"_planks").texture("particle", "block/"+treeName+"_trapdoor");
         ModelFile bottom = models().getBuilder(name(block.get())+"_bottom").parent(new ModelFile.UncheckedModelFile(new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/trapdoor_bottom")))
                 .texture("texture","block/"+treeName+"_trapdoor").texture("planktexture","block/"+treeName+"_planks").texture("particle", "block/"+treeName+"_trapdoor");
-
-//
-//        getVariantBuilder(block.get()).forAllStates(state ->
-//                Direction)
 
         MultiPartBlockStateBuilder trapdoor = getMultipartBuilder(block.get());
         for (Direction d : Direction.Plane.HORIZONTAL) {

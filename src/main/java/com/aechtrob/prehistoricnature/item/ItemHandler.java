@@ -75,6 +75,20 @@ public class ItemHandler {
         return returnItem;
     }
 
+    public static <T extends Item> RegistryObject<Item> addItem(String name,
+                                                                Supplier<T> item,
+                                                                BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
+                                                                BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,
+                                                                List<Pair<String,Pair<Integer,Integer>>> creativeModeTabs,
+                                                                String translation){
+        RegistryObject<Item> returnItem = ITEMS.register(name, item);
+        LootTableHelper.addLootTable(returnItem,lootConsumer);
+        ModelHelper.addItemModel(returnItem,itemConsumer);
+        LanguageHelper.addItemTranslation(returnItem, translation);
+        creativeModeTabs.forEach((pair)->{CreativeTabHelper.addCreativeItem(pair.first,returnItem,pair.second.first,pair.second.second);});
+        return returnItem;
+    }
+
     public static <T extends Item> RegistryObject<Item> addSignItem(String name,  Supplier<Item> item,
                                                                     BiConsumer<PrehistoricNatureItemModelProvider, RegistryObject<Item>> itemConsumer,
                                                                     BiConsumer<BlockLootSubProvider, RegistryObject<Block>> lootConsumer,

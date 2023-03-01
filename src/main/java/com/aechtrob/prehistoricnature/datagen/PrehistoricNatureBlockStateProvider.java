@@ -17,6 +17,7 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
     public PrehistoricNatureBlockStateProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
         super(packOutput, PrehistoricNatureMod.MOD_ID, existingFileHelper);
     }
+
     @Override
     protected void registerStatesAndModels() {
         ModelHelper.getBlockModels().forEach((block, consumer)->{consumer.accept(this,block);});
@@ -67,6 +68,7 @@ public class PrehistoricNatureBlockStateProvider extends BlockStateProvider {
     public void stairsBlock(RegistryObject<Block> stairs, RegistryObject<Block> block){
         super.stairsBlock((StairBlock) stairs.get(), blockTexture(block.get()));
     }
+
     public void simpleBlock(RegistryObject<Block> block) {
         super.simpleBlock(block.get());
     }

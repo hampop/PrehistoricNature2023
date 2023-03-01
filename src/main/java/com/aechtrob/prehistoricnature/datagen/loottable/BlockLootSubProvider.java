@@ -4,6 +4,7 @@ import com.aechtrob.prehistoricnature.block.*;
 import com.aechtrob.prehistoricnature.datagen.helpers.*;
 import com.aechtrob.prehistoricnature.item.*;
 import net.minecraft.advancements.critereon.*;
+import net.minecraft.tags.*;
 import net.minecraft.world.flag.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.*;

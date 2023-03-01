@@ -55,10 +55,11 @@ public class CoralBlocks {
                 List.of(BlockTags.CORALS, BlockTags.UNDERWATER_BONEMEALS, BlockTags.CORAL_PLANTS));
         return sign;
     }
-/*
+
     public static RegistryObject<Item> coralItem(RegistryObject<Block> plank, RegistryObject<Block> wallCoral, RegistryObject<Block> standingCoral,
                                                 List<TagKey<Item>> itemTags, String name,String translation){
-        return ItemHandler.addItem(name,
+        return ItemHandler.addItem(
+                name,
                 () -> new StandingAndWallBlockItem(standingCoral.get(), wallCoral.get(), new Item.Properties(), Direction.DOWN),
                 (provider, item) -> {provider.basicItem(item);},
                 (provider,item) ->{
@@ -68,8 +69,6 @@ public class CoralBlocks {
                 List.of(Pair.of("prehistoricnature_natural_tab",Pair.of(1,1))),
                 translation);
     }
-
- */
 
     public static RegistryObject<Block> addCoralPlantDead(String name, String translation, RegistryObject<Block> coralItem){
         return BlockHandler.registerBlock(name,

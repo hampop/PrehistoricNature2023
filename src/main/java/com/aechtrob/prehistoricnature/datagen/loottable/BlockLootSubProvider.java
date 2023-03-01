@@ -49,6 +49,13 @@ public class BlockLootSubProvider extends net.minecraft.data.loot.BlockLootSubPr
                         .when(HAS_GEOLOGIC_PICK).otherwise(LootItem.lootTableItem(fossil.get())))));
     }
 
+    /*
+    creates a loot table that drops the block when a silk touch tool is used to mine the block
+     */
+    public <T extends ItemLike> LootTable.Builder createSingleItemTableWithSilkTouch(RegistryObject<Block> pBlock, RegistryObject<T> item) {
+        return super.createSingleItemTableWithSilkTouch(pBlock.get(), item.get());
+    }
+
     public void createLeavesDrops(RegistryObject<Block> block, RegistryObject<Block> sapling) {
         this.add(block.get(),(lambdaBlock) -> createLeavesDrops(lambdaBlock, sapling.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }

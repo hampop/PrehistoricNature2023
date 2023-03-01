@@ -25,7 +25,6 @@ import java.util.*;
 import static com.aechtrob.prehistoricnature.creativetabs.CreativeTabHelper.naturalTabLogTier;
 
 public class BlockRegistration {
-
     public static ArrayList<RegistryObject<Block>> prehistoricNatureSigns =new ArrayList<>();
 
     public static RegistryObject<Block> logBlock(RegistryObject<Block> strippedLog, List<TagKey<Block>> blockTags,

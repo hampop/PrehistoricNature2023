@@ -59,17 +59,19 @@ public class LepidodendronTrunkPlacer extends TrunkPlacer {
         List<FoliagePlacer.FoliageAttachment> list = Lists.newArrayList();
 
         int height = 0;
-        BlockState logState = BlocksTreeLepidodendron.LEPIDODENDRON_LOG.get().defaultBlockState();
-        BlockState woodState = BlocksTreeLepidodendron.LEPIDODENDRON_WOOD.get().defaultBlockState();
+        BlockState logState = BlocksTreeLepidodendron.LEPIDODENDRON_LOG.get().defaultBlockState().setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Y);
+        BlockState woodState = BlocksTreeLepidodendron.LEPIDODENDRON_WOOD.get().defaultBlockState().setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Y);
 
         List<Consumer<BlockPos>> placableBlocks = List.of(
-                (blockPos) -> {},
-                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Y));},
-                (blockPos) -> {placeLog(blockPos, woodState);},
-                (blockPos) -> {placeFoliage(blockPos, 0, list);},
-                (blockPos) -> {placeRandomFoliage(blockPos, 0.4, 1, list);},
-                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Z));},
-                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.X));}
+                (blockPos) -> {}, //0 or x = Air
+                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.X));}, //1
+                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Y));}, //2
+                (blockPos) -> {placeLog(blockPos, logState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Z));}, //3
+                (blockPos) -> {placeLog(blockPos, woodState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.X));}, //4
+                (blockPos) -> {placeLog(blockPos, woodState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Y));}, //5
+                (blockPos) -> {placeLog(blockPos, woodState.setValue(PNRotatedPillarFlammableBlock.AXIS,Direction.Axis.Z));}, //6
+                (blockPos) -> {placeFoliage(blockPos, 0, list);}, //7 = Leaves
+                (blockPos) -> {placeRandomFoliage(blockPos, 0.4, 1, list);} //8 = Strobilus
         );
         int x = 0;
 

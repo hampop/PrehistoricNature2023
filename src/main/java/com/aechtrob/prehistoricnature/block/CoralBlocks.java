@@ -33,31 +33,49 @@ public class CoralBlocks {
 
 
 
-    //Register Living corals here:
-    //public static final RegistryObject<Block> CARBONIFEROUS_FOSSIL = coralBlock("carboniferous_fossil", "Carboniferous Fossil", PrehistoricNatureItems.CARBONIFEROUS_RAW_FOSSIL);
+    //Register Living Wall corals here:
+    //test brain coral registry
+    public static final RegistryObject<Block> BRAIN_CORAL_WALL = wallCoralBlock(List.of(BlockTags.WALL_CORALS),"brain_coral", Blocks.DEAD_BRAIN_CORAL);
+    //test brain coral standing registry
+    public static final RegistryObject<Block> BRAIN_CORAL_STANDING = standingCoralBlock(List.of(BlockTags.CORAL_PLANTS),"brain_coral", Blocks.DEAD_BRAIN_CORAL);
+
+    //Register living standing corals here:
+    public static final RegistryObject<Item> BRAIN_CORAL_ITEM = coralItem(BRAIN_CORAL_WALL, BRAIN_CORAL_STANDING, "brain_coral", "Brain Coral");
+
+
+
+    //Register Living Corals here:
+
 
 
     /*
-    This is the registration method for Coral Plants, it takes in a name,
+    The next three methods are Registration methods for Corals that go both on the ground and on walls.
+    Here is what each of the parameters for each method does:
+
      */
 
     //TODO particle needs changing when the new respective method is made
-    public static RegistryObject<Block> wallCoralBlock(WoodType woodType, List<TagKey<Block>> blockTags, String name, Block deadBlock){
+    public static RegistryObject<Block> wallCoralBlock(List<TagKey<Block>> blockTags, String name, Block deadBlock){
         RegistryObject<Block> sign = BlockHandler.registerBlockWithoutItem(name,
                 () -> new CoralWallFanBlock(deadBlock, BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_FAN)),
                 List.of(BlockTags.CORALS, BlockTags.WALL_CORALS));
         return sign;
     }
 
-    public static RegistryObject<Block> standingCoralBlock(RegistryObject<Block> wallSign, WoodType woodType,  List<TagKey<Block>> blockTags, String name, Block deadBlock){
+    public static RegistryObject<Block> standingCoralBlock( List<TagKey<Block>> blockTags, String name, Block deadBlock){
         RegistryObject<Block> sign = BlockHandler.registerBlockWithoutItem(name,
                 () -> new CoralPlantBlock(deadBlock, BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_FAN)),
                 List.of(BlockTags.CORALS, BlockTags.UNDERWATER_BONEMEALS, BlockTags.CORAL_PLANTS));
         return sign;
     }
 
-    public static RegistryObject<Item> coralItem(RegistryObject<Block> plank, RegistryObject<Block> wallCoral, RegistryObject<Block> standingCoral,
-                                                List<TagKey<Item>> itemTags, String name,String translation){
+    //End TODO
+
+    public static RegistryObject<Item> coralItem(//RegistryObject<Block> coral, Not sure what this does of if its needed
+                                                 RegistryObject<Block> wallCoral,
+                                                 RegistryObject<Block> standingCoral,
+                                                 String name,
+                                                 String translation){
         return ItemHandler.addItem(
                 name,
                 () -> new StandingAndWallBlockItem(standingCoral.get(), wallCoral.get(), new Item.Properties(), Direction.DOWN),

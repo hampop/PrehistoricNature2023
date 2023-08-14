@@ -9,11 +9,14 @@ import net.minecraft.network.chat.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.*;
-import net.minecraftforge.event.*;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.*;
-import net.minecraftforge.fml.common.*;
-import net.minecraftforge.registries.*;
-
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.RegistryObject;
 import java.util.*;
 
 @Mod.EventBusSubscriber(modid = PrehistoricNatureMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,24 +29,25 @@ public class CreativeTabs {
     public static CreativeModeTab PREHISTORIC_NATURE_MOBILE;
     public static CreativeModeTab PREHISTORIC_NATURE_PLANTS;
     public static CreativeModeTab PREHISTORIC_NATURE_STATIC;
+    private static BuildCreativeModeTabContentsEvent.Register Event;
 
     @SubscribeEvent
-    public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
+    public static void buildContents(BuildCreativeModeTabContentsEvent event) {
 
         PREHISTORIC_NATURE_FOSSILS = addTab("prehistoricnature_fossils_tab",PrehistoricNatureItems.GEOLOGIC_PICK,
-                "Prehistoric Nature Fossils",event);
+                "Prehistoric Nature Fossils",Event);
 
         PREHISTORIC_NATURE_BUILDING = addTab("prehistoricnature_building_tab", BlocksTreeLepidodendron.LEPIDODENDRON_PLANKS,
-                "Prehistoric Nature Building Blocks", event);
+                "Prehistoric Nature Building Blocks", Event);
 
         PREHISTORIC_NATURE_NATURAL = addTab("prehistoricnature_natural_tab", BlocksTreeLepidodendron.LEPIDODENDRON_SAPLING,
-                "Prehistoric Nature Natural Blocks", event);
+                "Prehistoric Nature Natural Blocks", Event);
 
         PREHISTORIC_NATURE_FUNCTIONAL = addTab("prehistoricnature_functional_tab", ItemsTreeLepidodendron.LEPIDODENDRON_SIGN_ITEM,
-                "Prehistoric Nature Functional Blocks", event);
+                "Prehistoric Nature Functional Blocks", Event);
 
         PREHISTORIC_NATURE_TRANSPORT = addTab("prehistoricnature_transport_tab", ItemsTreeLepidodendron.LEPIDODENDRON_BOAT_ITEM,
-                "Prehistoric Nature Transportation", event);
+                "Prehistoric Nature Transportation", Event);
     }
 
     private static <T extends ItemLike> CreativeModeTab addTab(String name, RegistryObject<T> icon, String translation, CreativeModeTabEvent.Register event){

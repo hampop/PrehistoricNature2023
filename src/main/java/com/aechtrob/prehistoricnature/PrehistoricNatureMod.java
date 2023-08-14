@@ -53,7 +53,7 @@ public class PrehistoricNatureMod
     }
 
     public void addCreative(BuildCreativeModeTabContentsEvent event){
-        if(event.getResult() == CreativeModeTabs.FUNCTIONAL_BLOCKS()){
+        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS()){
             event.getEntries().putAfter(new ItemStack(Blocks.LADDER),new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()),new ItemStack(VanillaAdditions.BIRCH_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(new ItemStack(VanillaAdditions.BIRCH_LADDER.get()),new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);

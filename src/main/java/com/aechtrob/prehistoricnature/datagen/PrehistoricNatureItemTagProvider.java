@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 
 public class PrehistoricNatureItemTagProvider extends ItemTagsProvider {
     public PrehistoricNatureItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookUp, TagsProvider<Block> blockTagsProvider, ExistingFileHelper existingFileHelper) {
-        super(output, lookUp, blockTagsProvider, PrehistoricNatureMod.MOD_ID,existingFileHelper);
+        super (output, lookUp, blockTagsProvider.contentsGetter ( ) , PrehistoricNatureMod.MOD_ID,existingFileHelper );
     }
 
     @Override

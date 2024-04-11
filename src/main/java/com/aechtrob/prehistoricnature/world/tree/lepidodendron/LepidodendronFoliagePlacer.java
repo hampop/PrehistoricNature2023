@@ -33,7 +33,7 @@ public class LepidodendronFoliagePlacer extends BlobFoliagePlacer {
     BlockState leafState = BlocksTreeLepidodendron.LEPIDODENDRON_LEAVES.get().defaultBlockState();
     BlockState strobilusState = BlocksTreeLepidodendron.LEPIDODENDRON_STROBILUS.get().defaultBlockState().setValue(PNDecayableDirectional.PERSISTENT, false);
 
-    @Override
+
     protected void createFoliage(LevelSimulatedReader levelSimulatedReader, BiConsumer<BlockPos, BlockState> biConsumer, RandomSource random, TreeConfiguration treeConfiguration, int ii, FoliageAttachment foliageAttachment, int p_161366_, int p_161367_, int p_161368_) {
         //This sets a single block of foliage only, and is detailed in the Trunk generator for where exactly it all has to go.
         //For trees with no flowers, strobili or variant leaf blocks, do not use this, use PNFoliagePlacer instead.

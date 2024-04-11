@@ -65,13 +65,13 @@ public class PNChestBoat extends PNBoat implements HasCustomInventoryScreen, Con
     @Override
     public void destroy(DamageSource damageSource) {
         super.destroy(damageSource);
-        this.chestVehicleDestroyed(damageSource, this.level, this);
+        this.chestVehicleDestroyed(damageSource, this.level (), this);
     }
 
     @Override
     public void remove(Entity.RemovalReason reason) {
-        if (!this.level.isClientSide && reason.shouldDestroy()) {
-            Containers.dropContents(this.level, this, this);
+        if (!this.level ().isClientSide && reason.shouldDestroy()) {
+            Containers.dropContents(this.level (), this, this);
         }
 
         super.remove(reason);
@@ -79,13 +79,13 @@ public class PNChestBoat extends PNBoat implements HasCustomInventoryScreen, Con
 
     @Override
     public InteractionResult interact(Player player, InteractionHand hand) {
-        return this.canAddPassenger(player) && !player.isSecondaryUseActive() ? super.interact(player, hand) : this.interactWithChestVehicle(this::gameEvent, player);
+        return this.canAddPassenger(player) && !player.isSecondaryUseActive() ? super.interact(player, hand) : this.interactWithContainerVehicle(player);
     }
 
     @Override
     public void openCustomInventoryScreen(Player player) {
         player.openMenu(this);
-        if (!player.level.isClientSide) {
+        if (!player.level ().isClientSide) {
             this.gameEvent(GameEvent.CONTAINER_OPEN, player);
             PiglinAi.angerNearbyPiglins(player, true);
         }

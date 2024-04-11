@@ -28,8 +28,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-import static net.minecraft.world.item.CreativeModeTabs.*;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PrehistoricNatureMod.MOD_ID)
 public class PrehistoricNatureMod
@@ -52,16 +50,15 @@ public class PrehistoricNatureMod
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    public void addCreative(BuildCreativeModeTabContentsEvent event){
-        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS()){
-            event.getEntries().putAfter(new ItemStack(Blocks.LADDER),new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()),new ItemStack(VanillaAdditions.BIRCH_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.BIRCH_LADDER.get()),new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()),new ItemStack(VanillaAdditions.ACACIA_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.ACACIA_LADDER.get()),new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()),new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()),new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.getEntries().putAfter(new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()),new ItemStack(VanillaAdditions.WARPED_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+    public void addCreative(BuildCreativeModeTabContentsEvent tabData){{
+            tabData.getEntries().putAfter(new ItemStack(Blocks.LADDER),new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.SPRUCE_LADDER.get()),new ItemStack(VanillaAdditions.BIRCH_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.BIRCH_LADDER.get()),new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.JUNGLE_LADDER.get()),new ItemStack(VanillaAdditions.ACACIA_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.ACACIA_LADDER.get()),new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.DARK_OAK_LADDER.get()),new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.MANGROVE_LADDER.get()),new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            tabData.getEntries().putAfter(new ItemStack(VanillaAdditions.CRIMSON_LADDER.get()),new ItemStack(VanillaAdditions.WARPED_LADDER.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }
 

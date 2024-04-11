@@ -1,11 +1,11 @@
 package com.aechtrob.prehistoricnature.world.tree;
 
 import com.mojang.serialization.Codec;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelSimulatedReader;
 import net.minecraft.world.level.levelgen.feature.TreeFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.material.Material;
 
 public class PNTreeFeature extends TreeFeature {
     public PNTreeFeature(Codec<TreeConfiguration> p_67201_) {
@@ -14,7 +14,7 @@ public class PNTreeFeature extends TreeFeature {
 
     public static boolean canLogReplaceBlock(LevelSimulatedReader p_67289_, BlockPos p_67290_) {
         return p_67289_.isStateAtPosition(p_67290_, (p_160551_) -> {
-            Material material = p_160551_.getMaterial ( );
+            Material material = p_160551_.getMaterial();
             return (material.isReplaceable()
                 || !material.isSolid()
                 || (material == Material.WEB)

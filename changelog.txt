@@ -1,6 +1,15 @@
-1.20.x Changelog
+1.20.1 Changelog
+47.2
+====
+ - 47.2.0 1.20.1 RB
+
 47.1
 ====
+ - 47.1.47 Keep order of sources in PackRepository (#9702)
+           Co-authored-by: dhyces <10985914+dhyces@users.noreply.github.com>
+ - 47.1.46 Fix DelegatingPackResources searching resource path twice (#9697)
+ - 47.1.45 Fix `Level` leak in debug HUD (#9699)
+           Co-authored-by: malte0811 <malte0811@web.de>
  - 47.1.44 Fix PlayerSpawnPhantomsEvent not being fired (#9689)
  - 47.1.43 Enhance LivingBreathEvent and LivingDrownEvent. Closes #9680
            Also remove 3.5MB of useless data from the installer.

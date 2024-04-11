@@ -43,7 +43,7 @@ public class PrehistoricNatureItemModelProvider extends ItemModelProvider {
             builder = builder.texture("layer" + i, layers[i]);
         }
         if (emissivity > 0)
-            builder = builder.customLoader(ItemLayersModelBuilder::begin).emissive(emissivity, emissivity, 0)
+            builder = builder.customLoader(ItemLayerModelBuilder::begin).emissive(emissivity, emissivity, 0)
                     .renderType("forge_entity_unsorted_translucent", 0).end();
         return builder;
     }

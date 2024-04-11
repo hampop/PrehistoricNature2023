@@ -24,7 +24,7 @@ public class FossilBlocks {
 
     public static RegistryObject<Block> addFossilBlock(String name, String translation, RegistryObject<Item> fossilItem){
         return BlockHandler.registerBlock(name,
-                () -> {return new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1.5F).requiresCorrectToolForDrops());},
+                () -> {return new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F).requiresCorrectToolForDrops());},
                 List.of(BlockTags.MINEABLE_WITH_PICKAXE, PrehistoricNatureTags.MINALBE_WITH_GEOLOGICAL_PICK),
                 (provider, block) -> {provider.simpleBlock(block);},
                 (provider, item) -> {provider.withExistingParent(name, new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+name));},

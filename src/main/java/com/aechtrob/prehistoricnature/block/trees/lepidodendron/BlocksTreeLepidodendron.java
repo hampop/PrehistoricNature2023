@@ -31,7 +31,7 @@ public class BlocksTreeLepidodendron {
     }
     public static String treeName = "lepidodendron";
     public static int treeId = 1;
-    public static final WoodType LEPIDODENDRON = WoodTypeHelper.putWoodType(WoodType.create(treeName));
+    public static final WoodType LEPIDODENDRON = WoodTypeHelper.putWoodType(WoodType.register(null));
 
     public static final RegistryObject<Block> LEPIDODENDRON_STRIPPED_LOG = BlockRegistration.strippedLogBlock(
                                                                             List.of(LepidodendronBlockTags.LEPIDODENDRON_LOGS,BlockTags.MINEABLE_WITH_AXE,BlockTags.LOGS,BlockTags.LOGS_THAT_BURN,BlockTags.OVERWORLD_NATURAL_LOGS),

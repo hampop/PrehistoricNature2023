@@ -182,8 +182,7 @@ public class BlockRegistration {
     public static RegistryObject<Block> doorBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
                                                   List<TagKey<Item>> itemTags, String treeName,int treeId){
         return BlockHandler.registerBlock(treeName+"_door",
-                () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)
-                        , SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_OPEN),
+                () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK),
                 blockTags,itemTags,
                 PrehistoricNatureBlockStateProvider::doorBlock,
                 PrehistoricNatureItemModelProvider::basicItem,
@@ -196,8 +195,7 @@ public class BlockRegistration {
     public static RegistryObject<Block> trapdoorBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
                                                       List<TagKey<Item>> itemTags, String treeName,int treeId){
         return BlockHandler.registerBlock(treeName+"_trapdoor",
-                () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)
-                        , SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_OPEN),
+                () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK),
                 blockTags,itemTags,
                 (provider, block) -> {provider.pnTrapdoorBlock(block, treeName);},
                 (provider, item) -> {provider.withExistingParent(treeName+"_trapdoor", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_trapdoor_bottom"));},
@@ -210,7 +208,7 @@ public class BlockRegistration {
     public static RegistryObject<Block> pressurePlateBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
                                                            List<TagKey<Item>> itemTags, String treeName,int treeId){
         return BlockHandler.registerBlock(treeName+"_pressure_plate",
-                () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON),SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON,SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF),
+                () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK),
                 blockTags, itemTags,
                 (provider, block) -> {provider.pressurePlateBlock(block, plank);},
                 (provider, item) -> {provider.pressurePlate(treeName+"_pressure_plate", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_planks"));},
@@ -221,10 +219,9 @@ public class BlockRegistration {
     }
 
     public static RegistryObject<Block> buttonBlock(RegistryObject<Block> plank, List<TagKey<Block>> blockTags,
-                                                      List<TagKey<Item>> itemTags, String treeName,int treeId){
+                                                    List<TagKey<Item>> itemTags, String treeName,int treeId){
         return BlockHandler.registerBlock(treeName+"_button",
-                () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
-                        , 30, true, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON),
+                () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK),
                 blockTags,itemTags,
                 (provider, block) -> {provider.buttonBlock(block, plank);},
                 (provider, item) -> {provider.buttonInventory(treeName+"_button", new ResourceLocation(PrehistoricNatureMod.MOD_ID, "block/"+treeName+"_planks"));},

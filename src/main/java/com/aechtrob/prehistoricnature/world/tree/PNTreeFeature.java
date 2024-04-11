@@ -3,9 +3,10 @@ package com.aechtrob.prehistoricnature.world.tree;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.TreeFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
-import net.minecraft.world.level.material.Material;
 
 public class PNTreeFeature extends TreeFeature {
     public PNTreeFeature(Codec<TreeConfiguration> p_67201_) {
@@ -13,44 +14,31 @@ public class PNTreeFeature extends TreeFeature {
     }
 
     public static boolean canLogReplaceBlock(LevelSimulatedReader p_67289_, BlockPos p_67290_) {
-        return p_67289_.isStateAtPosition(p_67290_, (p_160551_) -> {
-            Material material = p_160551_.getMaterial();
-            return (material.isReplaceable()
-                || !material.isSolid()
-                || (material == Material.WEB)
-                || (material == Material.AIR)
-                || (material == Material.STRUCTURAL_AIR)
-                || (material == Material.LEAVES)
-                || (material == Material.SNOW)
-                || (material == Material.WATER)
-                || (material == Material.BAMBOO)
-                || (material == Material.BAMBOO_SAPLING)
-                || (material == Material.BUBBLE_COLUMN)
-                || (material == Material.CACTUS)
-                || (material == Material.CAKE)
-                || (material == Material.CLOTH_DECORATION)
-                || (material == Material.DECORATION)
-                || (material == Material.LAVA)
-                || (material == Material.MOSS)
-                || (material == Material.PLANT)
-                || (material == Material.POWDER_SNOW)
-                || (material == Material.VEGETABLE)
-                || (material == Material.TOP_SNOW)
-                || (material == Material.WATER_PLANT)
-                || (material == Material.REPLACEABLE_FIREPROOF_PLANT)
-                || (material == Material.REPLACEABLE_PLANT)
-                || (material == Material.REPLACEABLE_WATER_PLANT)
-                    || (material == Material.FROGSPAWN) //1.19!
-                || (material == Material.WATER));
+        return p_67289_.isStateAtPosition(p_67290_, (state) -> {
+            Block block = state.getBlock();
+            return block == net.minecraft.world.level.block.Blocks.AIR
+                    || block == net.minecraft.world.level.block.Blocks.SNOW
+                    || block == net.minecraft.world.level.block.Blocks.WATER
+                    || block == net.minecraft.world.level.block.Blocks.BAMBOO
+                    || block == net.minecraft.world.level.block.Blocks.BAMBOO_SAPLING
+                    || block == net.minecraft.world.level.block.Blocks.BUBBLE_COLUMN
+                    || block == net.minecraft.world.level.block.Blocks.CACTUS
+                    || block == net.minecraft.world.level.block.Blocks.CAKE
+                    || block == net.minecraft.world.level.block.Blocks.LAVA
+                    || block == net.minecraft.world.level.block.Blocks.POWDER_SNOW
+                    || block == Blocks.PETRIFIED_OAK_SLAB
+                    || block == Blocks.OAK_WOOD
+                    || block == net.minecraft.world.level.block.Blocks.FROGSPAWN
+                    || block == net.minecraft.world.level.block.Blocks.WATER;
         });
     }
 
     public static boolean canLeavesReplaceBlock(LevelSimulatedReader p_67289_, BlockPos p_67290_) {
-        return p_67289_.isStateAtPosition(p_67290_, (p_160551_) -> {
-            Material material = p_160551_.getMaterial();
-            return ((material == Material.AIR)
-                || (material == Material.STRUCTURAL_AIR)
-                || (material == Material.LEAVES));
+        return p_67289_.isStateAtPosition(p_67290_, (state) -> {
+            Block block = state.getBlock();
+            return block == net.minecraft.world.level.block.Blocks.AIR
+                    || block == Blocks.STRUCTURE_VOID
+                    || block == Blocks.OAK_LEAVES;
         });
     }
 }
